@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Marketing Master Course | 5 Months Practical Training & Certification</title>
+  <meta name="description" content="Master SEO, Google Ads, Meta Marketing, GA4 & Content Strategy with 100% live agency projects. 5 Months Master Course for Students, Job Seekers, and Business Owners.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="../css/style.css">
+  
+  <style>
+    .course-hero-header {
+      background: radial-gradient(120% 100% at 50% 0%, #0f172a 0%, #1e293b 70%, #064e3b 100%);
+      color: #ffffff;
+      padding: 4rem 0 5rem;
+    }
+    .curriculum-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .module-box {
+      background: #ffffff;
+      border-radius: var(--radius-md);
+      padding: 1.75rem;
+      border: 1px solid var(--clr-border);
+      box-shadow: var(--shadow-sm);
+    }
+    .module-box h4 {
+      color: var(--clr-primary);
+      font-size: 1.15rem;
+      margin-bottom: 0.75rem;
+    }
+    .tools-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.25rem;
+      margin-top: 2rem;
+    }
+    .tool-chip {
+      background: #ffffff;
+      border: 1px solid var(--clr-border);
+      border-radius: var(--radius-md);
+      padding: 1rem;
+      text-align: center;
+      font-weight: 700;
+      color: var(--clr-navy-900);
+      box-shadow: var(--shadow-sm);
+    }
+    @media (max-width: 768px) {
+      .curriculum-grid { grid-template-columns: 1fr; }
+      .tools-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div>
+        <span class="top-bar-badge">DIGITAL MARKETING BATCH</span>
+        🚀 Next Batch Starting Soon! Weekday & Weekend Options Available.
+      </div>
+      <div class="top-bar-contact">
+        <a href="tel:+919004547746" class="top-bar-link">📞 +91 90045 47746</a>
+        <a href="../index.html" class="top-bar-link">&larr; Back to Home</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="../index.html" class="brand-logo">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"/></svg>
+        <span>SKILL<span class="highlight">NXT</span></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="../index.html#home" class="nav-link">Home</a></li>
+        <li><a href="#overview" class="nav-link active">Overview</a></li>
+        <li><a href="#curriculum" class="nav-link">Curriculum</a></li>
+        <li><a href="#tools" class="nav-link">Tools</a></li>
+        <li><a href="#enroll" class="nav-link">Enroll Now</a></li>
+      </ul>
+      <div class="nav-cta-group">
+        <a href="tel:+919004547746" class="btn btn-outline btn-sm">Call Direct</a>
+        <button onclick="scrollToSection('enroll')" class="btn btn-primary btn-sm">Book Free Demo</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Course Hero -->
+  <section class="course-hero-header" id="overview">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge">
+          📈 5 Months Agency-Level Master Certification Program
+        </div>
+        <h1 class="hero-title">
+          Digital Marketing <span class="gradient-text">Master Course</span>
+        </h1>
+        <p class="hero-subtitle">
+          Become a certified performance marketer. Master Search Engine Optimization (SEO), Paid Ads (Google & Meta), Analytics (GA4), and Growth Hacking with 100% practical live campaigns.
+        </p>
+
+        <div style="display: flex; gap: 1.5rem; margin-top: 1.5rem; color: #cbd5e1; font-size: 0.95rem;">
+          <div>⏱ <strong>Duration:</strong> 5 Months</div>
+          <div>💻 <strong>Format:</strong> Practical + Live Projects</div>
+          <div>📜 <strong>Certification:</strong> Included</div>
+        </div>
+
+        <div class="hero-cta-box" style="margin-top: 2rem;">
+          <button onclick="scrollToSection('enroll')" class="btn btn-primary">
+            Enroll in Next Batch &rarr;
+          </button>
+          <a href="https://wa.me/919004547746?text=I%20want%20details%20for%20Digital%20Marketing%20Course" target="_blank" class="btn btn-outline" style="color: #ffffff; border-color: #34d399;">
+            💬 WhatsApp Counselor
+          </a>
+        </div>
+      </div>
+
+      <!-- Lead Form Card -->
+      <div class="hero-form-card">
+        <div class="hero-form-header">
+          <h3>Get Detailed Course Brochure</h3>
+          <p>Book a free 1-on-1 counseling session & demo class</p>
+        </div>
+        <form id="dmPageForm">
+          <input type="hidden" name="course" value="digital-marketing">
+          <div class="form-group">
+            <label class="form-label">Full Name *</label>
+            <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Mobile Number *</label>
+            <input type="tel" name="phone" class="form-control" placeholder="10-digit mobile number" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">I am a *</label>
+            <select name="time" class="form-control form-select">
+              <option value="Student / Graduate">Student / Recent Graduate</option>
+              <option value="Job Seeker">Job Seeker looking for Career Switch</option>
+              <option value="Business Owner">Business Owner / Entrepreneur</option>
+              <option value="Working Professional">Working Marketing Professional</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            Download Syllabus & Reserve Seat &rarr;
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Detailed Curriculum Section -->
+  <section class="why-us-section" id="curriculum">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tagline">STEP-BY-STEP LEARNING ROADMAP</span>
+        <h2 class="section-title">Comprehensive 6-Module Syllabus</h2>
+        <p class="section-subtitle">Everything you need to plan, launch, optimize, and scale digital marketing campaigns.</p>
+      </div>
+
+      <div class="curriculum-grid">
+        <div class="module-box">
+          <h4>Module 1: Search Engine Optimization (SEO) & Technical Audits</h4>
+          <ul class="course-features-list">
+            <li>Keyword Intent Research & Competitor Analysis</li>
+            <li>On-Page SEO Optimization & Schema Structured Data</li>
+            <li>Technical SEO: Core Web Vitals, Crawl Errors & Indexing</li>
+            <li>Off-Page SEO, Backlink Outreach & Authority Building</li>
+            <li>Local SEO & Google Business Profile Optimization</li>
+          </ul>
+        </div>
+
+        <div class="module-box">
+          <h4>Module 2: Google Ads & Performance Marketing (SEM)</h4>
+          <ul class="course-features-list">
+            <li>Search Ads Structure, Bidding Strategies & Quality Score</li>
+            <li>Google Display Network (GDN) & Banner Targeting</li>
+            <li>Google Shopping Ads for E-Commerce Stores</li>
+            <li>YouTube Video Ad Campaigns & Audience Segments</li>
+            <li>Remarketing & Conversion Rate Optimization (CRO)</li>
+          </ul>
+        </div>
+
+        <div class="module-box">
+          <h4>Module 3: Social Media Marketing (Meta, IG & LinkedIn)</h4>
+          <ul class="course-features-list">
+            <li>Organic Content Strategy, Calendar & Reels Growth</li>
+            <li>Meta Ads Manager: Pixel Setup, Custom & Lookalike Audiences</li>
+            <li>Lead Generation Campaigns & Dynamic Catalog Ads</li>
+            <li>LinkedIn B2B Marketing & Decision Maker Targeting</li>
+            <li>Influencer Collaboration & Brand Growth Strategies</li>
+          </ul>
+        </div>
+
+        <div class="module-box">
+          <h4>Module 4: Web Analytics, GA4 & Conversion Tracking</h4>
+          <ul class="course-features-list">
+            <li>Google Analytics 4 (GA4) Custom Event Setup</li>
+            <li>Google Tag Manager (GTM) Container Management</li>
+            <li>Conversion Funnel Tracking & Attribution Models</li>
+            <li>Looker Studio (Data Studio) Executive Dashboard Creation</li>
+            <li>A/B Testing & User Behavior Heatmaps (Hotjar)</li>
+          </ul>
+        </div>
+
+        <div class="module-box">
+          <h4>Module 5: Content Strategy, Email & Copywriting</h4>
+          <ul class="course-features-list">
+            <li>High-Converting Copywriting Formulas (AIDA, PAS)</li>
+            <li>Email Marketing Automation & Drip Sequences</li>
+            <li>Canva Pro Graphics Design & Video Editing for Ads</li>
+            <li>AI Marketing Tools (ChatGPT, Midjourney, Claude for Copy)</li>
+            <li>Blog Content Monetization & Affiliate Marketing</li>
+          </ul>
+        </div>
+
+        <div class="module-box">
+          <h4>Module 6: Agency Capstone & Placement Portfolio</h4>
+          <ul class="course-features-list">
+            <li>Managing Live Ad Budgets on Real Agency Accounts</li>
+            <li>Client Pitching, Proposal Writing & Client Reporting</li>
+            <li>Building Your Personal Freelance / Agency Portfolio</li>
+            <li>ATS Resume Creation & Mock Technical Interviews</li>
+            <li>Direct Job Interview Referrals to Partner Companies</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tools Mastered Section -->
+  <section class="why-us-section" id="tools" style="background-color: var(--clr-slate-100);">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tagline">HANDS-ON TOOLSTACK</span>
+        <h2 class="section-title">Master 15+ Industry Tools</h2>
+        <p class="section-subtitle">Get practical access and training on the exact tools used by top marketing agencies worldwide.</p>
+      </div>
+
+      <div class="tools-grid">
+        <div class="tool-chip">🔍 SEMrush</div>
+        <div class="tool-chip">🎯 Google Ads</div>
+        <div class="tool-chip">📊 Google Analytics 4</div>
+        <div class="tool-chip">🏷 Google Tag Manager</div>
+        <div class="tool-chip">📱 Meta Ads Manager</div>
+        <div class="tool-chip">💼 LinkedIn Campaign Manager</div>
+        <div class="tool-chip">🌐 WordPress</div>
+        <div class="tool-chip">🎨 Canva Pro</div>
+        <div class="tool-chip">✉️ Mailchimp</div>
+        <div class="tool-chip">🔥 Hotjar</div>
+        <div class="tool-chip">📈 Google Looker Studio</div>
+        <div class="tool-chip">🤖 ChatGPT & AI Tools</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final Lead Capture Form -->
+  <section class="lead-section" id="enroll">
+    <div class="container">
+      <div class="lead-wrapper">
+        <div class="lead-info">
+          <h2>Enroll in Digital Marketing Master Course</h2>
+          <p>Join the upcoming batch to master practical digital marketing with live projects and 100% placement support.</p>
+          <ul class="lead-perks">
+            <li>✓ 100% Practical Agency Projects</li>
+            <li>✓ Certificate & Google / Meta Exam Guidance</li>
+            <li>✓ Flexible Weekday & Weekend Slots</li>
+          </ul>
+        </div>
+
+        <div class="lead-form-box">
+          <form id="dmPageMainForm">
+            <input type="hidden" name="course" value="digital-marketing">
+            <div class="form-group">
+              <label class="form-label">Full Name *</label>
+              <input type="text" name="name" class="form-control" placeholder="Enter Full Name" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Mobile Number *</label>
+              <input type="tel" name="phone" class="form-control" placeholder="Enter Mobile Number" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Preferred Time Slot</label>
+              <select name="time" class="form-control form-select">
+                <option value="Weekday Morning">Weekday Morning (10:00 AM)</option>
+                <option value="Weekday Evening">Weekday Evening (5:00 PM)</option>
+                <option value="Weekend Batch">Weekend Batch (Sat & Sun)</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Submit Application &rarr;</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container text-center">
+      <p>&copy; 2026 SkillNXT. Digital Marketing Master Program. <a href="../index.html">Return to Main Site</a></p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const f1 = document.getElementById('dmPageForm');
+      const f2 = document.getElementById('dmPageMainForm');
+      
+      const submitHandler = (e) => {
+        e.preventDefault();
+        const form = e.target;
+        const name = form.querySelector('[name="name"]').value;
+        const phone = form.querySelector('[name="phone"]').value;
+        alert(`Thank you ${name}! Your inquiry for Digital Marketing Master Course has been received. Our team will contact you at ${phone}.`);
+        form.reset();
+      };
+
+      if (f1) f1.addEventListener('submit', submitHandler);
+      if (f2) f2.addEventListener('submit', submitHandler);
+    });
+  </script>
+</body>
+</html>

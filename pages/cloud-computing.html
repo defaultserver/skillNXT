@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cloud Computing Professional Course | Sunday Special Batch | AWS & Azure Certification</title>
+  <meta name="description" content="Master AWS, Microsoft Azure, Docker, Kubernetes & Terraform. Dedicated SUNDAY SPECIAL BATCH (9:30 AM - 2:30 PM) for Working Professionals & Tech Students. 100% Practical Labs.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="../css/style.css">
+
+  <style>
+    .course-hero-purple {
+      background: radial-gradient(120% 100% at 50% 0%, #0f172a 0%, #2e1065 70%, #1e1b4b 100%);
+      color: #ffffff;
+      padding: 4rem 0 5rem;
+    }
+    .curriculum-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .module-box {
+      background: #ffffff;
+      border-radius: var(--radius-md);
+      padding: 1.75rem;
+      border: 1px solid var(--clr-border);
+      box-shadow: var(--shadow-sm);
+    }
+    .module-box h4 {
+      color: var(--clr-accent-purple);
+      font-size: 1.15rem;
+      margin-bottom: 0.75rem;
+    }
+    .tools-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.25rem;
+      margin-top: 2rem;
+    }
+    .tool-chip {
+      background: #ffffff;
+      border: 1px solid var(--clr-border);
+      border-radius: var(--radius-md);
+      padding: 1rem;
+      text-align: center;
+      font-weight: 700;
+      color: var(--clr-navy-900);
+      box-shadow: var(--shadow-sm);
+    }
+    @media (max-width: 768px) {
+      .curriculum-grid { grid-template-columns: 1fr; }
+      .tools-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar" style="background: linear-gradient(90deg, #1e1b4b 0%, #0f172a 100%);">
+    <div class="container top-bar-content">
+      <div>
+        <span class="top-bar-badge" style="background: #a855f7; color: #ffffff;">SUNDAY BATCH ALERT</span>
+        ⚡ Exclusively on SUNDAYS (9:30 AM - 2:30 PM). Ideal for Working Professionals.
+      </div>
+      <div class="top-bar-contact">
+        <a href="tel:+919004547746" class="top-bar-link">📞 +91 90045 47746</a>
+        <a href="../index.html" class="top-bar-link">&larr; Back to Home</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="../index.html" class="brand-logo">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"/></svg>
+        <span>SKILL<span class="highlight" style="color: #a855f7;">NXT</span></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="../index.html#home" class="nav-link">Home</a></li>
+        <li><a href="#overview" class="nav-link active">Overview</a></li>
+        <li><a href="#curriculum" class="nav-link">Curriculum</a></li>
+        <li><a href="#tools" class="nav-link">Cloud Stack</a></li>
+        <li><a href="#enroll" class="nav-link">Enroll Now</a></li>
+      </ul>
+      <div class="nav-cta-group">
+        <a href="tel:+919004547746" class="btn btn-outline btn-sm">Call Direct</a>
+        <button onclick="scrollToSection('enroll')" class="btn btn-primary btn-sm" style="background: #a855f7;">Book Sunday Demo</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Course Hero -->
+  <section class="course-hero-purple" id="overview">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge" style="background: rgba(168, 85, 247, 0.2); border-color: rgba(168, 85, 247, 0.4); color: #c084fc;">
+          ⚡ SUNDAY SPECIAL BATCH (Exclusively Sundays 9:30 AM - 2:30 PM)
+        </div>
+        <h1 class="hero-title">
+          Cloud Computing <span class="gradient-text" style="background: linear-gradient(135deg, #c084fc 0%, #38bdf8 100%); -webkit-background-clip: text;">Professional Course</span>
+        </h1>
+        <p class="hero-subtitle">
+          Master Multi-Cloud Architecture across AWS & Microsoft Azure. Build real production environments with Docker, Kubernetes, Terraform, and DevOps CI/CD automation.
+        </p>
+
+        <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; margin-top: 1.5rem; color: #cbd5e1; font-size: 0.95rem;">
+          <div>⏱ <strong>Duration:</strong> 5 Months</div>
+          <div>🗓 <strong>Schedule:</strong> Exclusively Sundays</div>
+          <div>📜 <strong>Cert Prep:</strong> AWS & Azure Solutions Architect</div>
+        </div>
+
+        <div class="hero-cta-box" style="margin-top: 2rem;">
+          <button onclick="scrollToSection('enroll')" class="btn btn-primary" style="background: linear-gradient(135deg, #a855f7 0%, #7e22ce 100%); border: none;">
+            Reserve Sunday Seat &rarr;
+          </button>
+          <a href="https://wa.me/919004547746?text=I%20want%20details%20for%20Cloud%20Computing%20Sunday%20Batch" target="_blank" class="btn btn-outline" style="color: #ffffff; border-color: #c084fc;">
+            💬 WhatsApp Counselor
+          </a>
+        </div>
+      </div>
+
+      <!-- Lead Form Card -->
+      <div class="hero-form-card">
+        <div class="hero-form-header">
+          <h3>Sunday Batch Demo Seat</h3>
+          <p>Get AWS & Azure Lab Manuals + Fee Structure</p>
+        </div>
+        <form id="cloudPageForm">
+          <input type="hidden" name="course" value="cloud-computing">
+          <div class="form-group">
+            <label class="form-label">Full Name *</label>
+            <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Mobile / WhatsApp Number *</label>
+            <input type="tel" name="phone" class="form-control" placeholder="10-digit mobile number" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Current Background *</label>
+            <select name="time" class="form-control form-select">
+              <option value="IT Working Professional">IT Working Professional / System Admin</option>
+              <option value="Non-IT Career Switcher">Non-IT Professional switching to Cloud</option>
+              <option value="CS / Tech Student">CS / Engineering Student</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" style="background: linear-gradient(135deg, #a855f7 0%, #7e22ce 100%); border: none;">
+            Book Free Sunday Demo Class &rarr;
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Detailed Curriculum Section -->
+  <section class="why-us-section" id="curriculum">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tagline" style="color: #9333ea; background: #f3e8ff;">CLOUD ARCHITECTURE ROADMAP</span>
+        <h2 class="section-title">Comprehensive 6-Module Cloud Syllabus</h2>
+        <p class="section-subtitle">Designed specifically for working IT aspirants and tech students seeking multi-cloud mastery.</p>
+      </div>
+
+      <div class="curriculum-grid">
+        <div class="module-box">
+          <h4>Module 1: Linux Administration & Shell Scripting</h4>
+          <ul class="course-features-list">
+            <li>Linux Terminal Navigation, File Permissions & User Management</li>
+            <li>Shell Scripting Automation for System Tasks</li>
+            <li>Networking Basics: TCP/IP, DNS, SSH Key Authentication & Firewalls</li>
+            <li>System Performance Monitoring & Troubleshooting Logs</li>
+          </ul>
+        </div>
+
+        <div class="module-box">
+          <h4>Module 2: AWS Core Compute, Storage & Networking</h4>
+          <ul class="course-features-list">
+            <li>EC2 Instances, Auto-Scaling Groups & Elastic Load Balancers (ALB)</li>
+            <li>S3 Storage Classes, Lifecycle Policies & IAM Bucket Security</li>
+            <li>Amazon VPC Architecture: Subnets, NAT Gateways & Route Tables</li>
+            <li>Relational DBs (RDS MySQL/PostgreSQL) & DynamoDB NoSQL</li>
+            <li>CloudFront CDN, Route 53 DNS & CloudWatch Monitoring</li>
+          </ul>
+        </div>
+
+        <div class="module-box">
+          <h4>Module 3: Microsoft Azure Enterprise Infrastructure</h4>
+          <ul class="course-features-list">
+            <li>Azure Resource Groups, Subscriptions & Cost Management</li>
+            <li>Azure Virtual Machines, Scale Sets & Virtual Networks (VNet)</li>
+            <li>Azure Blob Storage, File Shares & Azure AD Directory Sync</li>
+            <li>Azure Load Balancer & Application Gateway</li>
+          </ul>
+        </div>
+
+        <div class="module-box">
+          <h4>Module 4: Docker Containers & Microservices</h4>
+          <ul class="course-features-list">
+            <li>Container Fundamentals vs Traditional VMs</li>
+            <li>Writing Multi-stage Dockerfiles & Docker Compose Orchestration</li>
+            <li>Docker Hub Registry Management & Image Security</li>
+            <li>Containerizing Node.js, Python & Java Applications</li>
+          </ul>
+        </div>
+
+        <div class="module-box">
+          <h4>Module 5: Kubernetes Orchestration & Terraform IaC</h4>
+          <ul class="course-features-list">
+            <li>Kubernetes (k8s) Cluster Architecture: Pods, Deployments & Services</li>
+            <li>EKS (AWS) & AKS (Azure) Managed Kubernetes Clusters</li>
+            <li>Infrastructure as Code (IaC) with HashiCorp Terraform</li>
+            <li>CI/CD Pipelines using GitHub Actions & AWS CodePipeline</li>
+          </ul>
+        </div>
+
+        <div class="module-box">
+          <h4>Module 6: Certification Prep & Production Capstone Project</h4>
+          <ul class="course-features-list">
+            <li>AWS Certified Solutions Architect (SAA-C03) Exam Questions</li>
+            <li>Microsoft Azure Administrator (AZ-104) Exam Prep</li>
+            <li>Deploying High-Availability Multi-Region Architecture</li>
+            <li>Mock Technical Architecture Review Interviews</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cloud Toolstack -->
+  <section class="why-us-section" id="tools" style="background-color: var(--clr-slate-100);">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tagline">HANDS-ON LAB ENVIRONMENTS</span>
+        <h2 class="section-title">Cloud & DevOps Tools Mastered</h2>
+        <p class="section-subtitle">Real live console practice on AWS, Azure, and modern container orchestration tools.</p>
+      </div>
+
+      <div class="tools-grid">
+        <div class="tool-chip">☁️ AWS Console</div>
+        <div class="tool-chip">🔷 Azure Portal</div>
+        <div class="tool-chip">🐳 Docker</div>
+        <div class="tool-chip">☸️ Kubernetes (EKS/AKS)</div>
+        <div class="tool-chip">🏗 Terraform</div>
+        <div class="tool-chip">🐧 Linux Bash</div>
+        <div class="tool-chip">🐙 Git & GitHub</div>
+        <div class="tool-chip">⚙️ GitHub Actions CI/CD</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lead Form Section -->
+  <section class="lead-section" id="enroll">
+    <div class="container">
+      <div class="lead-wrapper">
+        <div class="lead-info">
+          <h2>Enroll in Sunday Special Cloud Batch</h2>
+          <p>Exclusively scheduled on SUNDAYS (9:30 AM to 2:30 PM) with 100% practical live lab access.</p>
+          <ul class="lead-perks">
+            <li>✓ AWS & Azure Lab Credentials Provided</li>
+            <li>✓ Sunday Class Recording Access on LMS</li>
+            <li>✓ Official Certification Guidance & Vouchers</li>
+          </ul>
+        </div>
+
+        <div class="lead-form-box">
+          <form id="cloudPageMainForm">
+            <input type="hidden" name="course" value="cloud-computing">
+            <div class="form-group">
+              <label class="form-label">Full Name *</label>
+              <input type="text" name="name" class="form-control" placeholder="Enter Full Name" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Mobile Number *</label>
+              <input type="tel" name="phone" class="form-control" placeholder="Enter Mobile Number" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Preferred Mode</label>
+              <select name="time" class="form-control form-select">
+                <option value="Sunday Classroom Batch">Sunday Classroom Batch (9:30 AM - 2:30 PM)</option>
+                <option value="Sunday Live Online Zoom">Sunday Live Online Zoom Batch</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" style="background: linear-gradient(135deg, #a855f7 0%, #7e22ce 100%); border: none;">
+              Reserve Sunday Seat Now &rarr;
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container text-center">
+      <p>&copy; 2026 SkillNXT. Cloud Computing Professional (Sunday Special Batch). <a href="../index.html">Return to Main Site</a></p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const f1 = document.getElementById('cloudPageForm');
+      const f2 = document.getElementById('cloudPageMainForm');
+      
+      const submitHandler = (e) => {
+        e.preventDefault();
+        const form = e.target;
+        const name = form.querySelector('[name="name"]').value;
+        const phone = form.querySelector('[name="phone"]').value;
+        alert(`Thank you ${name}! Your Sunday Batch Demo slot for Cloud Computing Professional has been reserved. Admissions will contact you at ${phone}.`);
+        form.reset();
+      };
+
+      if (f1) f1.addEventListener('submit', submitHandler);
+      if (f2) f2.addEventListener('submit', submitHandler);
+    });
+  </script>
+</body>
+</html>

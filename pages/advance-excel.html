@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advance Excel & Data Analysis | Saturday Special Batch | Dashboards & Automation</title>
+  <meta name="description" content="Master XLOOKUP, Power Query, Power Pivot, DAX, Executive Dashboards & VBA Macros. SATURDAY SPECIAL BATCH (10:00 AM - 3:00 PM) for Working Professionals & Accountants.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="../css/style.css">
+
+  <style>
+    .course-hero-amber {
+      background: radial-gradient(120% 100% at 50% 0%, #0f172a 0%, #78350f 70%, #451a03 100%);
+      color: #ffffff;
+      padding: 4rem 0 5rem;
+    }
+    .curriculum-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .module-box {
+      background: #ffffff;
+      border-radius: var(--radius-md);
+      padding: 1.75rem;
+      border: 1px solid var(--clr-border);
+      box-shadow: var(--shadow-sm);
+    }
+    .module-box h4 {
+      color: var(--clr-accent-amber);
+      font-size: 1.15rem;
+      margin-bottom: 0.75rem;
+    }
+    .tools-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.25rem;
+      margin-top: 2rem;
+    }
+    .tool-chip {
+      background: #ffffff;
+      border: 1px solid var(--clr-border);
+      border-radius: var(--radius-md);
+      padding: 1rem;
+      text-align: center;
+      font-weight: 700;
+      color: var(--clr-navy-900);
+      box-shadow: var(--shadow-sm);
+    }
+    @media (max-width: 768px) {
+      .curriculum-grid { grid-template-columns: 1fr; }
+      .tools-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar" style="background: linear-gradient(90deg, #78350f 0%, #0f172a 100%);">
+    <div class="container top-bar-content">
+      <div>
+        <span class="top-bar-badge" style="background: #f59e0b; color: #0f172a;">SATURDAY BATCH ALERT</span>
+        ⚡ Exclusively on SATURDAYS (10:00 AM - 3:00 PM). Hands-on Practical Labs.
+      </div>
+      <div class="top-bar-contact">
+        <a href="tel:+919004547746" class="top-bar-link">📞 +91 90045 47746</a>
+        <a href="../index.html" class="top-bar-link">&larr; Back to Home</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="../index.html" class="brand-logo">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"/></svg>
+        <span>SKILL<span class="highlight" style="color: #f59e0b;">NXT</span></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="../index.html#home" class="nav-link">Home</a></li>
+        <li><a href="#overview" class="nav-link active">Overview</a></li>
+        <li><a href="#curriculum" class="nav-link">Curriculum</a></li>
+        <li><a href="#tools" class="nav-link">Tools</a></li>
+        <li><a href="#enroll" class="nav-link">Enroll Now</a></li>
+      </ul>
+      <div class="nav-cta-group">
+        <a href="tel:+919004547746" class="btn btn-outline btn-sm">Call Direct</a>
+        <button onclick="scrollToSection('enroll')" class="btn btn-primary btn-sm" style="background: #d97706;">Book Saturday Demo</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Course Hero -->
+  <section class="course-hero-amber" id="overview">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge" style="background: rgba(245, 158, 11, 0.2); border-color: rgba(245, 158, 11, 0.4); color: #fbbf24;">
+          ⚡ SATURDAY SPECIAL BATCH (Exclusively Saturdays 10:00 AM - 3:00 PM)
+        </div>
+        <h1 class="hero-title">
+          Advance Excel & <span class="gradient-text" style="background: linear-gradient(135deg, #fbbf24 0%, #38bdf8 100%); -webkit-background-clip: text;">Data Analysis</span>
+        </h1>
+        <p class="hero-subtitle">
+          Transform complex datasets into interactive executive dashboards. Master dynamic formulas, automated Power Query workflows, Power Pivot data models, and VBA macro reporting.
+        </p>
+
+        <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; margin-top: 1.5rem; color: #cbd5e1; font-size: 0.95rem;">
+          <div>⏱ <strong>Duration:</strong> 3 Months</div>
+          <div>🗓 <strong>Schedule:</strong> Exclusively Saturdays</div>
+          <div>📜 <strong>Certificate:</strong> Advanced Data Analyst Diploma</div>
+        </div>
+
+        <div class="hero-cta-box" style="margin-top: 2rem;">
+          <button onclick="scrollToSection('enroll')" class="btn btn-primary" style="background: linear-gradient(135deg, #d97706 0%, #b45309 100%); border: none;">
+            Reserve Saturday Seat &rarr;
+          </button>
+          <a href="https://wa.me/919004547746?text=I%20want%20details%20for%20Advance%20Excel%20Saturday%20Batch" target="_blank" class="btn btn-outline" style="color: #ffffff; border-color: #fbbf24;">
+            💬 WhatsApp Counselor
+          </a>
+        </div>
+      </div>
+
+      <!-- Lead Form Card -->
+      <div class="hero-form-card">
+        <div class="hero-form-header">
+          <h3>Saturday Batch Demo Seat</h3>
+          <p>Get Dashboard Templates & Excel Sample Workbook</p>
+        </div>
+        <form id="excelPageForm">
+          <input type="hidden" name="course" value="advance-excel">
+          <div class="form-group">
+            <label class="form-label">Full Name *</label>
+            <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Mobile / WhatsApp Number *</label>
+            <input type="tel" name="phone" class="form-control" placeholder="10-digit mobile number" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Current Occupation *</label>
+            <select name="time" class="form-control form-select">
+              <option value="Working Professional / Accountant">Working Professional / Accountant</option>
+              <option value="MIS / Data Analyst">MIS / Financial Analyst</option>
+              <option value="Student">College Student</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" style="background: linear-gradient(135deg, #d97706 0%, #b45309 100%); border: none;">
+            Book Free Saturday Demo Class &rarr;
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Detailed Curriculum Section -->
+  <section class="why-us-section" id="curriculum">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tagline" style="color: #d97706; background: #fef3c7;">DATA ANALYTICS ROADMAP</span>
+        <h2 class="section-title">Comprehensive 5-Module Curriculum</h2>
+        <p class="section-subtitle">Designed for working accountants, financial analysts, and business professionals.</p>
+      </div>
+
+      <div class="curriculum-grid">
+        <div class="module-box">
+          <h4>Module 1: Advanced Excel Formulas & Logic</h4>
+          <ul class="course-features-list">
+            <li>XLOOKUP, INDEX/MATCH & Multi-Criteria VLOOKUP</li>
+            <li>Dynamic Array Formulas (UNIQUE, FILTER, SORT, SEQUENCE)</li>
+            <li>Nested Logical Functions (AND, OR, SWITCH, IFS)</li>
+            <li>Financial & Statistical Functions for Business Decisions</li>
+            <li>Conditional Formatting Rules & Custom Number Formats</li>
+          </ul>
+        </div>
+
+        <div class="module-box">
+          <h4>Module 2: Data Cleaning & Automation with Power Query</h4>
+          <ul class="course-features-list">
+            <li>Importing & Consolidating Multi-Folder Excel & CSV Files</li>
+            <li>Unpivoting Dirty Columns & Transforming Messy Data</li>
+            <li>Merging & Appending Datasets without VLOOKUP</li>
+            <li>Custom M-Code Expressions & Scheduled Data Refreshes</li>
+          </ul>
+        </div>
+
+        <div class="module-box">
+          <h4>Module 3: Data Modeling & Power Pivot DAX</h4>
+          <ul class="course-features-list">
+            <li>Building Data Models with Star & Snowflake Schemas</li>
+            <li>Creating Calculated Columns & DAX Measures</li>
+            <li>Time Intelligence Functions (YTD, QTD, YoY Growth)</li>
+            <li>KPI Indicators & Executive Performance Scorecards</li>
+          </ul>
+        </div>
+
+        <div class="module-box">
+          <h4>Module 4: Executive Interactive Dashboard Design</h4>
+          <ul class="course-features-list">
+            <li>Designing Sleek Financial & Sales Dashboards</li>
+            <li>Pivot Tables, Slicers & Dynamic Timeline Filters</li>
+            <li>Custom Combination Charts, Gauge Charts & Sparklines</li>
+            <li>User Experience (UX) Layout Principles for Corporate Reports</li>
+          </ul>
+        </div>
+
+        <div class="module-box">
+          <h4>Module 5: VBA Macros & Power BI Integration</h4>
+          <ul class="course-features-list">
+            <li>Recording & Editing Basic VBA Macros</li>
+            <li>Automating Monthly Reports & One-Click PDF Exports</li>
+            <li>Sending Automated Email Reports via Excel & Outlook</li>
+            <li>Exporting Excel Data Models into Power BI Desktop</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tools Mastered -->
+  <section class="why-us-section" id="tools" style="background-color: var(--clr-slate-100);">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tagline">TOOLS & SOFTWARE</span>
+        <h2 class="section-title">Analytics Stack Mastered</h2>
+        <p class="section-subtitle">Hands-on experience with Microsoft Excel 365, Power Query, DAX, and Power BI.</p>
+      </div>
+
+      <div class="tools-grid">
+        <div class="tool-chip">📊 Microsoft Excel 365</div>
+        <div class="tool-chip">⚡ Power Query</div>
+        <div class="tool-chip">🧮 Power Pivot</div>
+        <div class="tool-chip">📈 DAX Measures</div>
+        <div class="tool-chip">🤖 VBA Macros</div>
+        <div class="tool-chip">🟡 Power BI Desktop</div>
+        <div class="tool-chip">🗄 SQL Basics</div>
+        <div class="tool-chip">📋 Executive Dashboards</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lead Form Section -->
+  <section class="lead-section" id="enroll">
+    <div class="container">
+      <div class="lead-wrapper">
+        <div class="lead-info">
+          <h2>Enroll in Saturday Special Excel Batch</h2>
+          <p>Exclusively scheduled on SATURDAYS (10:00 AM to 3:00 PM) with hands-on dashboard building exercises.</p>
+          <ul class="lead-perks">
+            <li>✓ 100+ Ready Dashboard Templates Provided</li>
+            <li>✓ Saturday Recording & Workbook Files</li>
+            <li>✓ 1-on-1 Doubt Clarification Sessions</li>
+          </ul>
+        </div>
+
+        <div class="lead-form-box">
+          <form id="excelPageMainForm">
+            <input type="hidden" name="course" value="advance-excel">
+            <div class="form-group">
+              <label class="form-label">Full Name *</label>
+              <input type="text" name="name" class="form-control" placeholder="Enter Full Name" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Mobile Number *</label>
+              <input type="tel" name="phone" class="form-control" placeholder="Enter Mobile Number" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Preferred Training Mode</label>
+              <select name="time" class="form-control form-select">
+                <option value="Saturday Classroom Batch">Saturday Classroom Batch (10:00 AM - 3:00 PM)</option>
+                <option value="Saturday Live Online Zoom">Saturday Live Online Zoom Batch</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" style="background: linear-gradient(135deg, #d97706 0%, #b45309 100%); border: none;">
+              Reserve Saturday Seat Now &rarr;
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container text-center">
+      <p>&copy; 2026 SkillNXT. Advance Excel & Data Analysis (Saturday Special Batch). <a href="../index.html">Return to Main Site</a></p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const f1 = document.getElementById('excelPageForm');
+      const f2 = document.getElementById('excelPageMainForm');
+      
+      const submitHandler = (e) => {
+        e.preventDefault();
+        const form = e.target;
+        const name = form.querySelector('[name="name"]').value;
+        const phone = form.querySelector('[name="phone"]').value;
+        alert(`Thank you ${name}! Your Saturday Batch Demo slot for Advance Excel & Data Analysis has been reserved. Admissions will contact you at ${phone}.`);
+        form.reset();
+      };
+
+      if (f1) f1.addEventListener('submit', submitHandler);
+      if (f2) f2.addEventListener('submit', submitHandler);
+    });
+  </script>
+</body>
+</html>
