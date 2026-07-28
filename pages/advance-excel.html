@@ -1,25 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Advance Excel & Data Analysis | Saturday Special Batch | Dashboards & Automation</title>
-  <meta name="description" content="Master XLOOKUP, Power Query, Power Pivot, DAX, Executive Dashboards & VBA Macros. SATURDAY SPECIAL BATCH (10:00 AM - 3:00 PM) for Working Professionals & Accountants.">
+  <meta name="description"
+    content="Master XLOOKUP, Power Query, Power Pivot, DAX, Executive Dashboards & VBA Macros. SATURDAY SPECIAL BATCH (10:00 AM - 3:00 PM) for Working Professionals & Accountants.">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
   <link rel="canonical" href="https://defaultserver.github.io/skillNXT/pages/advance-excel.html">
   <meta property="og:title" content="Advance Excel & Data Analysis | SkillNXT">
-  <meta property="og:description" content="Learn Excel automation, dashboards, Power Query, Power Pivot and data analytics with live practical training.">
+  <meta property="og:description"
+    content="Learn Excel automation, dashboards, Power Query, Power Pivot and data analytics with live practical training.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://defaultserver.github.io/skillNXT/pages/advance-excel.html">
   <meta property="og:image" content="https://defaultserver.github.io/skillNXT/assets/og-image.svg">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Advance Excel & Data Analysis | SkillNXT">
-  <meta name="twitter:description" content="Learn Excel automation, dashboards, Power Query, Power Pivot and data analytics with live practical training.">
+  <meta name="twitter:description"
+    content="Learn Excel automation, dashboards, Power Query, Power Pivot and data analytics with live practical training.">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
+    rel="stylesheet">
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="../css/style.css">
@@ -30,12 +36,14 @@
       color: #ffffff;
       padding: 4rem 0 5rem;
     }
+
     .curriculum-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 1.5rem;
       margin-top: 2rem;
     }
+
     .module-box {
       background: #ffffff;
       border-radius: var(--radius-md);
@@ -43,17 +51,20 @@
       border: 1px solid var(--clr-border);
       box-shadow: var(--shadow-sm);
     }
+
     .module-box h4 {
       color: var(--clr-accent-amber);
       font-size: 1.15rem;
       margin-bottom: 0.75rem;
     }
+
     .tools-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 1.25rem;
       margin-top: 2rem;
     }
+
     .tool-chip {
       background: #ffffff;
       border: 1px solid var(--clr-border);
@@ -64,12 +75,19 @@
       color: var(--clr-navy-900);
       box-shadow: var(--shadow-sm);
     }
+
     @media (max-width: 768px) {
-      .curriculum-grid { grid-template-columns: 1fr; }
-      .tools-grid { grid-template-columns: repeat(2, 1fr); }
+      .curriculum-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .tools-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
     }
   </style>
 </head>
+
 <body>
 
   <!-- Top Bar -->
@@ -90,10 +108,12 @@
   <header class="site-header">
     <div class="container navbar">
       <a href="../index.html" class="brand-logo">
-        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"/></svg>
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z" />
+        </svg>
         <span>SKILL<span class="highlight" style="color: #f59e0b;">NXT</span></span>
       </a>
-      <ul class="nav-links">
+      <ul class="nav-links" id="navLinks">
         <li><a href="../index.html#home" class="nav-link">Home</a></li>
         <li><a href="#overview" class="nav-link active">Overview</a></li>
         <li><a href="#curriculum" class="nav-link">Curriculum</a></li>
@@ -102,7 +122,13 @@
       </ul>
       <div class="nav-cta-group">
         <a href="tel:+919004547746" class="btn btn-outline btn-sm">Call Direct</a>
-        <button onclick="scrollToSection('enroll')" class="btn btn-primary btn-sm" style="background: #d97706;">Book Saturday Demo</button>
+        <button onclick="scrollToSection('enroll')" class="btn btn-primary btn-sm" style="background: #d97706;">Book
+          Saturday Demo</button>
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle Menu">
+          <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
       </div>
     </div>
   </header>
@@ -111,27 +137,34 @@
   <section class="course-hero-amber" id="overview">
     <div class="container hero-grid">
       <div class="hero-content">
-        <div class="hero-badge" style="background: rgba(245, 158, 11, 0.2); border-color: rgba(245, 158, 11, 0.4); color: #fbbf24;">
+        <div class="hero-badge"
+          style="background: rgba(245, 158, 11, 0.2); border-color: rgba(245, 158, 11, 0.4); color: #fbbf24;">
           ⚡ SATURDAY SPECIAL BATCH (Exclusively Saturdays 10:00 AM - 3:00 PM)
         </div>
         <h1 class="hero-title">
-          Advance Excel & <span class="gradient-text" style="background: linear-gradient(135deg, #fbbf24 0%, #38bdf8 100%); -webkit-background-clip: text;">Data Analysis</span>
+          Advance Excel & <span class="gradient-text"
+            style="background: linear-gradient(135deg, #fbbf24 0%, #38bdf8 100%); -webkit-background-clip: text;">Data
+            Analysis</span>
         </h1>
         <p class="hero-subtitle">
-          Transform complex datasets into interactive executive dashboards. Master dynamic formulas, automated Power Query workflows, Power Pivot data models, and VBA macro reporting.
+          Transform complex datasets into interactive executive dashboards. Master dynamic formulas, automated Power
+          Query workflows, Power Pivot data models, and VBA macro reporting.
         </p>
 
-        <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; margin-top: 1.5rem; color: #cbd5e1; font-size: 0.95rem;">
+        <div
+          style="display: flex; flex-wrap: wrap; gap: 1.5rem; margin-top: 1.5rem; color: #cbd5e1; font-size: 0.95rem;">
           <div>⏱ <strong>Duration:</strong> 3 Months</div>
           <div>🗓 <strong>Schedule:</strong> Exclusively Saturdays</div>
           <div>📜 <strong>Certificate:</strong> Advanced Data Analyst Diploma</div>
         </div>
 
         <div class="hero-cta-box" style="margin-top: 2rem;">
-          <button onclick="scrollToSection('enroll')" class="btn btn-primary" style="background: linear-gradient(135deg, #d97706 0%, #b45309 100%); border: none;">
+          <button onclick="scrollToSection('enroll')" class="btn btn-primary"
+            style="background: linear-gradient(135deg, #d97706 0%, #b45309 100%); border: none;">
             Reserve Saturday Seat &rarr;
           </button>
-          <a href="https://wa.me/919004547746?text=I%20want%20details%20for%20Advance%20Excel%20Saturday%20Batch" target="_blank" class="btn btn-outline" style="color: #ffffff; border-color: #fbbf24;">
+          <a href="https://wa.me/919004547746?text=I%20want%20details%20for%20Advance%20Excel%20Saturday%20Batch"
+            target="_blank" class="btn btn-outline" style="color: #ffffff; border-color: #fbbf24;">
             💬 WhatsApp Counselor
           </a>
         </div>
@@ -161,7 +194,8 @@
               <option value="Student">College Student</option>
             </select>
           </div>
-          <button type="submit" class="btn btn-primary btn-full" style="background: linear-gradient(135deg, #d97706 0%, #b45309 100%); border: none;">
+          <button type="submit" class="btn btn-primary btn-full"
+            style="background: linear-gradient(135deg, #d97706 0%, #b45309 100%); border: none;">
             Book Free Saturday Demo Class &rarr;
           </button>
         </form>
@@ -175,7 +209,8 @@
       <div class="text-center">
         <span class="section-tagline" style="color: #d97706; background: #fef3c7;">DATA ANALYTICS ROADMAP</span>
         <h2 class="section-title">Comprehensive 5-Module Curriculum</h2>
-        <p class="section-subtitle">Designed for working accountants, financial analysts, and business professionals.</p>
+        <p class="section-subtitle">Designed for working accountants, financial analysts, and business professionals.
+        </p>
       </div>
 
       <div class="curriculum-grid">
@@ -287,7 +322,8 @@
                 <option value="Saturday Live Online Zoom">Saturday Live Online Zoom Batch</option>
               </select>
             </div>
-            <button type="submit" class="btn btn-primary btn-full" style="background: linear-gradient(135deg, #d97706 0%, #b45309 100%); border: none;">
+            <button type="submit" class="btn btn-primary btn-full"
+              style="background: linear-gradient(135deg, #d97706 0%, #b45309 100%); border: none;">
               Reserve Saturday Seat Now &rarr;
             </button>
           </form>
@@ -298,16 +334,25 @@
 
   <footer class="site-footer">
     <div class="container text-center">
-      <p>&copy; 2026 SkillNXT. Advance Excel & Data Analysis (Saturday Special Batch). <a href="../index.html">Return to Main Site</a></p>
+      <p>&copy; 2026 SkillNXT. Advance Excel & Data Analysis (Saturday Special Batch). <a href="../index.html">Return to
+          Main Site</a></p>
     </div>
   </footer>
+
+  <!-- Mobile Bottom Action Bar -->
+  <div class="mobile-bottom-bar">
+    <div class="mobile-bottom-bar-grid">
+      <a href="tel:+919004547746" class="btn btn-outline btn-sm">📞 Call Now</a>
+      <button onclick="scrollToSection('enroll')" class="btn btn-primary btn-sm">Book Saturday Demo</button>
+    </div>
+  </div>
 
   <script src="../js/main.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       const f1 = document.getElementById('excelPageForm');
       const f2 = document.getElementById('excelPageMainForm');
-      
+
       const submitHandler = (e) => {
         e.preventDefault();
         const form = e.target;
@@ -322,4 +367,5 @@
     });
   </script>
 </body>
+
 </html>

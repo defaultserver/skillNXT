@@ -93,7 +93,7 @@
         <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"/></svg>
         <span>SKILL<span class="highlight">NXT</span></span>
       </a>
-      <ul class="nav-links">
+      <ul class="nav-links" id="navLinks">
         <li><a href="../index.html#home" class="nav-link">Home</a></li>
         <li><a href="#overview" class="nav-link active">Overview</a></li>
         <li><a href="#curriculum" class="nav-link">Curriculum</a></li>
@@ -103,6 +103,9 @@
       <div class="nav-cta-group">
         <a href="tel:+919004547746" class="btn btn-outline btn-sm">Call Direct</a>
         <button onclick="scrollToSection('enroll')" class="btn btn-primary btn-sm">Book Free Demo</button>
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle Menu">
+          <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
       </div>
     </div>
   </header>
@@ -121,7 +124,7 @@
           Become a certified Google Analytics, Master Search Engine Optimization (SEO), Paid Ads (Google & Meta) and Growth Hacking with 100% practical live campaigns.
         </p>
 
-        <div style="display: flex; gap: 1.5rem; margin-top: 1.5rem; color: #cbd5e1; font-size: 0.95rem;">
+        <div style="display: flex; flex-wrap: wrap; gap: 1rem 1.5rem; margin-top: 1.5rem; color: #cbd5e1; font-size: 0.95rem;">
           <div>⏱ <strong>Duration:</strong> 5 Months</div>
           <div>💻 <strong>Format:</strong> Practical + Portfolio Creation</div>
           <div>📜 <strong>Certification:</strong> Included</div>
@@ -321,6 +324,14 @@
       <p>&copy; 2026 SkillNXT. Digital Marketing Master Program. <a href="../index.html">Return to Main Site</a></p>
     </div>
   </footer>
+
+  <!-- Mobile Bottom Action Bar -->
+  <div class="mobile-bottom-bar">
+    <div class="mobile-bottom-bar-grid">
+      <a href="tel:+919004547746" class="btn btn-outline btn-sm">📞 Call Now</a>
+      <button onclick="scrollToSection('enroll')" class="btn btn-primary btn-sm">Book Free Demo</button>
+    </div>
+  </div>
 
   <script src="../js/main.js"></script>
   <script>

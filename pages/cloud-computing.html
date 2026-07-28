@@ -1,25 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cloud Computing Professional Course | Sunday Special Batch | AWS & Azure Certification</title>
-  <meta name="description" content="Master AWS, Microsoft Azure, Docker, Kubernetes & Terraform. Dedicated SUNDAY SPECIAL BATCH (9:30 AM - 2:30 PM) for Working Professionals & Tech Students. 100% Practical Labs.">
+  <meta name="description"
+    content="Master AWS, Microsoft Azure, Docker, Kubernetes & Terraform. Dedicated SUNDAY SPECIAL BATCH (9:30 AM - 2:30 PM) for Working Professionals & Tech Students. 100% Practical Labs.">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
   <link rel="canonical" href="https://defaultserver.github.io/skillNXT/pages/cloud-computing.html">
   <meta property="og:title" content="Cloud Computing Professional Course | SkillNXT">
-  <meta property="og:description" content="Join the Sunday Special Batch for AWS, Azure, Docker, Kubernetes and Terraform training.">
+  <meta property="og:description"
+    content="Join the Sunday Special Batch for AWS, Azure, Docker, Kubernetes and Terraform training.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://defaultserver.github.io/skillNXT/pages/cloud-computing.html">
   <meta property="og:image" content="https://defaultserver.github.io/skillNXT/assets/og-image.svg">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Cloud Computing Professional Course | SkillNXT">
-  <meta name="twitter:description" content="Join the Sunday Special Batch for AWS, Azure, Docker, Kubernetes and Terraform training.">
+  <meta name="twitter:description"
+    content="Join the Sunday Special Batch for AWS, Azure, Docker, Kubernetes and Terraform training.">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
+    rel="stylesheet">
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="../css/style.css">
@@ -30,12 +36,14 @@
       color: #ffffff;
       padding: 4rem 0 5rem;
     }
+
     .curriculum-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 1.5rem;
       margin-top: 2rem;
     }
+
     .module-box {
       background: #ffffff;
       border-radius: var(--radius-md);
@@ -43,17 +51,20 @@
       border: 1px solid var(--clr-border);
       box-shadow: var(--shadow-sm);
     }
+
     .module-box h4 {
       color: var(--clr-accent-purple);
       font-size: 1.15rem;
       margin-bottom: 0.75rem;
     }
+
     .tools-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 1.25rem;
       margin-top: 2rem;
     }
+
     .tool-chip {
       background: #ffffff;
       border: 1px solid var(--clr-border);
@@ -64,12 +75,19 @@
       color: var(--clr-navy-900);
       box-shadow: var(--shadow-sm);
     }
+
     @media (max-width: 768px) {
-      .curriculum-grid { grid-template-columns: 1fr; }
-      .tools-grid { grid-template-columns: repeat(2, 1fr); }
+      .curriculum-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .tools-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
     }
   </style>
 </head>
+
 <body>
 
   <!-- Top Bar -->
@@ -90,10 +108,12 @@
   <header class="site-header">
     <div class="container navbar">
       <a href="../index.html" class="brand-logo">
-        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"/></svg>
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z" />
+        </svg>
         <span>SKILL<span class="highlight" style="color: #a855f7;">NXT</span></span>
       </a>
-      <ul class="nav-links">
+      <ul class="nav-links" id="navLinks">
         <li><a href="../index.html#home" class="nav-link">Home</a></li>
         <li><a href="#overview" class="nav-link active">Overview</a></li>
         <li><a href="#curriculum" class="nav-link">Curriculum</a></li>
@@ -102,7 +122,13 @@
       </ul>
       <div class="nav-cta-group">
         <a href="tel:+919004547746" class="btn btn-outline btn-sm">Call Direct</a>
-        <button onclick="scrollToSection('enroll')" class="btn btn-primary btn-sm" style="background: #a855f7;">Book Sunday Demo</button>
+        <button onclick="scrollToSection('enroll')" class="btn btn-primary btn-sm" style="background: #a855f7;">Book
+          Sunday Demo</button>
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle Menu">
+          <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
       </div>
     </div>
   </header>
@@ -111,27 +137,34 @@
   <section class="course-hero-purple" id="overview">
     <div class="container hero-grid">
       <div class="hero-content">
-        <div class="hero-badge" style="background: rgba(168, 85, 247, 0.2); border-color: rgba(168, 85, 247, 0.4); color: #c084fc;">
+        <div class="hero-badge"
+          style="background: rgba(168, 85, 247, 0.2); border-color: rgba(168, 85, 247, 0.4); color: #c084fc;">
           ⚡ SUNDAY SPECIAL BATCH (Exclusively Sundays 9:30 AM - 2:30 PM)
         </div>
         <h1 class="hero-title">
-          Cloud Computing <span class="gradient-text" style="background: linear-gradient(135deg, #c084fc 0%, #38bdf8 100%); -webkit-background-clip: text;">Professional Course</span>
+          Cloud Computing <span class="gradient-text"
+            style="background: linear-gradient(135deg, #c084fc 0%, #38bdf8 100%); -webkit-background-clip: text;">Professional
+            Course</span>
         </h1>
         <p class="hero-subtitle">
-          Master Multi-Cloud Architecture across AWS & Microsoft Azure. Build real production environments with Docker, Kubernetes, Terraform, and DevOps CI/CD automation.
+          Master Multi-Cloud Architecture across AWS & Microsoft Azure. Build real production environments with Docker,
+          Kubernetes, Terraform, and DevOps CI/CD automation.
         </p>
 
-        <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; margin-top: 1.5rem; color: #cbd5e1; font-size: 0.95rem;">
+        <div
+          style="display: flex; flex-wrap: wrap; gap: 1.5rem; margin-top: 1.5rem; color: #cbd5e1; font-size: 0.95rem;">
           <div>⏱ <strong>Duration:</strong> 5 Months</div>
           <div>🗓 <strong>Schedule:</strong> Exclusively Sundays</div>
           <div>📜 <strong>Cert Prep:</strong> AWS & Azure Solutions Architect</div>
         </div>
 
         <div class="hero-cta-box" style="margin-top: 2rem;">
-          <button onclick="scrollToSection('enroll')" class="btn btn-primary" style="background: linear-gradient(135deg, #a855f7 0%, #7e22ce 100%); border: none;">
+          <button onclick="scrollToSection('enroll')" class="btn btn-primary"
+            style="background: linear-gradient(135deg, #a855f7 0%, #7e22ce 100%); border: none;">
             Reserve Sunday Seat &rarr;
           </button>
-          <a href="https://wa.me/919004547746?text=I%20want%20details%20for%20Cloud%20Computing%20Sunday%20Batch" target="_blank" class="btn btn-outline" style="color: #ffffff; border-color: #c084fc;">
+          <a href="https://wa.me/919004547746?text=I%20want%20details%20for%20Cloud%20Computing%20Sunday%20Batch"
+            target="_blank" class="btn btn-outline" style="color: #ffffff; border-color: #c084fc;">
             💬 WhatsApp Counselor
           </a>
         </div>
@@ -161,7 +194,8 @@
               <option value="CS / Tech Student">CS / Engineering Student</option>
             </select>
           </div>
-          <button type="submit" class="btn btn-primary btn-full" style="background: linear-gradient(135deg, #a855f7 0%, #7e22ce 100%); border: none;">
+          <button type="submit" class="btn btn-primary btn-full"
+            style="background: linear-gradient(135deg, #a855f7 0%, #7e22ce 100%); border: none;">
             Book Free Sunday Demo Class &rarr;
           </button>
         </form>
@@ -175,7 +209,8 @@
       <div class="text-center">
         <span class="section-tagline" style="color: #9333ea; background: #f3e8ff;">CLOUD ARCHITECTURE ROADMAP</span>
         <h2 class="section-title">Comprehensive 6-Module Cloud Syllabus</h2>
-        <p class="section-subtitle">Designed specifically for working IT aspirants and tech students seeking multi-cloud mastery.</p>
+        <p class="section-subtitle">Designed specifically for working IT aspirants and tech students seeking multi-cloud
+          mastery.</p>
       </div>
 
       <div class="curriculum-grid">
@@ -249,7 +284,8 @@
       <div class="text-center">
         <span class="section-tagline">HANDS-ON LAB ENVIRONMENTS</span>
         <h2 class="section-title">Cloud & DevOps Tools Mastered</h2>
-        <p class="section-subtitle">Real live console practice on AWS, Azure, and modern container orchestration tools.</p>
+        <p class="section-subtitle">Real live console practice on AWS, Azure, and modern container orchestration tools.
+        </p>
       </div>
 
       <div class="tools-grid">
@@ -297,7 +333,8 @@
                 <option value="Sunday Live Online Zoom">Sunday Live Online Zoom Batch</option>
               </select>
             </div>
-            <button type="submit" class="btn btn-primary btn-full" style="background: linear-gradient(135deg, #a855f7 0%, #7e22ce 100%); border: none;">
+            <button type="submit" class="btn btn-primary btn-full"
+              style="background: linear-gradient(135deg, #a855f7 0%, #7e22ce 100%); border: none;">
               Reserve Sunday Seat Now &rarr;
             </button>
           </form>
@@ -308,16 +345,25 @@
 
   <footer class="site-footer">
     <div class="container text-center">
-      <p>&copy; 2026 SkillNXT. Cloud Computing Professional (Sunday Special Batch). <a href="../index.html">Return to Main Site</a></p>
+      <p>&copy; 2026 SkillNXT. Cloud Computing Professional (Sunday Special Batch). <a href="../index.html">Return to
+          Main Site</a></p>
     </div>
   </footer>
+
+  <!-- Mobile Bottom Action Bar -->
+  <div class="mobile-bottom-bar">
+    <div class="mobile-bottom-bar-grid">
+      <a href="tel:+919004547746" class="btn btn-outline btn-sm">📞 Call Now</a>
+      <button onclick="scrollToSection('enroll')" class="btn btn-primary btn-sm">Book Sunday Demo</button>
+    </div>
+  </div>
 
   <script src="../js/main.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       const f1 = document.getElementById('cloudPageForm');
       const f2 = document.getElementById('cloudPageMainForm');
-      
+
       const submitHandler = (e) => {
         e.preventDefault();
         const form = e.target;
@@ -332,4 +378,5 @@
     });
   </script>
 </body>
+
 </html>
