@@ -22,23 +22,75 @@ document.addEventListener('DOMContentLoaded', () => {
       modules: [
         {
           number: 'Module 1',
-          title: 'SEO & Search Engine Optimization',
-          topics: ['Keyword Research & Intent Analysis', 'On-Page & Technical SEO Audits', 'Link Building & Authority Strategies', 'Local SEO & Google Business Profile']
+          title: 'Website Basics, SEO & Frontend Setup',
+          price: '₹11,000',
+          topics: [
+            'Website structure & landing page basics',
+            'On-page SEO, meta tags & heading optimization',
+            'Schema & structured data basics',
+            'WordPress setup & easy publishing',
+            'Domain purchase & live hosting essentials'
+          ]
         },
         {
           number: 'Module 2',
-          title: 'Google Ads & Performance Marketing',
-          topics: ['Search, Display & Video Ad Campaigns', 'Smart Bidding & Conversion Tracking', 'Google Shopping Ads & Remarketing', 'PPC Budget Optimization']
+          title: 'Local SEO & Local Targeting',
+          price: '₹11,000',
+          topics: [
+            'Google Business Profile setup & optimization',
+            'Google Maps optimization for local visibility',
+            'NAP consistency & local listings',
+            'Local social media optimization',
+            'Locally optimized landing pages for indexing'
+          ]
         },
         {
           number: 'Module 3',
-          title: 'Social Media Marketing (Meta, LinkedIn & Instagram)',
-          topics: ['Organic Content Strategy & Reels', 'Meta Ads Manager & Audience Targeting', 'LinkedIn B2B Lead Generation', 'Influencer Marketing Campaign Execution']
+          title: 'SMM & SEM Strategy',
+          price: '₹15,000',
+          topics: [
+            'Platform selection & audience targeting',
+            'Content strategy & posting planning',
+            'Organic engagement vs paid ads',
+            'Campaign structure for Meta, LinkedIn & Google',
+            'Retargeting concepts & audience segmentation'
+          ]
         },
         {
           number: 'Module 4',
-          title: 'Web Analytics & Conversion Rate Optimization (CRO)',
-          topics: ['Google Analytics 4 (GA4) Implementation', 'Google Tag Manager Setup', 'Landing Page Optimization & A/B Testing', 'ROI & Executive Reporting Dashboards']
+          title: 'Web Analytics, GA4 & Search Console',
+          price: '₹11,000',
+          topics: [
+            'GA4 setup & reporting',
+            'Acquisition, engagement & user behavior reports',
+            'Event tracking & custom audience creation',
+            'Search Console insights & indexing',
+            'SEO performance tracking & optimization'
+          ]
+        },
+        {
+          number: 'Module 5',
+          title: 'Retargeting, Email & WhatsApp Marketing',
+          price: '₹7,000',
+          topics: [
+            'Email automation & welcome flows',
+            'List building & lead management',
+            'WhatsApp broadcast strategy & compliance',
+            'WhatsApp Business catalog optimization',
+            'Cross-platform retargeting with email & WhatsApp'
+          ]
+        },
+        {
+          number: 'Module 6',
+          title: 'Content Creation & Canva Studio',
+          price: '₹7,000',
+          topics: [
+            'Social media ad banners & infographic design',
+            'Brand consistency through theme continuation',
+            'Canva apps & design enhancements',
+            'AI + manual content writing practice',
+            'Canva video editing with audio & animation'
+          ]
         }
       ],
       tools: ['Google Ads', 'GA4', 'Meta Ads Manager', 'SEMrush', 'Canva Pro', 'WordPress', 'Google Tag Manager'],
@@ -94,23 +146,63 @@ document.addEventListener('DOMContentLoaded', () => {
       modules: [
         {
           number: 'Module 1',
-          title: 'Advanced Excel Formulas & Logic',
-          topics: ['XLOOKUP, INDEX/MATCH & Nested Conditions', 'Dynamic Array Formulas (UNIQUE, FILTER, SORT)', 'Financial & Statistical Functions', 'Data Validation & Multi-Condition Formatting']
+          title: 'Excel Foundations & Advanced Formulas',
+          price: '₹5,000',
+          topics: [
+            'Sorting, filtering & multi-level subtotal reports',
+            'Logical formulas with IF, IFS, AND & OR',
+            'COUNTIF, SUMIF, VLOOKUP, HLOOKUP & XLOOKUP',
+            'INDEX + MATCH for advanced lookups',
+            'Data validation & structured workbook design'
+          ]
         },
         {
           number: 'Module 2',
-          title: 'Power Query & Data Cleaning Automation',
-          topics: ['Connecting Multi-Source Files & Folders', 'Unpivoting & Cleaning Dirty Data', 'Automating Monthly Data Import Workflows', 'Custom M-Code Functions']
+          title: 'Data Cleaning & Automation',
+          price: '₹5,000',
+          topics: [
+            'Importing & consolidating Excel and CSV files',
+            'Cleaning messy data with Power Query',
+            'Merging & appending datasets without VLOOKUP',
+            'Automation ideas for recurring business reports',
+            'Practical transformation workflows'
+          ]
         },
         {
           number: 'Module 3',
-          title: 'Power Pivot & Data Modeling',
-          topics: ['Building Data Models & Relationships', 'DAX Measures (CALCULATE, RELATED, Time Intelligence)', 'KPI Indicators & Executive Scorecards']
+          title: 'Pivot Tables, Charts & What-If Analysis',
+          price: '₹5,000',
+          topics: [
+            'Pivot tables for business reporting',
+            'Pivot charts for quick visual summaries',
+            'What-if analysis & scenario planning',
+            'Named ranges for cleaner formulas',
+            'Reporting structure for MIS work'
+          ]
         },
         {
           number: 'Module 4',
-          title: 'Interactive Dashboards & VBA Macros',
-          topics: ['Designing Sleek Interactive Dashboards with Slicers', 'Recording & Modifying VBA Macros', 'Automating Excel Tasks & One-Click PDF/Email Reports', 'Introduction to Power BI']
+          title: 'Advanced Formatting & VBA Basics',
+          price: '₹5,000',
+          topics: [
+            'Advanced conditional formatting',
+            'Macros for repetitive tasks',
+            'VBA introduction for Excel automation',
+            'AI-assisted VBA coding practice',
+            'Simple automation projects for real work'
+          ]
+        },
+        {
+          number: 'Module 5',
+          title: 'MIS Dashboards & Capstone Projects',
+          price: '₹5,000',
+          topics: [
+            'MIS dashboard creation',
+            'Executive reporting layouts',
+            'Hands-on project assistance',
+            'Final business scenario practice',
+            'Portfolio-ready Excel outputs'
+          ]
         }
       ],
       tools: ['Microsoft Excel 365', 'Power Query', 'Power Pivot', 'DAX', 'VBA Editor', 'Power BI Desktop'],
@@ -148,9 +240,43 @@ document.addEventListener('DOMContentLoaded', () => {
     data.modules.forEach(mod => {
       const modEl = document.createElement('div');
       modEl.className = 'syllabus-module';
+      
+      // Override default primary border-left dynamically based on courseId
+      if (courseId === 'advance-excel') {
+        modEl.style.borderLeft = '4px solid var(--clr-accent-amber)';
+      } else if (courseId === 'cloud-computing') {
+        modEl.style.borderLeft = '4px solid var(--clr-accent-purple)';
+      } else {
+        modEl.style.borderLeft = '4px solid var(--clr-primary)';
+      }
+
+      // Add border transitions & hover micro-animations
+      modEl.style.transition = 'transform var(--transition-normal), box-shadow var(--transition-normal)';
+      modEl.addEventListener('mouseenter', () => {
+        modEl.style.transform = 'translateX(4px)';
+        modEl.style.boxShadow = 'var(--shadow-sm)';
+      });
+      modEl.addEventListener('mouseleave', () => {
+        modEl.style.transform = 'translateX(0)';
+        modEl.style.boxShadow = 'none';
+      });
+
+      // Price badge styling based on courseId
+      let badgeStyle = '';
+      if (mod.price) {
+        if (courseId === 'advance-excel') {
+          badgeStyle = 'background: var(--clr-accent-amber-light); color: var(--clr-accent-amber); border: 1px solid rgba(217, 119, 6, 0.15);';
+        } else {
+          badgeStyle = 'background: var(--clr-primary-light); color: var(--clr-primary); border: 1px solid rgba(2, 132, 199, 0.15);';
+        }
+      }
+
       modEl.innerHTML = `
-        <h5>${mod.number}: ${mod.title}</h5>
-        <ul>
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem; margin-bottom: 0.5rem;">
+          <h5 style="margin: 0; font-size: 1.05rem; font-weight: 700; color: var(--clr-navy-900);">${mod.number}: ${mod.title}</h5>
+          ${mod.price ? `<span style="${badgeStyle} font-weight: 700; padding: 0.2rem 0.6rem; border-radius: var(--radius-full); font-size: 0.8rem; white-space: nowrap;">${mod.price}</span>` : ''}
+        </div>
+        <ul style="margin: 0; padding-left: 1.25rem; color: var(--clr-slate-600); font-size: 0.9rem;">
           ${mod.topics.map(t => `<li>${t}</li>`).join('')}
         </ul>
       `;
