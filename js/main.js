@@ -315,11 +315,13 @@ document.addEventListener('DOMContentLoaded', () => {
     modalCloseBtn.addEventListener('click', closeCourseModal);
   }
 
-  modalBackdrop.addEventListener('click', (e) => {
-    if (e.target === modalBackdrop) {
-      closeCourseModal();
-    }
-  });
+  if (modalBackdrop) {
+    modalBackdrop.addEventListener('click', (e) => {
+      if (e.target === modalBackdrop) {
+        closeCourseModal();
+      }
+    });
+  }
 
   // Tab Switcher inside Modal
   function switchTab(tabId) {
