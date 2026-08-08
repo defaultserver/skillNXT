@@ -349,16 +349,29 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ------------------------------------------------------------------------
      3. Lead Capture Forms Logic (Hero & Main Section)
      ------------------------------------------------------------------------ */
-  const heroForm = document.getElementById('heroLeadForm');
-  const mainForm = document.getElementById('mainLeadForm');
+  // Bind submission logic to ALL forms on the page dynamically
+  const allForms = document.querySelectorAll('form');
+  allForms.forEach(form => {
+    form.addEventListener('submit', (e) => {
+      let formType = 'Website Form';
+      if (form.id === 'heroLeadForm') formType = 'Hero Form';
+      else if (form.id === 'mainLeadForm') formType = 'Main Form';
+      else if (form.id) formType = form.id;
+      handleFormSubmission(e, formType);
+    });
+  });
 
   function handleFormSubmission(e, formType) {
     e.preventDefault();
 
     const form = e.target;
-    const name = form.querySelector('[name="name"]').value.trim();
-    const phone = form.querySelector('[name="phone"]').value.trim();
-    const course = form.querySelector('[name="course"]').value;
+    const nameInput = form.querySelector('[name="name"]');
+    const phoneInput = form.querySelector('[name="phone"]');
+    const courseInput = form.querySelector('[name="course"]');
+    
+    const name = nameInput ? nameInput.value.trim() : '';
+    const phone = phoneInput ? phoneInput.value.trim() : '';
+    const course = courseInput ? courseInput.value.trim() : '';
     const preferredTime = form.querySelector('[name="time"]') ? form.querySelector('[name="time"]').value : 'Anytime';
 
     // Simple Phone Number Validation
@@ -373,44 +386,81 @@ document.addEventListener('DOMContentLoaded', () => {
       return;
     }
 
-    // Save lead into local storage for demonstration / admin dashboard retrieval
-    const existingLeads = JSON.parse(localStorage.getItem('apex_institute_leads') || '[]');
-    const newLead = {
-      id: Date.now(),
-      name,
-      phone,
-      course,
-      preferredTime,
-      submittedAt: new Date().toISOString(),
-      source: formType
-    };
-    existingLeads.push(newLead);
-    localStorage.setItem('apex_institute_leads', JSON.stringify(existingLeads));
+    // Disable button and show spinner
+    const submitBtn = form.querySelector('[type="submit"]');
+    let originalBtnContent = '';
+    if (submitBtn) {
+      originalBtnContent = submitBtn.innerHTML;
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = `<span class="spinner" style="margin-right: 0.5rem;"></span> Submitting...`;
+    }
 
-    // Reset Form
-    form.reset();
-
-    // Show Success Toast
-    showToast(`Thank you, ${name}! Your demo class slot request is received. Our academic team will call you shortly.`, 'success');
-
-    // Prompt user to open WhatsApp to talk directly to admissions
+    // Map course ID to human-readable title for lead records & Formspree
     const courseNameMap = {
       'digital-marketing': 'Digital Marketing Master Course',
       'cloud-computing': 'Cloud Computing Professional Course (Sunday Batch)',
       'advance-excel': 'Advance Excel & Data Analysis (Saturday Batch)'
     };
     const selectedCourseLabel = courseNameMap[course] || course;
-    const waText = encodeURIComponent(`Hello Apex Skills Institute! I just submitted an inquiry for *${selectedCourseLabel}*.\nName: ${name}\nPhone: ${phone}\nPreferred Time: ${preferredTime}. Please share fee details and demo class slot.`);
-    
-    setTimeout(() => {
-      if (confirm('Would you like to connect directly with our Counselor on WhatsApp for instant confirmation?')) {
-        window.open(`https://wa.me/919004547746?text=${waText}`, '_blank');
-      }
-    }, 1200);
-  }
 
-  if (heroForm) heroForm.addEventListener('submit', (e) => handleFormSubmission(e, 'Hero Form'));
-  if (mainForm) mainForm.addEventListener('submit', (e) => handleFormSubmission(e, 'Main Form'));
+    // Construct Formspree payload
+    const formData = new FormData(form);
+    formData.set('course', selectedCourseLabel);
+    formData.append('form_source', formType);
+
+    // Formspree Submission URL
+    const formspreeUrl = 'https://formspree.io/f/xlgqwjdw';
+
+    fetch(formspreeUrl, {
+      method: 'POST',
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
+      }
+    })
+    .then(response => {
+      if (response.ok) {
+        // Save lead into local storage for demonstration / admin dashboard retrieval
+        const existingLeads = JSON.parse(localStorage.getItem('apex_institute_leads') || '[]');
+        const newLead = {
+          id: Date.now(),
+          name,
+          phone,
+          course: selectedCourseLabel,
+          preferredTime,
+          submittedAt: new Date().toISOString(),
+          source: formType
+        };
+        existingLeads.push(newLead);
+        localStorage.setItem('apex_institute_leads', JSON.stringify(existingLeads));
+
+        // Save to sessionStorage for personalized greetings on the Thank You page
+        sessionStorage.setItem('last_lead_name', name);
+        sessionStorage.setItem('last_lead_course', selectedCourseLabel);
+
+        // Reset form
+        form.reset();
+
+        // Redirect to Thank You page
+        const pathPrefix = window.location.pathname.includes('/pages/') ? '' : 'pages/';
+        window.location.href = `${pathPrefix}thank-you.html?name=${encodeURIComponent(name)}`;
+      } else {
+        return response.json().then(data => {
+          throw new Error(data.error || 'Server error during submission');
+        });
+      }
+    })
+    .catch(error => {
+      console.error('Error submitting form:', error);
+      showToast('Oops! Something went wrong. Please try again or connect on WhatsApp.', 'error');
+      
+      // Restore submit button state
+      if (submitBtn) {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalBtnContent;
+      }
+    });
+  }
 
   // Function to pre-select course in forms when clicked from course cards
   window.selectCourseInForm = function(courseId) {

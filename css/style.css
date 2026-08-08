@@ -1747,3 +1747,218 @@ button, input, select, textarea {
   }
 }
 
+/* ==========================================================================
+   Thank You Page Styles & Animations
+   ========================================================================== */
+
+/* Spinner keyframe */
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.spinner {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid currentColor;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+/* Success Checkmark Pulse Animation */
+@keyframes pulse-success {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(5, 150, 105, 0.4);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 15px rgba(5, 150, 105, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(5, 150, 105, 0);
+  }
+}
+
+/* WhatsApp Button Pulse */
+@keyframes pulse-whatsapp {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px -5px rgba(16, 185, 129, 0.4);
+  }
+}
+
+.thank-you-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  background-color: var(--clr-slate-100);
+}
+
+.thank-you-card {
+  background: var(--clr-card-bg);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-xl);
+  padding: 3rem 2.5rem;
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  transition: transform var(--transition-normal);
+}
+
+.thank-you-card:hover {
+  transform: translateY(-2px);
+}
+
+.success-icon-container {
+  width: 80px;
+  height: 80px;
+  background-color: var(--clr-accent-emerald-light);
+  color: var(--clr-accent-emerald);
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 2rem;
+  animation: pulse-success 2s infinite;
+}
+
+.thank-you-title {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: var(--clr-navy-900);
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.thank-you-subtitle {
+  color: var(--clr-slate-600);
+  font-size: 1.1rem;
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+}
+
+/* Steps Timeline */
+.timeline-card {
+  background-color: var(--clr-slate-50);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  margin-bottom: 2.5rem;
+  text-align: left;
+}
+
+.timeline-card h4 {
+  font-size: 1.1rem;
+  color: var(--clr-navy-900);
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.timeline-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.timeline-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.step-number {
+  background: var(--clr-border);
+  color: var(--clr-slate-600);
+  font-size: 0.8rem;
+  font-weight: 700;
+  width: 24px;
+  height: 24px;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.timeline-step.completed .step-number {
+  background: var(--clr-accent-emerald);
+  color: white;
+}
+
+.timeline-step.active .step-number {
+  background: var(--clr-primary);
+  color: white;
+}
+
+.step-details h5 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--clr-navy-800);
+  margin-bottom: 0.1rem;
+}
+
+.step-details p {
+  font-size: 0.85rem;
+  color: var(--clr-slate-600);
+  margin: 0;
+}
+
+/* Custom Action Buttons */
+.thank-you-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.btn-whatsapp-cta {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: white !important;
+  font-weight: 700;
+  border: none;
+  box-shadow: 0 4px 6px rgba(16, 185, 129, 0.2);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  animation: pulse-whatsapp 3s infinite ease-in-out;
+}
+
+.btn-whatsapp-cta:hover {
+  background: linear-gradient(135deg, #059669 0%, #047857 100%);
+}
+
+.btn-back-home {
+  background: transparent;
+  border: 1px solid var(--clr-border);
+  color: var(--clr-navy-700);
+  transition: all var(--transition-fast);
+}
+
+.btn-back-home:hover {
+  background: var(--clr-slate-50);
+  border-color: var(--clr-slate-400);
+  color: var(--clr-navy-900);
+}
+
+@media (max-width: 640px) {
+  .thank-you-card {
+    padding: 2rem 1.5rem;
+  }
+  .thank-you-title {
+    font-size: 1.75rem;
+  }
+}
+
+
