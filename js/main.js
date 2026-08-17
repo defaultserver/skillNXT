@@ -443,9 +443,20 @@ document.addEventListener('DOMContentLoaded', () => {
         // Reset form
         form.reset();
 
-        // Redirect to Thank You page
-        const pathPrefix = window.location.pathname.includes('/pages/') ? '' : 'pages/';
-        window.location.href = `${pathPrefix}thank-you.html?name=${encodeURIComponent(name)}`;
+        // Redirect to appropriate Thank You page based on course
+        let redirectUrl;
+        const courseName = selectedCourseLabel;
+        
+        // Both forms and thank you pages are in /pages/ directory
+        // Redirect to thankyouCC.html for Cloud Computing course
+        if (course === 'cloud-computing') {
+          redirectUrl = 'thankyouCC.html?name=' + encodeURIComponent(name) + '&course=' + encodeURIComponent(courseName);
+        } else {
+          redirectUrl = 'thank-you.html?name=' + encodeURIComponent(name) + '&course=' + encodeURIComponent(courseName);
+        }
+        
+        console.log('Redirecting to:', redirectUrl);
+        window.location.href = redirectUrl;
       } else {
         return response.json().then(data => {
           throw new Error(data.error || 'Server error during submission');

@@ -1318,6 +1318,10 @@ button, input, select, textarea {
     display: none;
   }
 
+  .nav-cta-group .btn.btn-primary {
+    display: none;
+  }
+
   .nav-links {
     position: absolute;
     top: 100%;
