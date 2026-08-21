@@ -52,12 +52,38 @@
       padding: 1.75rem;
       border: 1px solid var(--clr-border);
       box-shadow: var(--shadow-sm);
+      transition: transform var(--transition-normal), box-shadow var(--transition-normal), border-color var(--transition-normal);
+    }
+
+    .module-box:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+      border-color: #9333ea;
+    }
+
+    .module-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 1rem;
+      margin-bottom: 0.75rem;
     }
 
     .module-box h4 {
-      color: var(--clr-accent-purple);
+      color: #7e22ce;
       font-size: 1.15rem;
-      margin-bottom: 0.75rem;
+      margin-bottom: 0;
+    }
+
+    .module-price {
+      background: #f3e8ff;
+      color: #7e22ce;
+      font-weight: 700;
+      padding: 0.25rem 0.75rem;
+      border-radius: var(--radius-full);
+      font-size: 0.9rem;
+      white-space: nowrap;
+      border: 1px solid rgba(147, 51, 234, 0.2);
     }
 
     .tools-grid {
@@ -162,7 +188,7 @@
             style="background: linear-gradient(135deg, #a855f7 0%, #7e22ce 100%); border: none;">
             Reserve Sunday Seat &rarr;
           </button>
-          <a href="https://wa.me/919004547746?text=I%20want%20details%20for%20Cloud%20Computing%20Sunday%20Batch"
+          <a href="https://wa.me/918356966541?text=I%20want%20details%20for%20Cloud%20Computing%20Sunday%20Batch"
             target="_blank" class="btn btn-outline" style="color: #ffffff; border-color: #c084fc;">
             💬 WhatsApp Counselor
           </a>
@@ -207,70 +233,89 @@
     <div class="container">
       <div class="text-center">
         <span class="section-tagline" style="color: #9333ea; background: #f3e8ff;">CLOUD ARCHITECTURE ROADMAP</span>
-        <h2 class="section-title">Comprehensive 6-Module Cloud Syllabus</h2>
+        <h2 class="section-title">Comprehensive 4-Module Cloud Syllabus</h2>
         <p class="section-subtitle">Designed specifically for working IT aspirants and tech students seeking multi-cloud
           mastery.</p>
       </div>
 
       <div class="curriculum-grid">
         <div class="module-box">
-          <h4>Module 1: Linux Administration & Shell Scripting</h4>
+          <div class="module-header">
+            <h4>Module 1: Networking / CCNA</h4>
+            <span class="module-price">₹10,000</span>
+          </div>
           <ul class="course-features-list">
-            <li>Linux Terminal Navigation, File Permissions & User Management</li>
-            <li>Shell Scripting Automation for System Tasks</li>
-            <li>Networking Basics: TCP/IP, DNS, SSH Key Authentication & Firewalls</li>
-            <li>System Performance Monitoring & Troubleshooting Logs</li>
+            <li>Networking Fundamentals – CCNA, Network Types, Network Devices, Cables, Ethernet</li>
+            <li>Networking Models – OSI Model, TCP/IP Model, Network Protocols</li>
+            <li>IP Addressing – IPv4, IPv6, Public/Private IP, MAC Address, CIDR</li>
+            <li>Subnetting – Subnet Mask, Subnetting, VLSM</li>
+            <li>Switching – Switch, VLAN, Trunking, Inter-VLAN, ROAS, STP, VTP</li>
+            <li>Routing – Router, Static Routing, RIP, EIGRP, OSPF</li>
+            <li>Network Security & Services – ACL, DHCP, DHCP Snooping, NAT, PAT</li>
           </ul>
         </div>
 
         <div class="module-box">
-          <h4>Module 2: AWS Core Compute, Storage & Networking</h4>
+          <div class="module-header">
+            <h4>Module 2: RHCE Linux</h4>
+            <span class="module-price">₹12,000</span>
+          </div>
           <ul class="course-features-list">
-            <li>EC2 Instances, Auto-Scaling Groups & Elastic Load Balancers (ALB)</li>
-            <li>S3 Storage Classes, Lifecycle Policies & IAM Bucket Security</li>
-            <li>Amazon VPC Architecture: Subnets, NAT Gateways & Route Tables</li>
-            <li>Relational DBs (RDS MySQL/PostgreSQL) & DynamoDB NoSQL</li>
-            <li>CloudFront CDN, Route 53 DNS & CloudWatch Monitoring</li>
+            <li>Linux Fundamentals – CentOS/RHEL, Basic Commands, File System, File/Folder Management</li>
+            <li>Users & Permissions – Users, Groups, Permissions, Ownership, ACL</li>
+            <li>Processes & Services – Processes, systemd, Services, Boot Process</li>
+            <li>Linux Storage – Partitions, File Systems, Disk Management, LVM, Mounting</li>
+            <li>Package & File Management – RPM, YUM/DNF, Archive & Compression</li>
+            <li>Linux Networking – SSH, SCP, SFTP, Network Configuration</li>
+            <li>Linux Security – SELinux, Firewall, SSL/TLS</li>
+            <li>File Sharing – Samba, NFS</li>
+            <li>System Administration – Logs, Cron, Task Scheduling, Cockpit</li>
+            <li>Database & Services – MariaDB, Mail Services</li>
+            <li>Shell Scripting – Bash Scripting, Variables, Conditions, Loops, Automation</li>
           </ul>
         </div>
 
         <div class="module-box">
-          <h4>Module 3: Microsoft Azure Enterprise Infrastructure</h4>
+          <div class="module-header">
+            <h4>Module 3: AWS Cloud Architecture</h4>
+            <span class="module-price">₹12,000</span>
+          </div>
           <ul class="course-features-list">
-            <li>Azure Resource Groups, Subscriptions & Cost Management</li>
-            <li>Azure Virtual Machines, Scale Sets & Virtual Networks (VNet)</li>
-            <li>Azure Blob Storage, File Shares & Azure AD Directory Sync</li>
-            <li>Azure Load Balancer & Application Gateway</li>
+            <li>AWS Fundamentals – Cloud Computing, AWS Architecture, Regions, Availability Zones, AWS Console</li>
+            <li>AWS Storage – S3, Buckets, Objects, Storage Classes, Versioning, Lifecycle, Glacier</li>
+            <li>AWS IAM – Users, Groups, Roles, Policies, Authentication, Authorization, MFA</li>
+            <li>AWS Compute – EC2, AMI, Instance Types, Security Groups, EBS, Snapshots</li>
+            <li>AWS Networking – VPC, Subnets, Route Tables, Internet Gateway, ENI, Elastic IP, Endpoints</li>
+            <li>VPC Security & Connectivity – Security Groups, NACLs, VPC Peering, NAT Gateway, VPN</li>
+            <li>Load Balancing & Monitoring – ELB, ALB, CloudWatch, Auto Scaling</li>
+            <li>AWS Databases – RDS, Redshift, DynamoDB</li>
+            <li>AWS Messaging – SQS, SNS, SWF</li>
+            <li>AWS DNS – DNS, Route 53, Hosted Zones, DNS Records</li>
+            <li>Additional Services – Lambda, CloudFront</li>
+            <li>AWS Security – Shared Responsibility Model, Encryption, KMS, Compliance</li>
           </ul>
         </div>
 
         <div class="module-box">
-          <h4>Module 4: Docker Containers & Microservices</h4>
+          <div class="module-header">
+            <h4>Module 4: Microsoft Azure (AZ-104)</h4>
+            <span class="module-price">₹12,000</span>
+          </div>
           <ul class="course-features-list">
-            <li>Container Fundamentals vs Traditional VMs</li>
-            <li>Writing Multi-stage Dockerfiles & Docker Compose Orchestration</li>
-            <li>Docker Hub Registry Management & Image Security</li>
-            <li>Containerizing Node.js, Python & Java Applications</li>
-          </ul>
-        </div>
-
-        <div class="module-box">
-          <h4>Module 5: Kubernetes Orchestration & Terraform IaC</h4>
-          <ul class="course-features-list">
-            <li>Kubernetes (k8s) Cluster Architecture: Pods, Deployments & Services</li>
-            <li>EKS (AWS) & AKS (Azure) Managed Kubernetes Clusters</li>
-            <li>Infrastructure as Code (IaC) with HashiCorp Terraform</li>
-            <li>CI/CD Pipelines using GitHub Actions & AWS CodePipeline</li>
-          </ul>
-        </div>
-
-        <div class="module-box">
-          <h4>Module 6: Certification Prep & Production Capstone Project</h4>
-          <ul class="course-features-list">
-            <li>AWS Certified Solutions Architect (SAA-C03) Exam Questions</li>
-            <li>Microsoft Azure Administrator (AZ-104) Exam Prep</li>
-            <li>Deploying High-Availability Multi-Region Architecture</li>
-            <li>Mock Technical Architecture Review Interviews</li>
+            <li>Azure Fundamentals – Cloud Computing, Azure Portal, Regions, Availability Zones, Subscriptions, Resource
+              Groups</li>
+            <li>Azure Identity & Governance – Microsoft Entra ID, Users, Groups, RBAC, Azure Policy, Resource Locks,
+              Tags, Cost Management</li>
+            <li>Azure Storage – Storage Accounts, Blob Storage, Azure Files, Storage Tiers, Replication, SAS, Access
+              Keys, Lifecycle Management</li>
+            <li>Azure Compute – Virtual Machines, Managed Disks, Snapshots, VM Images, Availability Sets/Zones, VM Scale
+              Sets, Containers</li>
+            <li>Azure Networking – VNet, Subnets, Public/Private IP, NIC, NSG, Route Tables, UDR, VNet Peering</li>
+            <li>Network Connectivity – Private Endpoints, Service Endpoints, NAT Gateway, VPN Gateway, Azure DNS, Load
+              Balancer</li>
+            <li>Azure Monitoring – Azure Monitor, Metrics, Logs, Log Analytics, Alerts, Network Watcher</li>
+            <li>Azure Backup & Disaster Recovery – Azure Backup, Recovery Services Vault, Backup Policies, Restore, Site
+              Recovery</li>
           </ul>
         </div>
       </div>
@@ -288,12 +333,12 @@
       </div>
 
       <div class="tools-grid">
-        <div class="tool-chip">☁️ AWS Console</div>
-        <div class="tool-chip">🔷 Azure Portal</div>
-        <div class="tool-chip">🐳 Docker</div>
-        <div class="tool-chip">☸️ Kubernetes (EKS/AKS)</div>
-        <div class="tool-chip">🏗 Terraform</div>
-        <div class="tool-chip">🐧 Linux Bash</div>
+        <div class="tool-chip">☁️ AWS </div>
+        <div class="tool-chip">🔷 VM Ware</div>
+        <div class="tool-chip">🐳 Cisco Packet Tracer</div>
+        <div class="tool-chip">☸️ Putty</div>
+        <div class="tool-chip">🏗 Azure Storage </div>
+        <div class="tool-chip">🐧Docker</div>
         <div class="tool-chip">🐙 Git & GitHub</div>
         <div class="tool-chip">⚙️ GitHub Actions CI/CD</div>
       </div>
@@ -350,9 +395,13 @@
   </footer>
 
   <!-- Floating WhatsApp Chat Icon -->
-  <a href="https://wa.me/918356966541?text=Hello%20SkillNXT!%20I%20want%20to%20know%20more%20about%20the%20Cloud%20Computing%20Sunday%20Batch%20and%20demo%20class." target="_blank" class="floating-whatsapp" aria-label="Chat on WhatsApp">
+  <a href="https://wa.me/918356966541?text=Hello%20SkillNXT!%20I%20want%20to%20know%20more%20about%20the%20Cloud%20Computing%20Sunday%20Batch%20and%20demo%20class."
+    target="_blank" class="floating-whatsapp" aria-label="Chat on WhatsApp">
     <div class="whatsapp-tooltip">Chat with Counselor</div>
-    <svg fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+    <svg fill="currentColor" viewBox="0 0 24 24">
+      <path
+        d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+    </svg>
   </a>
 
   <!-- Mobile Bottom Action Bar -->
