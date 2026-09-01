@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1V3LDP68EE"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-1V3LDP68EE');
+  </script>
+
+  <title>All Courses & Certification Programs | SkillNXT Academy</title>
+  <meta name="description"
+    content="Explore industry-leading certification programs in Digital Marketing, Cloud Computing, Advance Excel, Python for Data, SQL Database Mastery, and Tableau BI. 100% practical training.">
+  <meta name="keywords"
+    content="All Courses, Digital Marketing Course, Cloud Computing AWS Azure, Advance Excel VBA, Python Data Science, SQL Database Course, Tableau Business Intelligence">
+  <meta name="author" content="SkillNXT">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="theme-color" content="#0f172a">
+  <link rel="icon" type="image/png" href="../Asset/Fixcon%20(1).png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../Asset/Fixcon%20(1).png">
+  <link rel="canonical" href="https://defaultserver.github.io/skillNXT/pages/Courses.html">
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="All Certification Courses | SkillNXT">
+  <meta property="og:description"
+    content="Master in-demand skills in Digital Marketing, Cloud Computing, Advance Excel, Python, SQL, and Tableau. Practical training & weekend batches.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://defaultserver.github.io/skillNXT/pages/Courses.html">
+  <meta property="og:site_name" content="SkillNXT">
+  <meta property="og:image" content="https://defaultserver.github.io/skillNXT/assets/og-image.svg">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="All Certification Courses | SkillNXT">
+  <meta name="twitter:description"
+    content="Industry-ready courses in Cloud Computing, Digital Marketing, Excel, Python, SQL, and Tableau. Real-world practical mastery.">
+  <meta name="twitter:image" content="https://defaultserver.github.io/skillNXT/assets/og-image.svg">
+
+  <!-- Google Fonts: Inter & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="../css/style.css">
+
+  <style>
+    /* Specific Compact Styling for Courses Page */
+    .courses-hero-banner {
+      background: radial-gradient(circle at 80% 20%, rgba(2, 132, 199, 0.15), transparent 50%),
+        radial-gradient(circle at 10% 80%, rgba(124, 58, 237, 0.15), transparent 50%),
+        var(--clr-navy-900);
+      color: #ffffff;
+      padding: 4rem 0 3rem;
+      position: relative;
+      overflow: hidden;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .courses-hero-banner::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: radial-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+      background-size: 24px 24px;
+      pointer-events: none;
+      opacity: 0.5;
+    }
+
+    .courses-filter-nav {
+      display: flex;
+      justify-content: center;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+      margin-top: 1.75rem;
+    }
+
+    .filter-pill {
+      background: rgba(255, 255, 255, 0.08);
+      color: #e2e8f0;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      padding: 0.5rem 1.25rem;
+      border-radius: var(--radius-full);
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all var(--transition-normal);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .filter-pill:hover {
+      background: rgba(255, 255, 255, 0.18);
+      color: #ffffff;
+      transform: translateY(-2px);
+    }
+
+    .filter-pill.active {
+      background: var(--clr-primary);
+      color: #ffffff;
+      border-color: var(--clr-primary);
+      box-shadow: 0 4px 14px rgba(2, 132, 199, 0.4);
+    }
+
+    /* Compact Short Course Card */
+    .courses-compact-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-top: 2.5rem;
+    }
+
+    .course-card-compact {
+      background: #ffffff;
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--clr-border);
+      box-shadow: var(--shadow-sm);
+      transition: all var(--transition-normal);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .course-card-compact:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-lg);
+      border-color: #cbd5e1;
+    }
+
+    .card-top-bar {
+      height: 5px;
+      width: 100%;
+    }
+
+    .bar-cyan {
+      background: linear-gradient(90deg, #0284c7, #38bdf8);
+    }
+
+    .bar-purple {
+      background: linear-gradient(90deg, #7c3aed, #a855f7);
+    }
+
+    .bar-amber {
+      background: linear-gradient(90deg, #d97706, #fbbf24);
+    }
+
+    .bar-emerald {
+      background: linear-gradient(90deg, #059669, #34d399);
+    }
+
+    .bar-orange {
+      background: linear-gradient(90deg, #ea580c, #fb923c);
+    }
+
+    .bar-blue {
+      background: linear-gradient(90deg, #2563eb, #60a5fa);
+    }
+
+    .card-compact-body {
+      padding: 1.5rem 1.5rem 1.25rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .card-meta-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.85rem;
+    }
+
+    .badge-category {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 0.2rem 0.55rem;
+      border-radius: var(--radius-full);
+    }
+
+    .cat-cyan {
+      background: var(--clr-primary-light);
+      color: var(--clr-primary-hover);
+    }
+
+    .cat-purple {
+      background: var(--clr-accent-purple-light);
+      color: var(--clr-accent-purple);
+    }
+
+    .cat-amber {
+      background: var(--clr-accent-amber-light);
+      color: var(--clr-accent-amber);
+    }
+
+    .cat-emerald {
+      background: var(--clr-accent-emerald-light);
+      color: var(--clr-accent-emerald);
+    }
+
+    .cat-orange {
+      background: #ffedd5;
+      color: #c2410c;
+    }
+
+    .cat-blue {
+      background: #dbeafe;
+      color: #1d4ed8;
+    }
+
+    .duration-pill {
+      font-size: 0.8rem;
+      color: var(--clr-slate-600);
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+
+    .card-title-compact {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--clr-navy-900);
+      margin-bottom: 0.5rem;
+      line-height: 1.35;
+    }
+
+    .card-desc-compact {
+      font-size: 0.9rem;
+      color: var(--clr-slate-600);
+      margin-bottom: 1rem;
+      line-height: 1.5;
+      flex-grow: 1;
+    }
+
+    .tools-tags-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .tag-mini {
+      background: var(--clr-slate-50);
+      border: 1px solid var(--clr-border);
+      color: var(--clr-navy-800);
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 0.2rem 0.5rem;
+      border-radius: var(--radius-sm);
+    }
+
+    .card-compact-footer {
+      padding: 0 1.5rem 1.5rem;
+      background: #ffffff;
+    }
+
+    .btn-view-cirriculum {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      text-align: center;
+      padding: 0.75rem 1rem;
+      font-size: 0.95rem;
+      font-weight: 700;
+      border-radius: var(--radius-md);
+      transition: all var(--transition-fast);
+      cursor: pointer;
+      text-decoration: none;
+      border: none;
+    }
+
+    /* Comparison Table Section */
+    .comparison-section {
+      padding: 4.5rem 0;
+      background-color: #ffffff;
+    }
+
+    .table-container {
+      overflow-x: auto;
+      margin-top: 2rem;
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--clr-border);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .comparison-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      min-width: 900px;
+    }
+
+    .comparison-table th {
+      background: var(--clr-navy-900);
+      color: #ffffff;
+      padding: 1rem 1.25rem;
+      font-family: var(--font-heading);
+      font-size: 0.95rem;
+      font-weight: 700;
+    }
+
+    .comparison-table td {
+      padding: 1rem 1.25rem;
+      border-bottom: 1px solid var(--clr-border);
+      font-size: 0.9rem;
+      color: var(--clr-navy-800);
+      vertical-align: middle;
+    }
+
+    .comparison-table tr:nth-child(even) td {
+      background-color: var(--clr-slate-50);
+    }
+
+    .comparison-table tr:hover td {
+      background-color: #f8fafc;
+    }
+
+    .comparison-table .feature-col {
+      font-weight: 700;
+      color: var(--clr-navy-900);
+      width: 18%;
+    }
+
+    @media (max-width: 1024px) {
+      .courses-compact-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 680px) {
+      .courses-compact-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+
+  <!-- Schema.org Educational Organization Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "SkillNXT Training Programs",
+    "itemListElement": [
+      {
+        "@type": "Course",
+        "position": 1,
+        "name": "Digital Marketing Master Course",
+        "description": "5 Months Practical Agency Level Digital Marketing Course.",
+        "provider": { "@type": "Organization", "name": "SkillNXT" }
+      },
+      {
+        "@type": "Course",
+        "position": 2,
+        "name": "Cloud Computing Professional Course",
+        "description": "5 Months Sunday Batch Cloud Training with AWS & Azure.",
+        "provider": { "@type": "Organization", "name": "SkillNXT" }
+      },
+      {
+        "@type": "Course",
+        "position": 3,
+        "name": "Advance Excel & Data Analytics Course",
+        "description": "3 Months Saturday Batch Advance Excel and Power Query training.",
+        "provider": { "@type": "Organization", "name": "SkillNXT" }
+      },
+      {
+        "@type": "Course",
+        "position": 4,
+        "name": "Python for Data Analytics & Automation",
+        "description": "2.5 Months Python, Pandas, NumPy, and Visualization Course.",
+        "provider": { "@type": "Organization", "name": "SkillNXT" }
+      },
+      {
+        "@type": "Course",
+        "position": 5,
+        "name": "SQL & Relational Database Mastery",
+        "description": "2 Months SQL Queries, Joins, CTEs, and Window Functions.",
+        "provider": { "@type": "Organization", "name": "SkillNXT" }
+      },
+      {
+        "@type": "Course",
+        "position": 6,
+        "name": "Tableau & Business Intelligence",
+        "description": "2 Months Interactive Dashboarding and Visual Analytics.",
+        "provider": { "@type": "Organization", "name": "SkillNXT" }
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- 1. Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div>
+        <span class="top-bar-badge">ADMISSIONS OPEN</span>
+        🚀 Next batches starting this weekend! Free counseling &amp; syllabus guidance available.
+      </div>
+      <div class="top-bar-contact">
+        <a href="tel:+919004547746" class="top-bar-link">
+          <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+          </svg>
+          +91 90045 47746
+        </a>
+        <a href="../index.html" class="top-bar-link">&larr; Back to Home</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. Sticky Header / Navbar -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="../index.html" class="brand-logo">
+        <img src="../Asset/LOGO.png" alt="SkillNext Logo" class="logo-img">
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html" class="nav-link">Home</a></li>
+        <li><a href="Courses.html" class="nav-link active">Courses</a></li>
+        <li><a href="Gallery.html" class="nav-link">Gallery</a></li>
+        <li><a href="policy.html" class="nav-link">Policy</a></li>
+        <li><a href="about-us.html" class="nav-link">About us</a></li>
+      </ul>
+
+      <div class="nav-cta-group">
+        <a href="tel:+919004547746" class="btn btn-outline btn-sm">Call Direct</a>
+        <a href="https://wa.me/919004547746?text=Hello%20SkillNXT!%20I%20want%20to%20know%20more%20about%20your%20courses."
+          target="_blank" class="btn btn-primary btn-sm">WhatsApp Counselor</a>
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle Menu">
+          <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- 3. Courses Hero Header -->
+  <section class="courses-hero-banner">
+    <div class="container text-center">
+      <nav class="breadcrumb-nav" style="justify-content: center; margin-bottom: 1rem;">
+        <a href="../index.html" style="color: #94a3b8;">Home</a>
+        <span class="sep" style="color: #64748b;">/</span>
+        <span class="current" style="color: #38bdf8;">All Courses</span>
+      </nav>
+
+      <div class="hero-badge"
+        style="background: rgba(2, 132, 199, 0.2); border-color: rgba(56, 189, 248, 0.4); color: #38bdf8; display: inline-flex; margin-bottom: 1rem;">
+        🎓 Industry-Aligned Master Programs
+      </div>
+
+      <h1
+        style="font-size: clamp(1.8rem, 3.5vw, 2.8rem); font-weight: 800; line-height: 1.2; margin-bottom: 1rem; color: #ffffff;">
+        Explore All <span class="gradient-text">Certification Programs</span>
+      </h1>
+
+      <p style="max-width: 720px; margin: 0 auto 1.5rem; font-size: 1.05rem; color: #cbd5e1; line-height: 1.6;">
+        Choose from our comprehensive hands-on certification courses designed with practical corporate projects and
+        flexible weekend batches.
+      </p>
+
+      <!-- Category Filter Pills -->
+      <div class="courses-filter-nav">
+        <button class="filter-pill active" onclick="filterCourses('all', this)">
+          <span>🔥 All Programs (6)</span>
+        </button>
+        <button class="filter-pill" onclick="filterCourses('cloud', this)">
+          <span>☁️ Cloud &amp; DevOps</span>
+        </button>
+        <button class="filter-pill" onclick="filterCourses('marketing', this)">
+          <span>📈 Digital Marketing</span>
+        </button>
+        <button class="filter-pill" onclick="filterCourses('analytics', this)">
+          <span>📊 Data Analytics</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. All Courses Showcase Grid (Compact & Short Cards) -->
+  <section class="courses-section" id="all-courses" style="padding: 3.5rem 0 4.5rem;">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tagline">EXPLORE OUR SPECIALIZED PROGRAMS</span>
+        <h2 class="section-title">Industry Certification Courses</h2>
+      </div>
+
+      <div class="courses-compact-grid" id="coursesGrid">
+
+        <!-- 1. Digital Marketing Master Course -->
+        <div class="course-card-compact course-item-box" data-category="marketing">
+          <div class="card-top-bar bar-cyan"></div>
+          <div class="card-compact-body">
+            <div class="card-meta-row">
+              <span class="badge-category cat-cyan">Marketing</span>
+              <div class="duration-pill">
+                <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                5 Months
+              </div>
+            </div>
+            <h3 class="card-title-compact">Digital Marketing Master Course</h3>
+            <p class="card-desc-compact">
+              Agency-level mastery of SEO, Google Ads, Meta Ads Manager, GA4 Analytics, and multi-channel lead funnels
+              with live ad budgets.
+            </p>
+            <div class="tools-tags-row">
+              <span class="tag-mini">SEO</span>
+              <span class="tag-mini">Google Ads</span>
+              <span class="tag-mini">Meta Ads</span>
+              <span class="tag-mini">GA4</span>
+              <span class="tag-mini">Canva Pro</span>
+            </div>
+          </div>
+          <div class="card-compact-footer">
+            <a href="digital-marketing.html" class="btn-view-cirriculum"
+              style="background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%); color: #ffffff;">
+              View Full Curriculum &rarr;
+            </a>
+          </div>
+        </div>
+
+        <!-- 2. Cloud Computing Professional Course -->
+        <div class="course-card-compact course-item-box" data-category="cloud">
+          <div class="card-top-bar bar-purple"></div>
+          <div class="card-compact-body">
+            <div class="card-meta-row">
+              <span class="badge-category cat-purple">Sunday Batch</span>
+              <div class="duration-pill">
+                <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                5 Months
+              </div>
+            </div>
+            <h3 class="card-title-compact">Cloud Computing Professional Course</h3>
+            <p class="card-desc-compact">
+              Hands-on AWS and Azure cloud architecture, Docker containerization, Kubernetes cluster deployments, and
+              Terraform automation.
+            </p>
+            <div class="tools-tags-row">
+              <span class="tag-mini">AWS</span>
+              <span class="tag-mini">MS Azure</span>
+              <span class="tag-mini">Docker</span>
+              <span class="tag-mini">Kubernetes</span>
+              <span class="tag-mini">Terraform</span>
+            </div>
+          </div>
+          <div class="card-compact-footer">
+            <a href="cloud-computing.html" class="btn-view-cirriculum"
+              style="background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%); color: #ffffff;">
+              View Full Curriculum &rarr;
+            </a>
+          </div>
+        </div>
+
+        <!-- 3. Advance Excel & Data Management -->
+        <div class="course-card-compact course-item-box" data-category="marketing analytics">
+          <div class="card-top-bar bar-amber"></div>
+          <div class="card-compact-body">
+            <div class="card-meta-row">
+              <span class="badge-category cat-amber">Saturday Batch</span>
+              <div class="duration-pill">
+                <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                3 Months
+              </div>
+            </div>
+            <h3 class="card-title-compact">Advance Excel &amp; Data Analysis</h3>
+            <p class="card-desc-compact">
+              Advanced business modeling, dynamic lookup formulas (XLOOKUP, INDEX-MATCH), Power Query ETL, KPI
+              dashboards, and VBA Macros.
+            </p>
+            <div class="tools-tags-row">
+              <span class="tag-mini">Excel 365</span>
+              <span class="tag-mini">Power Query</span>
+              <span class="tag-mini">Power Pivot</span>
+              <span class="tag-mini">VBA Macros</span>
+              <span class="tag-mini">Dashboards</span>
+            </div>
+          </div>
+          <div class="card-compact-footer">
+            <a href="advance-excel.html" class="btn-view-cirriculum"
+              style="background: linear-gradient(135deg, #d97706 0%, #b45309 100%); color: #ffffff;">
+              View Full Curriculum &rarr;
+            </a>
+          </div>
+        </div>
+
+        <!-- 4. Python for Data Analytics & Automation -->
+        <div class="course-card-compact course-item-box" data-category="analytics">
+          <div class="card-top-bar bar-blue"></div>
+          <div class="card-compact-body">
+            <div class="card-meta-row">
+              <span class="badge-category cat-blue">Programming</span>
+              <div class="duration-pill">
+                <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                2.5 Months
+              </div>
+            </div>
+            <h3 class="card-title-compact">Python for Data Analytics &amp; Automation</h3>
+            <p class="card-desc-compact">
+              Master Python syntax, NumPy, Pandas for data wrangling, Matplotlib &amp; Seaborn for visualization, and
+              task automation scripts.
+            </p>
+            <div class="tools-tags-row">
+              <span class="tag-mini">Python 3</span>
+              <span class="tag-mini">Pandas</span>
+              <span class="tag-mini">NumPy</span>
+              <span class="tag-mini">Matplotlib</span>
+              <span class="tag-mini">Jupyter</span>
+            </div>
+          </div>
+          <div class="card-compact-footer">
+            <button onclick="openCourseModal('python')" class="btn-view-cirriculum"
+              style="background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%); color: #ffffff;">
+              View Full Curriculum &rarr;
+            </button>
+          </div>
+        </div>
+
+        <!-- 5. SQL & Relational Database Mastery -->
+        <div class="course-card-compact course-item-box" data-category="analytics">
+          <div class="card-top-bar bar-emerald"></div>
+          <div class="card-compact-body">
+            <div class="card-meta-row">
+              <span class="badge-category cat-emerald">Databases</span>
+              <div class="duration-pill">
+                <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                2 Months
+              </div>
+            </div>
+            <h3 class="card-title-compact">SQL &amp; Relational Database Mastery</h3>
+            <p class="card-desc-compact">
+              Master database queries, complex joins, subqueries, Common Table Expressions (CTEs), window functions, and
+              query optimization.
+            </p>
+            <div class="tools-tags-row">
+              <span class="tag-mini">PostgreSQL</span>
+              <span class="tag-mini">MySQL</span>
+              <span class="tag-mini">Joins &amp; CTEs</span>
+              <span class="tag-mini">Window Functions</span>
+              <span class="tag-mini">pgAdmin</span>
+            </div>
+          </div>
+          <div class="card-compact-footer">
+            <button onclick="openCourseModal('sql')" class="btn-view-cirriculum"
+              style="background: linear-gradient(135deg, #059669 0%, #047857 100%); color: #ffffff;">
+              View Full Curriculum &rarr;
+            </button>
+          </div>
+        </div>
+
+        <!-- 6. Tableau & Business Intelligence -->
+        <div class="course-card-compact course-item-box" data-category="analytics">
+          <div class="card-top-bar bar-orange"></div>
+          <div class="card-compact-body">
+            <div class="card-meta-row">
+              <span class="badge-category cat-orange">Visual BI</span>
+              <div class="duration-pill">
+                <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                2 Months
+              </div>
+            </div>
+            <h3 class="card-title-compact">Tableau &amp; Business Intelligence</h3>
+            <p class="card-desc-compact">
+              Transform raw data into interactive executive dashboards, calculated fields, Level of Detail (LOD)
+              calculations, and storyboards.
+            </p>
+            <div class="tools-tags-row">
+              <span class="tag-mini">Tableau Desktop</span>
+              <span class="tag-mini">LOD Calculations</span>
+              <span class="tag-mini">KPI Dashboards</span>
+              <span class="tag-mini">Tableau Prep</span>
+              <span class="tag-mini">Visual Story</span>
+            </div>
+          </div>
+          <div class="card-compact-footer">
+            <button onclick="openCourseModal('tableau')" class="btn-view-cirriculum"
+              style="background: linear-gradient(135deg, #ea580c 0%, #c2410c 100%); color: #ffffff;">
+              View Full Curriculum &rarr;
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Course Comparison Matrix Section -->
+  <section class="comparison-section" id="comparison">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tagline">SIDE-BY-SIDE EVALUATION</span>
+        <h2 class="section-title">Quick Course Comparison</h2>
+        <p class="section-subtitle">Evaluate all our certification programs to find the ideal career track.</p>
+      </div>
+
+      <div class="table-container">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Program</th>
+              <th>Duration</th>
+              <th>Batch Schedule</th>
+              <th>Key Tools Covered</th>
+              <th>Ideal Career Role</th>
+              <th>Details</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="feature-col">Digital Marketing Master</td>
+              <td><strong>5 Months</strong></td>
+              <td>Regular &amp; Weekend</td>
+              <td>Google Ads, Meta Ads, GA4, SEO, Canva</td>
+              <td>Digital Marketer, SEO/PPC Specialist</td>
+              <td><a href="digital-marketing.html" class="btn btn-outline btn-sm">View &rarr;</a></td>
+            </tr>
+            <tr>
+              <td class="feature-col">Cloud Computing Pro</td>
+              <td><strong>5 Months</strong></td>
+              <td>Sundays (9:30 AM - 2:30 PM)</td>
+              <td>AWS, Azure, Docker, Kubernetes, Terraform</td>
+              <td>Cloud Engineer, DevOps Associate</td>
+              <td><a href="cloud-computing.html" class="btn btn-outline btn-sm">View &rarr;</a></td>
+            </tr>
+            <tr>
+              <td class="feature-col">Advance Excel &amp; Analytics</td>
+              <td><strong>3 Months</strong></td>
+              <td>Saturdays (10 AM - 3 PM)</td>
+              <td>Excel 365, Power Query, Power Pivot, VBA</td>
+              <td>Data Analyst, MIS Executive</td>
+              <td><a href="advance-excel.html" class="btn btn-outline btn-sm">View &rarr;</a></td>
+            </tr>
+            <tr>
+              <td class="feature-col">Python for Data Analytics</td>
+              <td><strong>2.5 Months</strong></td>
+              <td>Weekend &amp; Evening</td>
+              <td>Python 3, Pandas, NumPy, Matplotlib, Seaborn</td>
+              <td>Python Developer, Data Analyst</td>
+              <td><button onclick="openCourseModal('python')" class="btn btn-outline btn-sm">View &rarr;</button></td>
+            </tr>
+            <tr>
+              <td class="feature-col">SQL Database Mastery</td>
+              <td><strong>2 Months</strong></td>
+              <td>Weekend &amp; Evening</td>
+              <td>PostgreSQL, MySQL, Joins, CTEs, Window Funcs</td>
+              <td>SQL Developer, Database Analyst</td>
+              <td><button onclick="openCourseModal('sql')" class="btn btn-outline btn-sm">View &rarr;</button></td>
+            </tr>
+            <tr>
+              <td class="feature-col">Tableau &amp; Business Intelligence</td>
+              <td><strong>2 Months</strong></td>
+              <td>Saturday Special</td>
+              <td>Tableau Desktop, LOD Expressions, KPI Dashboards</td>
+              <td>BI Analyst, Tableau Developer</td>
+              <td><button onclick="openCourseModal('tableau')" class="btn btn-outline btn-sm">View &rarr;</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Frequently Asked Questions -->
+  <section class="faq-section" style="padding: 4rem 0; background-color: var(--clr-slate-100);">
+    <div class="container" style="max-width: 860px;">
+      <div class="text-center">
+        <span class="section-tagline">GOT QUESTIONS?</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">Everything you need to know about our courses, schedules, and training methodology.
+        </p>
+      </div>
+
+      <div class="faq-accordion" style="margin-top: 2rem;">
+        <div class="faq-item active">
+          <div class="faq-header">
+            <h4>Can I attend classes on weekends while working full-time?</h4>
+            <div class="faq-icon">+</div>
+          </div>
+          <div class="faq-body">
+            <p>
+              Yes, absolutely! Our courses are specifically designed for working professionals and college students with
+              dedicated weekend (Saturday &amp; Sunday) and flexible evening batches.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-header">
+            <h4>Is the training completely practical and project-based?</h4>
+            <div class="faq-icon">+</div>
+          </div>
+          <div class="faq-body">
+            <p>
+              Yes. 80% of class time is dedicated to live project execution in real cloud consoles (AWS/Azure), ad
+              managers (Meta/Google), SQL databases, and data modeling tools. You build a portfolio of live work.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-header">
+            <h4>Can I take multiple courses like Python, SQL, and Tableau together?</h4>
+            <div class="faq-icon">+</div>
+          </div>
+          <div class="faq-body">
+            <p>
+              Yes! Many students enroll in the complete Data Analytics bundle (Excel + SQL + Python + Tableau) for a
+              complete end-to-end data stack. Speak with our academic counselor for bundle pricing and schedules.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-header">
+            <h4>What happens if I miss a scheduled class?</h4>
+            <div class="faq-icon">+</div>
+          </div>
+          <div class="faq-body">
+            <p>
+              All live classes are recorded in HD and uploaded to your student portal within 24 hours. Additionally, you
+              can attend backup doubt-solving sessions or sit in with another batch to review the topic.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-header">
+            <h4>Will I receive a recognized certification and placement guidance?</h4>
+            <div class="faq-icon">+</div>
+          </div>
+          <div class="faq-body">
+            <p>
+              Yes. Upon successfully completing the course modules and capstone projects, you receive an
+              industry-recognized SkillNXT Master Certification along with resume reviews, mock interviews, and
+              placement support.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Course Quick Preview Modal (Shared with main.js) -->
+  <div class="modal-backdrop" id="courseModal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div>
+          <h3 id="modalTitle">Course Details</h3>
+          <span class="badge badge-purple" id="modalScheduleBadge" style="margin-top: 0.25rem;">Batch Info</span>
+        </div>
+        <button class="modal-close" id="modalCloseBtn" aria-label="Close modal">&times;</button>
+      </div>
+
+      <div class="modal-tabs">
+        <button class="tab-btn active" data-tab="overview">Overview</button>
+        <button class="tab-btn" data-tab="syllabus">Full Syllabus</button>
+        <button class="tab-btn" data-tab="careers">Tools &amp; Careers</button>
+      </div>
+
+      <div class="modal-body">
+        <!-- Tab 1: Overview -->
+        <div class="tab-content active" id="tab-overview">
+          <p id="modalOverviewText" style="color: var(--clr-slate-600); line-height: 1.6; margin-bottom: 1.5rem;"></p>
+          <div class="audience-box" style="margin-bottom: 1.25rem;">
+            <div class="audience-title">🎯 Ideal Audience</div>
+            <span id="modalTargetText"></span>
+          </div>
+          <div class="audience-box"
+            style="background: var(--clr-primary-light); border: 1px solid rgba(2, 132, 199, 0.2);">
+            <div class="audience-title" style="color: var(--clr-primary);">⏰ Batch Timings &amp; Mode</div>
+            <span id="modalTimingText" style="color: var(--clr-navy-900); font-weight: 600;"></span>
+          </div>
+        </div>
+
+        <!-- Tab 2: Syllabus -->
+        <div class="tab-content" id="tab-syllabus">
+          <div id="modalSyllabusList" style="display: flex; flex-direction: column; gap: 1rem;"></div>
+        </div>
+
+        <!-- Tab 3: Tools & Careers -->
+        <div class="tab-content" id="tab-careers">
+          <h5 style="font-size: 0.95rem; font-weight: 700; color: var(--clr-navy-900); margin-bottom: 0.75rem;">Industry
+            Tools You Will Master:</h5>
+          <div id="modalToolsList" style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem;"></div>
+
+          <h5 style="font-size: 0.95rem; font-weight: 700; color: var(--clr-navy-900); margin-bottom: 0.75rem;">Career
+            Opportunities:</h5>
+          <ul id="modalCareersList"
+            style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 0.5rem; color: var(--clr-navy-800);">
+          </ul>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button onclick="document.getElementById('courseModal').classList.remove('active');"
+          class="btn btn-outline">Close</button>
+        <a href="https://wa.me/919004547746?text=Hello%20SkillNXT!%20I%20want%20to%20know%20more%20about%20this%20course."
+          target="_blank" class="btn btn-primary">Connect on WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 8. Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="../Asset/LOGO.png" alt="SkillNext Logo" class="logo-img">
+          <p>Empowering students and working professionals with practical, market-aligned skills in Tech, Cloud, and
+            Data Analytics.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="Courses.html">All Courses</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="../index.html#why-us">Why Choose Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Our Certification Programs</h4>
+          <ul class="footer-links">
+            <li><a href="digital-marketing.html">Digital Marketing Master</a></li>
+            <li><a href="cloud-computing.html">Cloud Computing (Sunday Batch)</a></li>
+            <li><a href="advance-excel.html">Advance Excel (Saturday Batch)</a></li>
+            <li><a href="#all-courses" onclick="openCourseModal('python')">Python for Data Analytics</a></li>
+            <li><a href="#all-courses" onclick="openCourseModal('sql')">SQL Database Mastery</a></li>
+            <li><a href="#all-courses" onclick="openCourseModal('tableau')">Tableau &amp; BI Analytics</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Campus Branches</h4>
+          <p style="margin-bottom: 0.5rem;">📍 <strong>Nerul:</strong> Opposite Nerul Station, Navi Mumbai</p>
+          <p style="margin-bottom: 0.5rem;">📍 <strong>Vashi:</strong> 2nd Floor, Vashi Plaza, Sector 17, Navi Mumbai</p>
+          <p style="margin-bottom: 0.5rem;">📞 Helpline: <a href="tel:+919004547746" style="color: inherit;">+91 90045 47746</a></p>
+          <p>✉️ Email: <a href="mailto:admissions@apexskills.edu" style="color: inherit;">admissions@apexskills.edu</a></p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 SkillNXT Academy. All Rights Reserved. Built for student excellence &amp; career success.</p>
+        <div>
+          <a href="#" style="margin-right: 1rem;">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 9. Floating WhatsApp Chat Icon -->
+  <a href="https://wa.me/919004547746?text=Hello%20SkillNXT!%20I%20want%20to%20know%20more%20about%20your%20certification%20courses."
+    target="_blank" class="floating-whatsapp" aria-label="Chat on WhatsApp">
+    <div class="whatsapp-tooltip">Chat with Counselor</div>
+    <svg fill="currentColor" viewBox="0 0 24 24">
+      <path
+        d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+    </svg>
+  </a>
+
+  <!-- 10. Mobile Bottom Action Bar (Fixed Call + WhatsApp) -->
+  <div class="mobile-bottom-bar">
+    <div class="mobile-bottom-bar-grid">
+      <a href="tel:+919004547746" class="btn btn-outline btn-sm">
+        📞 Call Now
+      </a>
+      <a href="https://wa.me/919004547746?text=Hello%20SkillNXT!%20I%20want%20to%20know%20more%20about%20your%20courses."
+        target="_blank" class="btn btn-primary btn-sm">
+        💬 WhatsApp
+      </a>
+    </div>
+  </div>
+
+  <!-- JavaScript File -->
+  <script src="../js/main.js"></script>
+
+  <!-- Filter Script for Courses Page -->
+  <script>
+    function filterCourses(category, btnElement) {
+      // Update active filter pill
+      document.querySelectorAll('.filter-pill').forEach(pill => pill.classList.remove('active'));
+      if (btnElement) {
+        btnElement.classList.add('active');
+      }
+
+      // Filter cards
+      const cards = document.querySelectorAll('.course-item-box');
+      cards.forEach(card => {
+        const catAttr = card.getAttribute('data-category') || '';
+        const categories = catAttr.trim().split(/\s+/);
+        if (category === 'all' || categories.includes(category)) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+  </script>
+</body>
+
+</html>

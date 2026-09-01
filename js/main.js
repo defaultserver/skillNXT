@@ -208,6 +208,114 @@ document.addEventListener('DOMContentLoaded', () => {
       tools: ['Microsoft Excel 365', 'Power Query', 'Power Pivot', 'DAX', 'VBA Editor', 'Power BI Desktop'],
       careers: ['Data Analyst', 'Financial & MIS Analyst', 'Business Intelligence Executive', 'Reporting Operations Manager', 'Audit & Accounts Specialist'],
       timings: 'Exclusively Saturdays: 10:00 AM - 3:00 PM (Practical Lab Focus)'
+    },
+
+    'python': {
+      id: 'python',
+      title: 'Python for Data Analytics & Automation',
+      duration: '2.5 Months',
+      schedule: 'Weekend & Evening Batches Available',
+      badge: 'Data & Automation',
+      badgeClass: 'badge-cyan',
+      target: 'Software Aspirants, Data Enthusiasts, Working Professionals',
+      overview: 'Master Python fundamentals, NumPy, Pandas for data wrangling, Matplotlib & Seaborn for data visualization, and real-world task automation scripts.',
+      modules: [
+        {
+          number: 'Module 1',
+          title: 'Python Core & Data Structures',
+          topics: ['Python syntax, variables & data types', 'Lists, tuples, dictionaries & sets', 'Conditionals, loops & list comprehensions', 'Functions, lambdas & error handling']
+        },
+        {
+          number: 'Module 2',
+          title: 'Data Wrangling with NumPy & Pandas',
+          topics: ['NumPy arrays, mathematical operations & indexing', 'Pandas Series & DataFrames', 'Importing CSV, Excel & JSON datasets', 'Data cleaning, missing values & transformations']
+        },
+        {
+          number: 'Module 3',
+          title: 'Data Visualization & Storytelling',
+          topics: ['Plotting with Matplotlib & Seaborn', 'Customizing charts, heatmaps & scatter plots', 'Exploratory Data Analysis (EDA) workflows', 'Statistical insights from datasets']
+        },
+        {
+          number: 'Module 4',
+          title: 'Task Automation & Capstone Project',
+          topics: ['File system automation & Excel file manipulation with openpyxl', 'API consumption & JSON parsing', 'Web scraping basics with BeautifulSoup', 'End-to-end data analytics portfolio project']
+        }
+      ],
+      tools: ['Python 3', 'Jupyter Notebook', 'Pandas', 'NumPy', 'Matplotlib', 'Seaborn', 'VS Code'],
+      careers: ['Python Developer', 'Data Analyst', 'Automation Specialist', 'Analytics Consultant'],
+      timings: 'Weekends: 10:00 AM - 1:00 PM | Weekdays: 7:00 PM - 9:00 PM'
+    },
+
+    'sql': {
+      id: 'sql',
+      title: 'SQL & Database Management for Analytics',
+      duration: '2 Months',
+      schedule: 'Weekend & Evening Batches Available',
+      badge: 'Relational DB Mastery',
+      badgeClass: 'badge-emerald',
+      target: 'Aspiring Analysts, Developers, Business Professionals',
+      overview: 'Master relational database querying, complex joins, subqueries, common table expressions (CTEs), window functions, and query optimization for real enterprise datasets.',
+      modules: [
+        {
+          number: 'Module 1',
+          title: 'RDBMS Fundamentals & Basic Querying',
+          topics: ['Relational database concepts & tables', 'SELECT, WHERE, DISTINCT, ORDER BY', 'Filtering with AND, OR, IN, BETWEEN, LIKE', 'Data aggregation with COUNT, SUM, AVG, GROUP BY, HAVING']
+        },
+        {
+          number: 'Module 2',
+          title: 'Joins & Relational Data Modeling',
+          topics: ['INNER, LEFT, RIGHT, FULL OUTER & CROSS JOIN', 'Multi-table joins & alias techniques', 'Primary & Foreign keys relationships', 'Union vs Union All operations']
+        },
+        {
+          number: 'Module 3',
+          title: 'Advanced SQL: Subqueries & CTEs',
+          topics: ['Correlated & nested subqueries', 'Common Table Expressions (WITH clause)', 'String manipulation & Date-Time functions', 'Conditional CASE WHEN logic']
+        },
+        {
+          number: 'Module 4',
+          title: 'Window Functions & Performance Optimization',
+          topics: ['ROW_NUMBER, RANK, DENSE_RANK', 'LEAD, LAG & rolling aggregations', 'Indexing strategies & query execution plans', 'Live database analysis capstone project']
+        }
+      ],
+      tools: ['PostgreSQL', 'MySQL', 'SQL Server', 'DBeaver', 'pgAdmin'],
+      careers: ['SQL Developer', 'Database Analyst', 'BI Engineer', 'Data Operations Specialist'],
+      timings: 'Weekends: 2:00 PM - 5:00 PM | Weekdays: 8:00 PM - 10:00 PM'
+    },
+
+    'tableau': {
+      id: 'tableau',
+      title: 'Tableau & Business Intelligence Visualizations',
+      duration: '2 Months',
+      schedule: 'Weekend Special Batch',
+      badge: 'Visual Analytics',
+      badgeClass: 'badge-amber',
+      target: 'Data Analysts, Managers, Marketing & Financial Analysts',
+      overview: 'Master data storytelling, interactive KPI dashboards, Level of Detail (LOD) calculations, parameters, and enterprise reporting with Tableau Desktop.',
+      modules: [
+        {
+          number: 'Module 1',
+          title: 'Tableau Interface & Connecting Data',
+          topics: ['Connecting to Excel, CSV, and live SQL databases', 'Data preparation, blending & relationships', 'Dimensions vs Measures, continuous vs discrete fields', 'Building basic charts: Bar, Line, Pie & Area']
+        },
+        {
+          number: 'Module 2',
+          title: 'Advanced Visual Analytics & Formatting',
+          topics: ['Heat maps, Treemaps, Gantt charts & Dual-axis charts', 'Geographic mapping & custom spatial layers', 'Calculated fields & logical functions', 'Quick Table Calculations (MoM, YoY, Running Total)']
+        },
+        {
+          number: 'Module 3',
+          title: 'Parameters & Level of Detail (LOD)',
+          topics: ['Dynamic parameter controls & sets', 'FIXED, INCLUDE & EXCLUDE LOD expressions', 'Interactive filters, actions & URL drilldowns', 'Dashboard design principles & layout containers']
+        },
+        {
+          number: 'Module 4',
+          title: 'Executive Dashboards & Storyboarding',
+          topics: ['Building responsive C-level executive KPI dashboards', 'Interactive storyboards for business presentations', 'Publishing to Tableau Public & Tableau Server', 'Portfolio building with real-world case studies']
+        }
+      ],
+      tools: ['Tableau Desktop', 'Tableau Public', 'Tableau Prep', 'Excel Datasets', 'SQL Connectors'],
+      careers: ['Tableau Developer', 'Business Intelligence Analyst', 'Data Visualization Specialist', 'Reporting Manager'],
+      timings: 'Exclusively Saturdays: 3:30 PM - 6:30 PM'
     }
   };
 
@@ -446,14 +554,11 @@ document.addEventListener('DOMContentLoaded', () => {
         // Redirect to appropriate Thank You page based on course
         let redirectUrl;
         const courseName = selectedCourseLabel;
+        const targetPage = (course === 'cloud-computing') ? 'thankyouCC.html' : 'thank-you.html';
+        const isInsidePagesDir = window.location.pathname.toLowerCase().includes('/pages/') || window.location.pathname.toLowerCase().includes('\\pages\\');
+        const prefix = isInsidePagesDir ? '' : 'pages/';
         
-        // Both forms and thank you pages are in /pages/ directory
-        // Redirect to thankyouCC.html for Cloud Computing course
-        if (course === 'cloud-computing') {
-          redirectUrl = 'thankyouCC.html?name=' + encodeURIComponent(name) + '&course=' + encodeURIComponent(courseName);
-        } else {
-          redirectUrl = 'thank-you.html?name=' + encodeURIComponent(name) + '&course=' + encodeURIComponent(courseName);
-        }
+        redirectUrl = prefix + targetPage + '?name=' + encodeURIComponent(name) + '&course=' + encodeURIComponent(courseName);
         
         console.log('Redirecting to:', redirectUrl);
         window.location.href = redirectUrl;

@@ -1,0 +1,53 @@
+Module 1 — Networking / CCNA — ₹10,000
+Networking Fundamentals – CCNA, Network Types, Network Devices, Cables, Ethernet
+Networking Models – OSI Model, TCP/IP Model, Network Protocols
+IP Addressing – IPv4, IPv6, Public/Private IP, MAC Address, CIDR
+Subnetting – Subnet Mask, Subnetting, VLSM
+Switching – Switch, VLAN, Trunking, Inter-VLAN, ROAS, STP, VTP
+Routing – Router, Static Routing, RIP, EIGRP, OSPF
+Network Security & Services – ACL, DHCP, DHCP Snooping, NAT, PAT
+
+
+
+Module 2 — RHCE Linux — ₹15,000
+Linux Fundamentals – CentOS/RHEL, Basic Commands, File System, File/Folder Management
+Users & Permissions – Users, Groups, Permissions, Ownership, ACL
+Processes & Services – Processes, systemd, Services, Boot Process
+Linux Storage – Partitions, File Systems, Disk Management, LVM, Mounting
+Package & File Management – RPM, YUM/DNF, Archive & Compression
+Linux Networking – SSH, SCP, SFTP, Network Configuration
+Linux Security – SELinux, Firewall, SSL/TLS
+File Sharing – Samba, NFS
+System Administration – Logs, Cron, Task Scheduling, Cockpit
+Database & Services – MariaDB, Mail Services
+Shell Scripting – Bash Scripting, Variables, Conditions, Loops, Automation
+
+
+
+
+Module 3 — AWS — ₹15,000
+AWS Fundamentals – Cloud Computing, AWS Architecture, Regions, Availability Zones, AWS Console
+AWS Storage – S3, Buckets, Objects, Storage Classes, Versioning, Lifecycle, Glacier
+AWS IAM – Users, Groups, Roles, Policies, Authentication, Authorization, MFA
+AWS Compute – EC2, AMI, Instance Types, Security Groups, EBS, Snapshots
+AWS Networking – VPC, Subnets, Route Tables, Internet Gateway, ENI, Elastic IP, Endpoints
+VPC Security & Connectivity – Security Groups, NACLs, VPC Peering, NAT Gateway, VPN
+Load Balancing & Monitoring – ELB, ALB, CloudWatch, Auto Scaling
+AWS Databases – RDS, Redshift, DynamoDB
+AWS Messaging – SQS, SNS, SWF
+AWS DNS – DNS, Route 53, Hosted Zones, DNS Records
+Additional Services – Lambda, CloudFront
+AWS Security – Shared Responsibility Model, Encryption, KMS, Compliance
+
+
+Module 4 — Azure / AZ-104 — ₹15,000
+Azure Fundamentals – Cloud Computing, Azure Portal, Regions, Availability Zones, Subscriptions, Resource Groups
+Azure Identity & Governance – Microsoft Entra ID, Users, Groups, RBAC, Azure Policy, Resource Locks, Tags, Cost Management
+Azure Storage – Storage Accounts, Blob Storage, Azure Files, Storage Tiers, Replication, SAS, Access Keys, Lifecycle Management
+Azure Compute – Virtual Machines, Managed Disks, Snapshots, VM Images, Availability Sets/Zones, VM Scale Sets, Containers
+Azure Networking – VNet, Subnets, Public/Private IP, NIC, NSG, Route Tables, UDR, VNet Peering
+Network Connectivity – Private Endpoints, Service Endpoints, NAT Gateway, VPN Gateway, Azure DNS, Load Balancer
+Azure Monitoring – Azure Monitor, Metrics, Logs, Log Analytics, Alerts, Network Watcher
+Azure Backup & Disaster Recovery – Azure Backup, Recovery Services Vault, Backup Policies, Restore, Site Recovery
+
+
