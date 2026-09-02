@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gallery | SkillNXT – Demo Sessions, Alumni & Certificates</title>
-  <meta name="description" content="Watch SkillNXT live demo sessions on YouTube, meet our alumni, and learn about our course completion certificates. Practical training in Digital Marketing, Cloud Computing & Data Analytics.">
+  <meta name="description"
+    content="Watch SkillNXT live demo sessions on YouTube, meet our alumni, and learn about our course completion certificates. Practical training in Digital Marketing, Cloud Computing & Data Analytics.">
   <meta name="robots" content="index, follow">
   <link rel="icon" type="image/png" href="../Asset/Fixcon%20(1).png">
   <link rel="apple-touch-icon" sizes="180x180" href="../Asset/Fixcon%20(1).png">
@@ -12,7 +14,8 @@
 
   <!-- Open Graph -->
   <meta property="og:title" content="Gallery | SkillNXT – Demo Sessions & Alumni">
-  <meta property="og:description" content="Watch real demo sessions, explore alumni journeys, and see SkillNXT course completion certificates.">
+  <meta property="og:description"
+    content="Watch real demo sessions, explore alumni journeys, and see SkillNXT course completion certificates.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://defaultserver.github.io/skillNXT/pages/Gallery.html">
   <meta property="og:image" content="https://defaultserver.github.io/skillNXT/assets/og-image.svg">
@@ -20,7 +23,9 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
+    rel="stylesheet">
 
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="../css/style.css">
@@ -35,6 +40,7 @@
       color: #ffffff;
       text-align: center;
     }
+
     .gallery-hero .hero-badge {
       display: inline-flex;
       align-items: center;
@@ -50,6 +56,7 @@
       margin-bottom: 1.25rem;
       text-transform: uppercase;
     }
+
     .gallery-hero h1 {
       font-size: clamp(2rem, 4vw, 3rem);
       font-weight: 800;
@@ -57,6 +64,7 @@
       color: #ffffff;
       margin-bottom: 1.1rem;
     }
+
     .gallery-hero p {
       font-size: 1.1rem;
       color: #cbd5e1;
@@ -64,6 +72,7 @@
       margin: 0 auto 2rem;
       line-height: 1.7;
     }
+
     .hero-tab-nav {
       display: flex;
       justify-content: center;
@@ -71,6 +80,7 @@
       flex-wrap: wrap;
       margin-top: 1.5rem;
     }
+
     .hero-tab-link {
       display: inline-flex;
       align-items: center;
@@ -79,12 +89,13 @@
       border-radius: 9999px;
       font-size: 0.9rem;
       font-weight: 600;
-      border: 1px solid rgba(255,255,255,0.2);
+      border: 1px solid rgba(255, 255, 255, 0.2);
       color: #e2e8f0;
       text-decoration: none;
       transition: all 0.2s ease;
-      background: rgba(255,255,255,0.05);
+      background: rgba(255, 255, 255, 0.05);
     }
+
     .hero-tab-link:hover,
     .hero-tab-link.active {
       background: var(--clr-primary);
@@ -98,6 +109,7 @@
     .gallery-section {
       padding: 5rem 0;
     }
+
     .gallery-section.alt-bg {
       background-color: var(--clr-slate-100);
     }
@@ -111,6 +123,7 @@
       gap: 1.75rem;
       margin-top: 2.75rem;
     }
+
     .video-card {
       background: #ffffff;
       border-radius: var(--radius-lg);
@@ -119,17 +132,21 @@
       overflow: hidden;
       transition: transform 0.25s ease, box-shadow 0.25s ease;
     }
+
     .video-card:hover {
       transform: translateY(-5px);
       box-shadow: var(--shadow-lg);
     }
+
     .video-embed-wrap {
       position: relative;
       width: 100%;
-      padding-top: 56.25%; /* 16:9 */
+      padding-top: 56.25%;
+      /* 16:9 */
       background: #0f172a;
       overflow: hidden;
     }
+
     .video-embed-wrap iframe {
       position: absolute;
       inset: 0;
@@ -137,6 +154,7 @@
       height: 100%;
       border: 0;
     }
+
     /* YouTube Thumbnail Overlay (lazy load) */
     .yt-thumb {
       position: absolute;
@@ -147,6 +165,7 @@
       cursor: pointer;
       transition: opacity 0.3s ease;
     }
+
     .yt-play-btn {
       position: absolute;
       top: 50%;
@@ -163,23 +182,28 @@
       transition: transform 0.2s ease, background 0.2s ease;
       pointer-events: none;
     }
+
     .yt-play-btn svg {
       width: 26px;
       height: 26px;
       fill: #ffffff;
       margin-left: 4px;
     }
+
     .yt-overlay:hover .yt-play-btn {
       transform: translate(-50%, -50%) scale(1.12);
       background: #dc2626;
     }
+
     .yt-overlay.loaded .yt-thumb,
     .yt-overlay.loaded .yt-play-btn {
       display: none;
     }
+
     .video-card-body {
       padding: 1.25rem 1.35rem 1.4rem;
     }
+
     .video-course-tag {
       display: inline-block;
       font-size: 0.73rem;
@@ -190,10 +214,26 @@
       border-radius: 9999px;
       margin-bottom: 0.6rem;
     }
-    .tag-cyan  { background: var(--clr-primary-light); color: var(--clr-primary-hover); }
-    .tag-purple{ background: var(--clr-accent-purple-light); color: var(--clr-accent-purple); }
-    .tag-amber { background: var(--clr-accent-amber-light); color: var(--clr-accent-amber); }
-    .tag-green { background: var(--clr-accent-emerald-light); color: var(--clr-accent-emerald); }
+
+    .tag-cyan {
+      background: var(--clr-primary-light);
+      color: var(--clr-primary-hover);
+    }
+
+    .tag-purple {
+      background: var(--clr-accent-purple-light);
+      color: var(--clr-accent-purple);
+    }
+
+    .tag-amber {
+      background: var(--clr-accent-amber-light);
+      color: var(--clr-accent-amber);
+    }
+
+    .tag-green {
+      background: var(--clr-accent-emerald-light);
+      color: var(--clr-accent-emerald);
+    }
 
     .video-card-body h4 {
       font-size: 0.98rem;
@@ -202,11 +242,13 @@
       line-height: 1.45;
       margin-bottom: 0.35rem;
     }
+
     .video-card-body p {
       font-size: 0.85rem;
       color: var(--clr-slate-600);
       line-height: 1.5;
     }
+
     .watch-all-wrap {
       text-align: center;
       margin-top: 2.5rem;
@@ -221,6 +263,7 @@
       gap: 1.5rem;
       margin-top: 2.75rem;
     }
+
     .alumni-card {
       background: #ffffff;
       border-radius: var(--radius-lg);
@@ -230,6 +273,7 @@
       transition: transform 0.25s ease, box-shadow 0.25s ease;
       position: relative;
     }
+
     .alumni-card::before {
       content: '"';
       position: absolute;
@@ -241,20 +285,24 @@
       font-family: Georgia, serif;
       font-weight: 900;
     }
+
     .alumni-card:hover {
       transform: translateY(-4px);
       box-shadow: var(--shadow-lg);
     }
+
     .alumni-stars {
       display: flex;
       gap: 3px;
       margin-bottom: 0.85rem;
     }
+
     .alumni-stars svg {
       width: 16px;
       height: 16px;
       fill: #f59e0b;
     }
+
     .alumni-quote {
       font-size: 0.95rem;
       color: var(--clr-slate-600);
@@ -262,6 +310,7 @@
       margin-bottom: 1.25rem;
       font-style: italic;
     }
+
     .alumni-profile {
       display: flex;
       align-items: center;
@@ -269,6 +318,7 @@
       padding-top: 1.1rem;
       border-top: 1px solid var(--clr-border);
     }
+
     .alumni-avatar {
       width: 48px;
       height: 48px;
@@ -281,28 +331,50 @@
       color: #ffffff;
       flex-shrink: 0;
     }
-    .av-blue   { background: linear-gradient(135deg, #0284c7, #38bdf8); }
-    .av-purple { background: linear-gradient(135deg, #7c3aed, #a78bfa); }
-    .av-green  { background: linear-gradient(135deg, #059669, #34d399); }
-    .av-amber  { background: linear-gradient(135deg, #d97706, #fbbf24); }
-    .av-rose   { background: linear-gradient(135deg, #e11d48, #fb7185); }
-    .av-teal   { background: linear-gradient(135deg, #0d9488, #2dd4bf); }
+
+    .av-blue {
+      background: linear-gradient(135deg, #0284c7, #38bdf8);
+    }
+
+    .av-purple {
+      background: linear-gradient(135deg, #7c3aed, #a78bfa);
+    }
+
+    .av-green {
+      background: linear-gradient(135deg, #059669, #34d399);
+    }
+
+    .av-amber {
+      background: linear-gradient(135deg, #d97706, #fbbf24);
+    }
+
+    .av-rose {
+      background: linear-gradient(135deg, #e11d48, #fb7185);
+    }
+
+    .av-teal {
+      background: linear-gradient(135deg, #0d9488, #2dd4bf);
+    }
+
     .alumni-info h5 {
       font-size: 0.95rem;
       font-weight: 700;
       color: var(--clr-navy-900);
       margin-bottom: 0.15rem;
     }
+
     .alumni-info .role {
       font-size: 0.8rem;
       color: var(--clr-primary);
       font-weight: 600;
     }
+
     .alumni-info .batch {
       font-size: 0.75rem;
       color: var(--clr-slate-400);
       margin-top: 0.1rem;
     }
+
     .alumni-badge {
       display: inline-flex;
       align-items: center;
@@ -324,21 +396,25 @@
       padding: 5rem 0;
       color: #ffffff;
     }
+
     .cert-layout {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 3.5rem;
       align-items: center;
     }
+
     .cert-image-frame {
       position: relative;
     }
+
     .cert-image-frame img {
       width: 100%;
       border-radius: var(--radius-lg);
-      box-shadow: 0 20px 60px rgba(0,0,0,0.5);
-      border: 2px solid rgba(255,255,255,0.1);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+      border: 2px solid rgba(255, 255, 255, 0.1);
     }
+
     .cert-glow {
       position: absolute;
       inset: -12px;
@@ -347,9 +423,11 @@
       z-index: -1;
       pointer-events: none;
     }
+
     .cert-content .section-tagline {
       color: #fbbf24;
     }
+
     .cert-content h2 {
       font-size: clamp(1.6rem, 3vw, 2.2rem);
       font-weight: 800;
@@ -357,9 +435,11 @@
       line-height: 1.25;
       margin-bottom: 1.5rem;
     }
+
     .cert-content h2 span {
       color: #fbbf24;
     }
+
     .cert-disclaimer-box {
       background: rgba(239, 68, 68, 0.12);
       border: 1px solid rgba(239, 68, 68, 0.4);
@@ -367,6 +447,7 @@
       padding: 1.25rem 1.4rem;
       margin-bottom: 1.75rem;
     }
+
     .cert-disclaimer-box .disc-header {
       display: flex;
       align-items: center;
@@ -378,11 +459,13 @@
       letter-spacing: 0.5px;
       margin-bottom: 0.6rem;
     }
+
     .cert-disclaimer-box p {
       font-size: 0.92rem;
       color: #cbd5e1;
       line-height: 1.7;
     }
+
     .cert-included-list {
       list-style: none;
       padding: 0;
@@ -391,6 +474,7 @@
       flex-direction: column;
       gap: 0.6rem;
     }
+
     .cert-included-list li {
       display: flex;
       align-items: flex-start;
@@ -399,6 +483,7 @@
       color: #cbd5e1;
       line-height: 1.55;
     }
+
     .cert-included-list li svg {
       color: #34d399;
       flex-shrink: 0;
@@ -409,17 +494,36 @@
        RESPONSIVE
     ============================== */
     @media (max-width: 1024px) {
-      .video-grid  { grid-template-columns: repeat(2, 1fr); }
-      .alumni-grid { grid-template-columns: repeat(2, 1fr); }
+      .video-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .alumni-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
     }
+
     @media (max-width: 768px) {
-      .video-grid  { grid-template-columns: 1fr; }
-      .alumni-grid { grid-template-columns: 1fr; }
-      .cert-layout { grid-template-columns: 1fr; gap: 2.5rem; }
-      .cert-image-frame { order: -1; }
+      .video-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .alumni-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .cert-layout {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+
+      .cert-image-frame {
+        order: -1;
+      }
     }
   </style>
 </head>
+
 <body>
 
   <!-- 1. Top Announcement Bar -->
@@ -481,12 +585,13 @@
 
       <div class="hero-badge">🎬 Live Sessions · Alumni Stories · Certifications</div>
       <h1>See What Happens <span class="gradient-text">Inside Our Classrooms</span></h1>
-      <p>Real demo sessions recorded live, alumni who transformed their careers, and a look at the certificate issued on course completion.</p>
+      <p>Real demo sessions recorded live, alumni who transformed their careers, and a look at the certificate issued on
+        course completion.</p>
 
       <div class="hero-tab-nav">
         <a href="#demo-sessions" class="hero-tab-link active">▶️ Demo Sessions</a>
-        <a href="#alumni"        class="hero-tab-link">🎓 Alumni Stories</a>
-        <a href="#certificate"   class="hero-tab-link">📜 Our Certificate</a>
+        <a href="#alumni" class="hero-tab-link">🎓 Alumni Stories</a>
+        <a href="#certificate" class="hero-tab-link">📜 Our Certificate</a>
       </div>
     </div>
   </section>
@@ -500,7 +605,8 @@
         <span class="section-tagline">WATCH BEFORE YOU ENROLL</span>
         <h2 class="section-title">Demo Sessions on <span class="gradient-text">YouTube</span></h2>
         <p class="section-subtitle">
-          These are real, unedited sessions recorded live from our classrooms. Watch how we teach, what tools we use, and how much you'll learn in a single class.
+          These are real, unedited sessions recorded live from our classrooms. Watch how we teach, what tools we use,
+          and how much you'll learn in a single class.
         </p>
       </div>
 
@@ -509,38 +615,41 @@
         <!-- Video 1 — Digital Marketing -->
         <div class="video-card">
           <div class="video-embed-wrap">
-            <div class="yt-overlay" id="yt1" onclick="loadYT('yt1','https://www.youtube.com/embed/?rel=0&autoplay=1')">
-              <img class="yt-thumb"
-                src="https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg"
-                alt="Digital Marketing Demo Session" loading="lazy">
+            <div class="yt-overlay" id="yt1" onclick="loadYT('yt1', 'https://www.youtube.com/embed/0qBsDUFz2J0')">
+              <img class="yt-thumb" src="https://img.youtube.com/vi/0qBsDUFz2J0/hqdefault.jpg"
+                alt="SAP/FICO Demo Session" loading="lazy">
               <div class="yt-play-btn">
-                <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
+                <svg viewBox="0 0 24 24">
+                  <polygon points="5,3 19,12 5,21" />
+                </svg>
               </div>
             </div>
           </div>
           <div class="video-card-body">
-            <span class="video-course-tag tag-cyan">Digital Marketing</span>
-            <h4>Google Ads Campaign Setup — Live Demo Class</h4>
-            <p>Watch how we set up a real Google Ads campaign from scratch with live budget tracking in class.</p>
+            <span class="video-course-tag tag-cyan">SAP / FICO</span>
+            <h4>Company Creation & Management — Live Demo Class</h4>
+            <p>Watch how we set up a real Company, Execute Operations, Prepare Fianancial Statement's in class.</p>
           </div>
         </div>
 
         <!-- Video 2 — Cloud Computing -->
         <div class="video-card">
           <div class="video-embed-wrap">
-            <div class="yt-overlay" id="yt2" onclick="loadYT('yt2','https://www.youtube.com/embed/?rel=0&autoplay=1')">
-              <img class="yt-thumb"
-                src="https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg"
-                alt="Cloud Computing Demo Session" loading="lazy">
+            <div class="yt-overlay" id="yt2" onclick="loadYT('yt2', 'https://www.youtube.com/embed/4EqsNNmpvhM')">
+              <img class="yt-thumb" src="https://img.youtube.com/vi/4EqsNNmpvhM/hqdefault.jpg"
+                alt="Advance Excel Demo Session" loading="lazy">
               <div class="yt-play-btn">
-                <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
+                <svg viewBox="0 0 24 24">
+                  <polygon points="5,3 19,12 5,21" />
+                </svg>
               </div>
             </div>
           </div>
           <div class="video-card-body">
-            <span class="video-course-tag tag-purple">Cloud &amp; DevOps</span>
-            <h4>Deploying an AWS EC2 Instance — Sunday Batch Demo</h4>
-            <p>Full end-to-end AWS instance deployment, security groups, and SSH access — done live in 45 minutes.</p>
+            <span class="video-course-tag tag-purple">Advance Excel</span>
+            <h4>TextFucntion & Import Data — Sunday Batch Demo</h4>
+            <p>What the Basics of Text Functions, Import Data from web or any website & What are Solitude — done live in
+              45 minutes.</p>
           </div>
         </div>
 
@@ -548,16 +657,17 @@
         <div class="video-card">
           <div class="video-embed-wrap">
             <div class="yt-overlay" id="yt3" onclick="loadYT('yt3','https://www.youtube.com/embed/?rel=0&autoplay=1')">
-              <img class="yt-thumb"
-                src="https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg"
+              <img class="yt-thumb" src="https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg"
                 alt="Advance Excel Demo Session" loading="lazy">
               <div class="yt-play-btn">
-                <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
+                <svg viewBox="0 0 24 24">
+                  <polygon points="5,3 19,12 5,21" />
+                </svg>
               </div>
             </div>
           </div>
           <div class="video-card-body">
-            <span class="video-course-tag tag-amber">Advance Excel</span>
+            <span class="video-course-tag tag-amber">Cloud &amp; DevOps</span>
             <h4>Power Query + KPI Dashboard — Saturday Batch Demo</h4>
             <p>Transforming raw sales data into an interactive KPI dashboard — the exact workflow we teach in class.</p>
           </div>
@@ -567,11 +677,12 @@
         <div class="video-card">
           <div class="video-embed-wrap">
             <div class="yt-overlay" id="yt4" onclick="loadYT('yt4','https://www.youtube.com/embed/?rel=0&autoplay=1')">
-              <img class="yt-thumb"
-                src="https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg"
-                alt="Python Demo Session" loading="lazy">
+              <img class="yt-thumb" src="https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg" alt="Python Demo Session"
+                loading="lazy">
               <div class="yt-play-btn">
-                <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
+                <svg viewBox="0 0 24 24">
+                  <polygon points="5,3 19,12 5,21" />
+                </svg>
               </div>
             </div>
           </div>
@@ -586,11 +697,12 @@
         <div class="video-card">
           <div class="video-embed-wrap">
             <div class="yt-overlay" id="yt5" onclick="loadYT('yt5','https://www.youtube.com/embed/?rel=0&autoplay=1')">
-              <img class="yt-thumb"
-                src="https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg"
-                alt="SQL Demo Session" loading="lazy">
+              <img class="yt-thumb" src="https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg" alt="SQL Demo Session"
+                loading="lazy">
               <div class="yt-play-btn">
-                <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
+                <svg viewBox="0 0 24 24">
+                  <polygon points="5,3 19,12 5,21" />
+                </svg>
               </div>
             </div>
           </div>
@@ -605,27 +717,31 @@
         <div class="video-card">
           <div class="video-embed-wrap">
             <div class="yt-overlay" id="yt6" onclick="loadYT('yt6','https://www.youtube.com/embed/?rel=0&autoplay=1')">
-              <img class="yt-thumb"
-                src="https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg"
+              <img class="yt-thumb" src="https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg"
                 alt="Tableau Demo Session" loading="lazy">
               <div class="yt-play-btn">
-                <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
+                <svg viewBox="0 0 24 24">
+                  <polygon points="5,3 19,12 5,21" />
+                </svg>
               </div>
             </div>
           </div>
           <div class="video-card-body">
             <span class="video-course-tag tag-amber">Tableau &amp; BI</span>
             <h4>Executive Sales Dashboard — Tableau Live Build</h4>
-            <p>Building a full executive dashboard with LOD expressions, filters, and KPI tiles from scratch in one session.</p>
+            <p>Building a full executive dashboard with LOD expressions, filters, and KPI tiles from scratch in one
+              session.</p>
           </div>
         </div>
 
       </div>
 
       <div class="watch-all-wrap">
-        <a href="https://www.youtube.com/@AllSkillNOW" target="_blank" class="btn btn-primary" style="gap:0.6rem; font-size:1rem; padding: 0.85rem 2rem;">
+        <a href="https://www.youtube.com/@AllSkillNOW" target="_blank" class="btn btn-primary"
+          style="gap:0.6rem; font-size:1rem; padding: 0.85rem 2rem;">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+            <path
+              d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
           </svg>
           Watch All Sessions on YouTube
         </a>
@@ -642,7 +758,8 @@
         <span class="section-tagline">STUDENT SUCCESS STORIES</span>
         <h2 class="section-title">Our <span class="gradient-text">Alumni</span> Speak</h2>
         <p class="section-subtitle">
-          From beginners to industry professionals — these are real students from our Nerul &amp; Vashi batches who transformed their careers after completing SkillNXT programs.
+          From beginners to industry professionals — these are real students from our Nerul &amp; Vashi batches who
+          transformed their careers after completing SkillNXT programs.
         </p>
       </div>
 
@@ -651,13 +768,25 @@
         <!-- Alumni 1 -->
         <div class="alumni-card">
           <div class="alumni-stars">
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
           </div>
-          <p class="alumni-quote">Before SkillNXT I was applying to 50+ jobs with zero responses. Three weeks after finishing the Digital Marketing course I had two interviews lined up. The live project work made all the difference.</p>
+          <p class="alumni-quote">Before SkillNXT I was applying to 50+ jobs with zero responses. Three weeks after
+            finishing the Digital Marketing course I had two interviews lined up. The live project work made all the
+            difference.</p>
           <div class="alumni-profile">
             <div class="alumni-avatar av-blue">PR</div>
             <div class="alumni-info">
@@ -671,13 +800,25 @@
         <!-- Alumni 2 -->
         <div class="alumni-card">
           <div class="alumni-stars">
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
           </div>
-          <p class="alumni-quote">I was already a software developer but wanted to move into cloud roles. The Sunday batch fit perfectly around my job. Cleared my AWS Solutions Architect exam two months after finishing the course.</p>
+          <p class="alumni-quote">I was already a software developer but wanted to move into cloud roles. The Sunday
+            batch fit perfectly around my job. Cleared my AWS Solutions Architect exam two months after finishing the
+            course.</p>
           <div class="alumni-profile">
             <div class="alumni-avatar av-purple">AK</div>
             <div class="alumni-info">
@@ -691,13 +832,25 @@
         <!-- Alumni 3 -->
         <div class="alumni-card">
           <div class="alumni-stars">
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
           </div>
-          <p class="alumni-quote">I'm an accountant and learned Excel basics on my own but the advanced Excel course at SkillNXT took me to a completely different level. Got promoted to MIS Lead within 3 months of completing it.</p>
+          <p class="alumni-quote">I'm an accountant and learned Excel basics on my own but the advanced Excel course at
+            SkillNXT took me to a completely different level. Got promoted to MIS Lead within 3 months of completing it.
+          </p>
           <div class="alumni-profile">
             <div class="alumni-avatar av-amber">SM</div>
             <div class="alumni-info">
@@ -711,13 +864,25 @@
         <!-- Alumni 4 -->
         <div class="alumni-card">
           <div class="alumni-stars">
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
           </div>
-          <p class="alumni-quote">I came in with zero programming knowledge. By month 2 of the Python course I was writing automation scripts for my office. By month 3 I had a job offer as a junior data analyst. Unbelievable growth.</p>
+          <p class="alumni-quote">I came in with zero programming knowledge. By month 2 of the Python course I was
+            writing automation scripts for my office. By month 3 I had a job offer as a junior data analyst.
+            Unbelievable growth.</p>
           <div class="alumni-profile">
             <div class="alumni-avatar av-green">RV</div>
             <div class="alumni-info">
@@ -731,13 +896,25 @@
         <!-- Alumni 5 -->
         <div class="alumni-card">
           <div class="alumni-stars">
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
           </div>
-          <p class="alumni-quote">The SQL curriculum is intense in the best possible way. We solved real business problems every class. I now confidently write CTEs, window functions, and optimize queries at my job — skills I never imagined having 4 months ago.</p>
+          <p class="alumni-quote">The SQL curriculum is intense in the best possible way. We solved real business
+            problems every class. I now confidently write CTEs, window functions, and optimize queries at my job —
+            skills I never imagined having 4 months ago.</p>
           <div class="alumni-profile">
             <div class="alumni-avatar av-rose">NK</div>
             <div class="alumni-info">
@@ -751,13 +928,25 @@
         <!-- Alumni 6 -->
         <div class="alumni-card">
           <div class="alumni-stars">
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
           </div>
-          <p class="alumni-quote">Tableau looked intimidating but SkillNXT broke it down beautifully. By the end of the course I was building executive dashboards I could show in interviews. Got hired as a BI Analyst within weeks.</p>
+          <p class="alumni-quote">Tableau looked intimidating but SkillNXT broke it down beautifully. By the end of the
+            course I was building executive dashboards I could show in interviews. Got hired as a BI Analyst within
+            weeks.</p>
           <div class="alumni-profile">
             <div class="alumni-avatar av-teal">DS</div>
             <div class="alumni-info">
@@ -793,25 +982,25 @@
           <ul class="cert-included-list">
             <li>
               <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
               </svg>
               Issued upon successful completion of all modules and projects
             </li>
             <li>
               <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
               </svg>
               Contains your name, course name, and batch completion date
             </li>
             <li>
               <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
               </svg>
               Signed and stamped by SkillNXT Academy
             </li>
             <li>
               <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
               </svg>
               A meaningful recognition of your dedication and hard work
             </li>
@@ -822,12 +1011,17 @@
             <div class="disc-header">
               <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                  d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
               Important Disclaimer
             </div>
             <p>
-              This certificate is issued purely as a <strong style="color:#fca5a5;">recognition of course completion</strong> at SkillNXT Academy. It is <strong style="color:#fca5a5;">not a government-recognized certification</strong>, professional license, or accredited degree. You <strong style="color:#fca5a5;">cannot claim or display</strong> this certificate as proof of formal certification or qualification to any regulatory body, employer, or institution. It is meant solely to acknowledge that you have participated in and completed our training program.
+              This certificate is issued purely as a <strong style="color:#fca5a5;">recognition of course
+                completion</strong> at SkillNXT Academy. It is <strong style="color:#fca5a5;">not a
+                government-recognized certification</strong>, professional license, or accredited degree. You <strong
+                style="color:#fca5a5;">cannot claim or display</strong> this certificate as proof of formal
+              certification or qualification to any regulatory body, employer, or institution. It is meant solely to
+              acknowledge that you have participated in and completed our training program.
             </p>
           </div>
 
@@ -849,7 +1043,8 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <img src="../Asset/LOGO.png" alt="SkillNext Logo" class="logo-img">
-          <p>Empowering students and professionals with practical, market-aligned skills in Digital Marketing, Cloud Technologies, and Data Analytics since 2022.</p>
+          <p>Empowering students and professionals with practical, market-aligned skills in Digital Marketing, Cloud
+            Technologies, and Data Analytics since 2022.</p>
         </div>
 
         <div class="footer-col">
@@ -875,9 +1070,12 @@
         <div class="footer-col">
           <h4>Campus Branches</h4>
           <p style="margin-bottom: 0.5rem;">📍 <strong>Nerul:</strong> Opposite Nerul Station, Navi Mumbai</p>
-          <p style="margin-bottom: 0.5rem;">📍 <strong>Vashi:</strong> 2nd Floor, Vashi Plaza, Sector 17, Navi Mumbai</p>
-          <p style="margin-bottom: 0.5rem;">📞 Helpline: <a href="tel:+919004547746" style="color:inherit;">+91 90045 47746</a></p>
-          <p>✉️ Email: <a href="mailto:admissions@apexskills.edu" style="color:inherit;">admissions@apexskills.edu</a></p>
+          <p style="margin-bottom: 0.5rem;">📍 <strong>Vashi:</strong> 2nd Floor, Vashi Plaza, Sector 17, Navi Mumbai
+          </p>
+          <p style="margin-bottom: 0.5rem;">📞 Helpline: <a href="tel:+919004547746" style="color:inherit;">+91 90045
+              47746</a></p>
+          <p>✉️ Email: <a href="mailto:admissions@apexskills.edu" style="color:inherit;">admissions@apexskills.edu</a>
+          </p>
         </div>
       </div>
 
@@ -896,7 +1094,8 @@
     target="_blank" class="floating-whatsapp" aria-label="Chat on WhatsApp">
     <div class="whatsapp-tooltip">Chat with Counselor</div>
     <svg fill="currentColor" viewBox="0 0 24 24">
-      <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+      <path
+        d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
     </svg>
   </a>
 
@@ -927,7 +1126,7 @@
 
     // Smooth scroll for hero tab nav
     document.querySelectorAll('.hero-tab-link').forEach(link => {
-      link.addEventListener('click', function(e) {
+      link.addEventListener('click', function (e) {
         const href = this.getAttribute('href');
         if (href.startsWith('#')) {
           e.preventDefault();
@@ -939,4 +1138,5 @@
     });
   </script>
 </body>
+
 </html>
