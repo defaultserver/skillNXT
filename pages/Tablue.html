@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tableau & Visual Business Intelligence | SkillNXT Academy</title>
+  <meta name="description"
+    content="Master Tableau Desktop, Visual Analytics, Advanced Data Connections, Calculated Fields, Level of Detail (LOD) Calculations, Interactive Dashboards, and Storytelling. 100% Practical Training.">
+  <meta name="keywords"
+    content="Tableau Course, Tableau Certification, Data Visualization, Business Intelligence, Tableau Desktop, Dashboard Design, SkillNXT Tableau Institute">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <link rel="icon" type="image/png" href="../Asset/Fixcon%20(1).png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../Asset/Fixcon%20(1).png">
+  <link rel="canonical" href="https://defaultserver.github.io/skillNXT/pages/Tablue.html">
+  <meta property="og:title" content="Tableau & Visual Business Intelligence | SkillNXT">
+  <meta property="og:description"
+    content="Master Tableau Desktop, advanced visual charts, interactive dashboards, LOD calculations, and business storytelling.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://defaultserver.github.io/skillNXT/pages/Tablue.html">
+  <meta property="og:image" content="https://defaultserver.github.io/skillNXT/assets/og-image.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Tableau & Visual Business Intelligence | SkillNXT">
+  <meta name="twitter:description"
+    content="Master Tableau Desktop, advanced visual charts, interactive dashboards, LOD calculations, and business storytelling.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="../css/style.css">
+
+  <style>
+    .course-hero-orange {
+      background: radial-gradient(120% 100% at 50% 0%, #0f172a 0%, #9a3412 70%, #7c2d12 100%);
+      color: #ffffff;
+      padding: 4rem 0 5rem;
+    }
+
+    .curriculum-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .module-box {
+      background: #ffffff;
+      border-radius: var(--radius-md);
+      padding: 1.75rem;
+      border: 1px solid var(--clr-border);
+      box-shadow: var(--shadow-sm);
+      transition: transform var(--transition-normal), box-shadow var(--transition-normal), border-color var(--transition-normal);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .module-box:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+      border-color: #ea580c;
+    }
+
+    .module-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 1rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .module-box h4 {
+      color: #ea580c;
+      font-size: 1.15rem;
+      margin-bottom: 0;
+      line-height: 1.35;
+    }
+
+    .module-price {
+      background: #ffedd5;
+      color: #c2410c;
+      font-weight: 700;
+      padding: 0.25rem 0.75rem;
+      border-radius: var(--radius-full);
+      font-size: 0.9rem;
+      white-space: nowrap;
+      border: 1px solid rgba(234, 88, 12, 0.2);
+    }
+
+    .tools-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.25rem;
+      margin-top: 2rem;
+    }
+
+    .tool-chip {
+      background: #ffffff;
+      border: 1px solid var(--clr-border);
+      border-radius: var(--radius-md);
+      padding: 1.1rem 1rem;
+      text-align: center;
+      font-weight: 700;
+      color: var(--clr-navy-900);
+      box-shadow: var(--shadow-sm);
+      transition: transform var(--transition-normal), border-color var(--transition-normal);
+    }
+
+    .tool-chip:hover {
+      transform: translateY(-3px);
+      border-color: #ea580c;
+    }
+
+    .career-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .career-card {
+      background: #ffffff;
+      padding: 1.75rem;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--clr-border);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .career-card h4 {
+      color: var(--clr-navy-900);
+      margin-bottom: 0.5rem;
+      font-size: 1.1rem;
+    }
+
+    .career-card p {
+      color: var(--clr-slate-600);
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 900px) {
+      .curriculum-grid {
+        grid-template-columns: 1fr;
+      }
+      .tools-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .career-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar" style="background: linear-gradient(90deg, #7c2d12 0%, #0f172a 100%);">
+    <div class="container top-bar-content">
+      <div>
+        <span class="top-bar-badge" style="background: #fb923c; color: #7c2d12;">TABLEAU DESKTOP CERTIFIED</span>
+        📈 Master Tableau Visual Analytics, Data Blending, LOD Calculations &amp; Interactive Storytelling.
+      </div>
+      <div class="top-bar-contact">
+        <a href="tel:+919004547746" class="top-bar-link">📞 +91 90045 47746</a>
+        <a href="../index.html" class="top-bar-link">&larr; Back to Home</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="../index.html" class="brand-logo">
+        <img src="../Asset/LOGO.png" alt="SkillNext Logo" class="logo-img">
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html" class="nav-link">Home</a></li>
+        <li><a href="Courses.html" class="nav-link active">Courses</a></li>
+        <li><a href="Gallery.html" class="nav-link">Gallery</a></li>
+        <li><a href="policy.html" class="nav-link">Policy</a></li>
+        <li><a href="about-us.html" class="nav-link">About us</a></li>
+      </ul>
+      <div class="nav-cta-group">
+        <a href="tel:+919004547746" class="btn btn-outline btn-sm">Call Direct</a>
+        <button onclick="scrollToSection('enroll')" class="btn btn-primary btn-sm" style="background: #ea580c;">Book Tableau Demo</button>
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle Menu">
+          <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Course Hero -->
+  <section class="course-hero-orange" id="overview">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge"
+          style="background: rgba(251, 146, 60, 0.2); border-color: rgba(251, 146, 60, 0.4); color: #fdba74;">
+          ⚡ TABLEAU DESKTOP SPECIALIST CERTIFICATION TRACK
+        </div>
+        <h1 class="hero-title">
+          Tableau &amp; Visual <span class="gradient-text"
+            style="background: linear-gradient(135deg, #fb923c 0%, #38bdf8 100%); -webkit-background-clip: text;">Business Intelligence</span>
+        </h1>
+        <p class="hero-subtitle">
+          Transform raw, complex business datasets into compelling visual stories. Master data joins, data blending, Level of Detail (LOD) expressions, statistical forecasting, interactive executive dashboards, and cloud distribution.
+        </p>
+
+        <div
+          style="display: flex; flex-wrap: wrap; gap: 1.5rem; margin-top: 1.5rem; color: #cbd5e1; font-size: 0.95rem;">
+          <div>⏱ <strong>Duration:</strong> 2 Months</div>
+          <div>🗓 <strong>Batches:</strong> Weekend &amp; Weekday Flexible Batches</div>
+          <div>📜 <strong>Certificate:</strong> Tableau Certified Data Analyst Diploma</div>
+          <div>💻 <strong>Tools:</strong> Tableau Desktop, Tableau Prep, Tableau Cloud</div>
+        </div>
+
+        <div class="hero-cta-box" style="margin-top: 2rem;">
+          <button onclick="scrollToSection('enroll')" class="btn btn-primary"
+            style="background: linear-gradient(135deg, #ea580c 0%, #c2410c 100%); border: none;">
+            Enroll in Tableau Course &rarr;
+          </button>
+          <a href="https://wa.me/919004547746?text=I%20want%20details%20for%20Tableau%20Business%20Intelligence%20Course"
+            target="_blank" class="btn btn-outline" style="color: #ffffff; border-color: #fb923c;">
+            💬 WhatsApp Counselor
+          </a>
+        </div>
+      </div>
+
+      <!-- Lead Form Card -->
+      <div class="hero-form-card">
+        <div class="hero-form-header">
+          <h3>Book Tableau Demo Class</h3>
+          <p>Get Real-World Dashboard Workbooks &amp; Case Study Pack</p>
+        </div>
+        <form id="tableauPageForm">
+          <input type="hidden" name="course" value="tableau-bi">
+          <div class="form-group">
+            <label class="form-label">Full Name *</label>
+            <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Mobile / WhatsApp Number *</label>
+            <input type="tel" name="phone" class="form-control" placeholder="10-digit mobile number" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Career Objective *</label>
+            <select name="time" class="form-control form-select">
+              <option value="BI / Visual Analytics Career">BI / Visual Analytics Career</option>
+              <option value="Data Analyst / Scientist">Data Analyst / Scientist</option>
+              <option value="Business Manager / Decision Maker">Business Manager / Decision Maker</option>
+              <option value="College Student / Graduate">College Student / Graduate</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full"
+            style="background: linear-gradient(135deg, #ea580c 0%, #c2410c 100%); border: none;">
+            Book Free Tableau Demo Class &rarr;
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Detailed Curriculum Section -->
+  <section class="why-us-section" id="curriculum">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tagline" style="color: #c2410c; background: #ffedd5;">5 COMPREHENSIVE PILLARS</span>
+        <h2 class="section-title">Tableau Practical Curriculum Modules</h2>
+        <p class="section-subtitle">A real-world analytical journey from visual charting fundamentals to advanced enterprise forecasting and storytelling.</p>
+      </div>
+
+      <div class="curriculum-grid">
+        <!-- Module 1 -->
+        <div class="module-box">
+          <div class="module-header">
+            <h4>1. Tableau &amp; Data Visualization Foundations</h4>
+            <span class="module-price">₹2,000</span>
+          </div>
+          <ul class="course-features-list">
+            <li>What is Data Visualization? Industry scope &amp; cognitive visual perception</li>
+            <li>Tableau Visualization Engine (VizQL) architecture</li>
+            <li>Core Visualizations: Text Tables, Highlight Tables, Pie Charts, Bar Charts, Line Charts</li>
+            <li>Advanced Visualizations: Heat Maps, Side-by-Side Lines, Circle Plots</li>
+            <li>Complex Charting: Tree Maps, Area Charts, Dual Axis Charts, Scatter Plots</li>
+            <li>Navigating Tableau Workspace, Startup Quadrant, Marks card &amp; Shelves</li>
+            <li>Dashboard tricks: Reference Lines, Drop lines, and Custom Dynamic Tooltips</li>
+          </ul>
+        </div>
+
+        <!-- Module 2 -->
+        <div class="module-box">
+          <div class="module-header">
+            <h4>2. Tableau &amp; Data Connections</h4>
+            <span class="module-price">₹2,000</span>
+          </div>
+          <ul class="course-features-list">
+            <li>Understanding Data Connections: Live Connections vs In-Memory Extracts (Hyper)</li>
+            <li>Connecting to Tableau Data Server, Excel, CSV, Google Sheets &amp; SQL databases</li>
+            <li>Data Modeling: Physical layer vs Logical layer (Relationships)</li>
+            <li>Defining Joins: Inner, Left, Right, and Full Outer Joins</li>
+            <li>Custom SQL integration: writing direct queries to feed Tableau workbooks</li>
+            <li>Data Blending vs Joining: Primary &amp; Secondary data sources and blending limitations</li>
+          </ul>
+        </div>
+
+        <!-- Module 3 -->
+        <div class="module-box">
+          <div class="module-header">
+            <h4>3. Data Organization, Calculations &amp; Sets</h4>
+            <span class="module-price">₹2,000</span>
+          </div>
+          <ul class="course-features-list">
+            <li>Organizing and simplifying data: Dimension vs Measure segregation</li>
+            <li>Filtering types: Extract, Data Source, Context, Dimension, and Measure filters</li>
+            <li>Totals, Subtotals, Aggregating measures and Data Spotlighting techniques</li>
+            <li>String, Date, Math, and Logical functions (IF, IIF, CASE)</li>
+            <li>Sorting data in Tableau: Computed, Manual, and Nested sorting options</li>
+            <li>Combined Fields, Groups, and Aliases creation</li>
+            <li>Calculated Fields vs Basic &amp; Advanced Table Calculations (Running Total, % of Total, Rank)</li>
+            <li>Quality assurance for table calculations &amp; addressing direction (Compute Using)</li>
+            <li>Hierarchies, Dynamic Sets, Tableau Bins (Fixed &amp; Variable size), and Drill-down methods</li>
+          </ul>
+        </div>
+
+        <!-- Module 4 -->
+        <div class="module-box">
+          <div class="module-header">
+            <h4>4. Advanced Data Prep &amp; Analytics in Tableau</h4>
+            <span class="module-price">₹2,000</span>
+          </div>
+          <ul class="course-features-list">
+            <li>Retail Sector Forecasting case study &amp; time-series decomposition</li>
+            <li>Building and interpreting Box Plots &amp; Whiskers for distribution outliers</li>
+            <li>Working with Large Enterprise Data Sources &amp; performance tuning</li>
+            <li>Data restructuring: Understanding and implementing Pivot and Split operations</li>
+            <li>Real-world retail analytics with Trendlines and Linear regression models</li>
+            <li>Advanced Timeseries Blending and calculating Sales Per Capita metrics</li>
+            <li>Automated Forecasting in Tableau: model parameters &amp; prediction intervals</li>
+            <li>Presenting visual storylines &amp; creating page-by-page Animations in Tableau</li>
+            <li>Real-World Case Study: World Health Trends Investigation with blended animated metrics</li>
+          </ul>
+        </div>
+
+        <!-- Module 5 -->
+        <div class="module-box" style="grid-column: span 2;">
+          <div class="module-header">
+            <h4>5. Interactive Dashboards &amp; Work Sharing</h4>
+            <span class="module-price">₹2,000</span>
+          </div>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+            <ul class="course-features-list">
+              <li>Building responsive Executive Dashboards with containers (Tiled &amp; Floating)</li>
+              <li>Configuring Action Filters: Filter actions, Highlight actions, URL actions</li>
+              <li>Go to Sheet and dynamic Parameter actions</li>
+              <li>Creating compelling Storyboards &amp; multi-page narrative flows</li>
+              <li>Best practices for dashboard design, typography, white-space, and color theory</li>
+            </ul>
+            <ul class="course-features-list">
+              <li>Designing professional Cover Pages, KPI summary cards, and breadcrumbs</li>
+              <li>Adding Annotations, Dynamic Viz in Tooltips, and Keyboard shortcuts</li>
+              <li>Work sharing &amp; publishing to Tableau Server and Tableau Cloud (Online)</li>
+              <li>Securing permissions, managing user filters, and distributing via Tableau Reader</li>
+              <li>Automating scheduled workbook refresh and email subscriptions</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tools & Platform -->
+  <section class="why-us-section" id="tools" style="background-color: var(--clr-slate-100);">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tagline">VISUAL ANALYTICS SUITE</span>
+        <h2 class="section-title">Tableau BI Platform Mastered</h2>
+        <p class="section-subtitle">Master the complete Tableau platform for data prep, visual exploration, and cloud distribution.</p>
+      </div>
+
+      <div class="tools-grid">
+        <div class="tool-chip">📊 Tableau Desktop Professional</div>
+        <div class="tool-chip">🧹 Tableau Prep Builder</div>
+        <div class="tool-chip">☁️ Tableau Cloud / Online</div>
+        <div class="tool-chip">🌐 Tableau Public Portfolio</div>
+        <div class="tool-chip">📖 Tableau Reader</div>
+        <div class="tool-chip">⚡ Custom SQL Data Sources</div>
+        <div class="tool-chip">🧮 Level of Detail (LOD) Calculations</div>
+        <div class="tool-chip">📈 Executive KPI Storyboards</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Career Outcomes -->
+  <section class="why-us-section">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tagline" style="color: #c2410c; background: #ffedd5;">CAREER PATHWAYS</span>
+        <h2 class="section-title">High-Impact Visual BI Roles</h2>
+        <p class="section-subtitle">Tableau specialists are top-tier visual storytellers trusted by Fortune 500 decision-makers.</p>
+      </div>
+
+      <div class="career-grid">
+        <div class="career-card">
+          <h4>📊 Tableau Developer</h4>
+          <p>Design, build, and publish high-performance interactive dashboards, calculated fields, and executive KPI reporting tools.</p>
+        </div>
+        <div class="career-card">
+          <h4>💼 Business Intelligence Consultant</h4>
+          <p>Work with client stakeholders to structure raw enterprise data into intuitive visual analytics dashboards that drive strategy.</p>
+        </div>
+        <div class="career-card">
+          <h4>📈 Data Visualization Specialist</h4>
+          <p>Translate complex statistical and time-series patterns into compelling visual stories and interactive infographics.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lead Form Section -->
+  <section class="lead-section" id="enroll">
+    <div class="container">
+      <div class="lead-wrapper">
+        <div class="lead-info">
+          <h2>Enroll in Tableau BI Masterclass</h2>
+          <p>Gain hands-on experience building 12+ industry dashboards with real-world case studies and certification guidance.</p>
+          <ul class="lead-perks">
+            <li>✓ 12+ Complete Tableau Dashboard Project Files (.twbx)</li>
+            <li>✓ Retail, Healthcare &amp; Financial Industry Datasets</li>
+            <li>✓ Tableau Desktop Specialist Certification Exam Practice</li>
+            <li>✓ Public Portfolio Creation on Tableau Public</li>
+          </ul>
+        </div>
+
+        <div class="lead-form-box">
+          <form id="tableauPageMainForm">
+            <input type="hidden" name="course" value="tableau-bi">
+            <div class="form-group">
+              <label class="form-label">Full Name *</label>
+              <input type="text" name="name" class="form-control" placeholder="Enter Full Name" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Mobile Number *</label>
+              <input type="tel" name="phone" class="form-control" placeholder="Enter Mobile Number" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Preferred Training Batch</label>
+              <select name="time" class="form-control form-select">
+                <option value="Weekend Practical Batch">Weekend Practical Batch</option>
+                <option value="Weekday Live Online Batch">Weekday Live Online Batch</option>
+                <option value="Fast-Track Analytics Batch">Fast-Track Analytics Batch</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full"
+              style="background: linear-gradient(135deg, #ea580c 0%, #c2410c 100%); border: none;">
+              Reserve My Tableau Seat &rarr;
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="../Asset/LOGO.png" alt="SkillNext Logo" class="logo-img">
+          <p>Empowering students and professionals with practical, market-aligned skills in Data Visualization, Business Intelligence, and Analytics.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="Courses.html">All Courses</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="#overview">Course Overview</a></li>
+            <li><a href="#curriculum">Syllabus</a></li>
+            <li><a href="#enroll">Book Demo Class</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Other Programs</h4>
+          <ul class="footer-links">
+            <li><a href="PowerBi.html">Microsoft Power BI Masterclass</a></li>
+            <li><a href="SQL.html">Oracle SQL Database Mastery</a></li>
+            <li><a href="Python.html">Python for Data Analytics</a></li>
+            <li><a href="advance-excel.html">Advance Excel (Saturday Batch)</a></li>
+            <li><a href="cloud-computing.html">Cloud Computing (Sunday Batch)</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact &amp; Campus</h4>
+          <p style="margin-bottom: 0.5rem;">📍 4th Floor, Tech Hub Towers, Main Avenue Road.</p>
+          <p style="margin-bottom: 0.5rem;">📞 Helpline: +91 90045 47746</p>
+          <p>✉️ Email: admissions@apexskills.edu</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 SkillNXT. Tableau &amp; Visual Business Intelligence Course. All Rights Reserved.</p>
+        <div>
+          <a href="policy.html" style="margin-right: 1rem;">Privacy Policy</a>
+          <a href="policy.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Chat Icon -->
+  <a href="https://wa.me/919004547746?text=Hello%20SkillNXT!%20I%20want%20to%20know%20more%20about%20the%20Tableau%20Business%20Intelligence%20Course." target="_blank" class="floating-whatsapp" aria-label="Chat on WhatsApp">
+    <div class="whatsapp-tooltip">Chat with Counselor</div>
+    <svg fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+  </a>
+
+  <!-- Mobile Bottom Action Bar -->
+  <div class="mobile-bottom-bar">
+    <div class="mobile-bottom-bar-grid">
+      <a href="tel:+919004547746" class="btn btn-outline btn-sm">📞 Call Now</a>
+      <button onclick="scrollToSection('enroll')" class="btn btn-primary btn-sm" style="background: #ea580c;">Book Tableau Demo</button>
+    </div>
+  </div>
+
+  <script src="../js/main.js"></script>
+</body>
+
+</html>

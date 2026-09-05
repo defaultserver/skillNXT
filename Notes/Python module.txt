@@ -1,0 +1,181 @@
+Introduction to Python ₹5000
+• History of Python
+• Why to learn python
+• How is Python Different?
+• Installing Python
+
+Python Interpreter ₹5000
+• Using the interpreter
+• Integrated Development Environments (IDE) How to run Python programs?
+
+Basics of Python ₹5000
+• Variable
+• Keywords
+• Statements & Comments
+• Indentation
+• Data types
+• Static Typing vs Dynamic Typing
+• Input and output
+• Operators Arithmetic operator Relational Operator Assignment Operator
+• Logical operator Bitwise operator Membership Operator
+• Identity Operator
+
+Control Flow ₹5000
+• If statement
+• If - else
+• If – elif -else
+• Nested if-else
+• while loop
+• for – in loop
+• Nested for loop
+• Nester while loop
+• Loop with else
+• Pass statement
+• Break and continue
+
+Functions ₹5000
+• Basics Defining function
+• function call Return statement
+• Function with parameter and without parameter
+• Function parameters Call by value or call by reference local and global variable
+• Recursion, Anonymous (lambda) function
+• User define functions
+• Examples
+
+Modules ₹5000
+• Defining module
+• How to create a module
+• Importing module
+• Dir()
+• Module search path
+• Reloading a module
+• Sys module
+• Os 
+
+Package ₹5000
+• Defining package
+• How to create the package
+• Importing package
+• Installing third party packages
+
+Numeric Types ₹5000
+• Numeric type basics
+• Hexadecimal, Octal, and Binary Notation
+• Complex Numbers
+• Typecasting Numeric Functions
+• Random number generation (Using Random Modules)
+
+String ₹5000
+• Defining a string
+• Different ways to create string Accessing elements of the string
+• Escape sequence
+• Raw string String methods
+• String formatting Expressions
+
+List ₹5000
+• Defining a list
+• Creating list
+• Accessing list elements of list
+• Deleting list
+• List methods
+• Functions used with list
+• List comprehension
+• Implementation of stack and queue using list
+• Use of Zip ()
+• Matrix operations using list
+
+Tuple ₹5000
+• Defining a tuple
+• Creating a tuple
+• Accessing elements of the tuple
+• What is Immutability
+• List vs tuples
+• Tuple Methods Functions used with tuple
+• Advantage of Tuple
+
+Dictionary ₹5000
+• Defining a dictionary
+• Creating a dictionary
+• Accessing elements of the dictionary
+• Deleting a dictionary
+• Dictionary methods
+• Dictionary Comprehension
+
+Set ₹5000
+• Defining a set
+• Creating set
+• Set operations
+• Set methods
+• Set comprehension
+
+Files ₹5000
+• Defining a file
+• Types of file operations
+• Opening a File
+• Closing file
+• File modes
+• File attributes
+• Writing to file
+• Reading from file
+• Appending to file
+• File positions
+• Binary file
+• Pickle module
+
+Exception Handling ₹5000
+• Defining an exception?
+• Default exception handler
+• Exception handling techniques
+a. Detecting Exception (try)
+b. Catching exceptions (catch)
+c. Catching multiple exceptions
+d. Raising exception (raise) Finally block
+• User-defined exceptions
+
+Object-Oriented Programming ₹5000
+• OOPS concepts Defining
+• Class Creating object
+• Method vs function Calling methods
+• Instance attribute vs class attribute
+• Instance method vs class method
+• Private attribute and method Static Method
+• Method Overloading Constructor
+• Method Overriding Constructor
+• List of objects Inheritance
+• Examples
+
+Multi-Threading ₹5000
+• Process-based multitasking
+• Thread based multitasking
+• Creating a Thread without using class
+• Creating thread using class
+• Sleep() method
+• Join() method Getting and setting the name of the Thread Logging module
+• Synchronization
+• Lock concept
+• Object-Oriented
+• Inter thread communication
+
+GUI Programming with Tkinter₹5000
+• Introduction to Tkinter
+• Creating a window Tkinter widgets Label
+• Button Entry Message box List
+• Radio Button Check Button Creating Frame
+• Creating Menu Assignments on Tkinter
+• Examples
+
+Data Base Programming ₹5000
+• Introduction to MySQL. Connector module, Connecting to the database by using
+MySQL, Creating a table by MySQL
+• Performing SQL operations, Introduction to MySQL, Installing MySQL, Creating
+database using MySQL
+• Connecting MySQL database from python, Creating a table, Performing
+• SQL operations
+• Examples
+
+WEB SCRAPPING ₹5000
+• Web Scrapping (Pending Content) Web Scraping Using Requests And Beautifulsoup
+• Learn To Extract, Parse, And Structure Data From Websites Using python libraries
+
+Conversion of Python script to executable file ₹5000
+• Defining an executable file, Deploying the application

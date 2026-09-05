@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SAP FICO Master Certification Course | SkillNXT Academy</title>
+  <meta name="description"
+    content="Master SAP Financial Accounting (FI) and Controlling (CO). Comprehensive training on Enterprise Structure, G/L, AP, AR, Asset Accounting, GST & TDS Configuration, Cost Center & Profit Center Accounting.">
+  <meta name="keywords"
+    content="SAP FICO Course, SAP FI CO Training, SAP Financial Accounting, SAP Controlling, Asset Accounting, GST in SAP, Accounts Payable Receivable SAP, SAP S/4HANA">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <link rel="icon" type="image/png" href="../Asset/Fixcon%20(1).png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../Asset/Fixcon%20(1).png">
+  <link rel="canonical" href="https://defaultserver.github.io/skillNXT/pages/SapFico.html">
+  <meta property="og:title" content="SAP FICO Master Certification Course | SkillNXT">
+  <meta property="og:description"
+    content="End-to-End SAP FI & CO modules training with live enterprise server practicals, GST configuration, and real-world accounting scenarios.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://defaultserver.github.io/skillNXT/pages/SapFico.html">
+  <meta property="og:image" content="https://defaultserver.github.io/skillNXT/assets/og-image.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SAP FICO Master Certification Course | SkillNXT">
+  <meta name="twitter:description"
+    content="End-to-End SAP FI & CO modules training with live enterprise server practicals, GST configuration, and real-world accounting scenarios.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="../css/style.css">
+
+  <style>
+    .course-hero-indigo {
+      background: radial-gradient(120% 100% at 50% 0%, #0f172a 0%, #1e1b4b 60%, #312e81 100%);
+      color: #ffffff;
+      padding: 4rem 0 5rem;
+    }
+
+    .curriculum-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .module-box {
+      background: #ffffff;
+      border-radius: var(--radius-md);
+      padding: 1.75rem;
+      border: 1px solid var(--clr-border);
+      box-shadow: var(--shadow-sm);
+      transition: transform var(--transition-normal), box-shadow var(--transition-normal), border-color var(--transition-normal);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .module-box:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+      border-color: #4f46e5;
+    }
+
+    .module-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 1rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .module-box h4 {
+      color: #3730a3;
+      font-size: 1.15rem;
+      margin-bottom: 0;
+      line-height: 1.35;
+    }
+
+    .module-price {
+      background: #e0e7ff;
+      color: #3730a3;
+      font-weight: 700;
+      padding: 0.25rem 0.75rem;
+      border-radius: var(--radius-full);
+      font-size: 0.9rem;
+      white-space: nowrap;
+      border: 1px solid rgba(79, 70, 229, 0.2);
+    }
+
+    .tools-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.25rem;
+      margin-top: 2rem;
+    }
+
+    .tool-chip {
+      background: #ffffff;
+      border: 1px solid var(--clr-border);
+      border-radius: var(--radius-md);
+      padding: 1.1rem 1rem;
+      text-align: center;
+      font-weight: 700;
+      color: var(--clr-navy-900);
+      box-shadow: var(--shadow-sm);
+      transition: transform var(--transition-normal), border-color var(--transition-normal);
+    }
+
+    .tool-chip:hover {
+      transform: translateY(-3px);
+      border-color: #4f46e5;
+    }
+
+    .career-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .career-card {
+      background: #ffffff;
+      padding: 1.75rem;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--clr-border);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .career-card h4 {
+      color: var(--clr-navy-900);
+      margin-bottom: 0.5rem;
+      font-size: 1.1rem;
+    }
+
+    .career-card p {
+      color: var(--clr-slate-600);
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 900px) {
+      .curriculum-grid {
+        grid-template-columns: 1fr;
+      }
+      .tools-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .career-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar" style="background: linear-gradient(90deg, #1e1b4b 0%, #0f172a 100%);">
+    <div class="container top-bar-content">
+      <div>
+        <span class="top-bar-badge" style="background: #6366f1; color: #ffffff;">SAP ERP CERTIFIED</span>
+        🏢 Complete SAP FI (Financial Accounting) &amp; CO (Controlling) Enterprise Implementation Curriculum.
+      </div>
+      <div class="top-bar-contact">
+        <a href="tel:+919004547746" class="top-bar-link">📞 +91 90045 47746</a>
+        <a href="../index.html" class="top-bar-link">&larr; Back to Home</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="../index.html" class="brand-logo">
+        <img src="../Asset/LOGO.png" alt="SkillNext Logo" class="logo-img">
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html" class="nav-link">Home</a></li>
+        <li><a href="Courses.html" class="nav-link active">Courses</a></li>
+        <li><a href="Gallery.html" class="nav-link">Gallery</a></li>
+        <li><a href="policy.html" class="nav-link">Policy</a></li>
+        <li><a href="about-us.html" class="nav-link">About us</a></li>
+      </ul>
+      <div class="nav-cta-group">
+        <a href="tel:+919004547746" class="btn btn-outline btn-sm">Call Direct</a>
+        <button onclick="scrollToSection('enroll')" class="btn btn-primary btn-sm" style="background: #4f46e5;">Book SAP Demo</button>
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle Menu">
+          <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Course Hero -->
+  <section class="course-hero-indigo" id="overview">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge"
+          style="background: rgba(99, 102, 241, 0.2); border-color: rgba(99, 102, 241, 0.4); color: #a5b4fc;">
+          ⚡ ENTERPRISE FINANCIAL ACCOUNTING &amp; CONTROLLING
+        </div>
+        <h1 class="hero-title">
+          SAP FICO &amp; <span class="gradient-text"
+            style="background: linear-gradient(135deg, #a5b4fc 0%, #38bdf8 100%); -webkit-background-clip: text;">Enterprise Finance</span>
+        </h1>
+        <p class="hero-subtitle">
+          Master end-to-end Financial Accounting (FI) and Controlling (CO) in SAP ERP. Learn Enterprise Structure setup, General Ledger, Accounts Payable, Accounts Receivable, Asset Accounting, GST &amp; TDS compliance, Cost Center, and Profit Center Accounting.
+        </p>
+
+        <div
+          style="display: flex; flex-wrap: wrap; gap: 1.5rem; margin-top: 1.5rem; color: #cbd5e1; font-size: 0.95rem;">
+          <div>⏱ <strong>Duration:</strong> 3.5 Months</div>
+          <div>🗓 <strong>Batches:</strong> Weekend &amp; Weekday Evening Batches</div>
+          <div>📜 <strong>Certificate:</strong> SAP FICO Power User &amp; Consultant Diploma</div>
+          <div>💻 <strong>Server:</strong> Live SAP S/4HANA &amp; ECC 6.0 Access</div>
+        </div>
+
+        <div class="hero-cta-box" style="margin-top: 2rem;">
+          <button onclick="scrollToSection('enroll')" class="btn btn-primary"
+            style="background: linear-gradient(135deg, #4f46e5 0%, #3730a3 100%); border: none;">
+            Enroll in SAP FICO &rarr;
+          </button>
+          <a href="https://wa.me/919004547746?text=I%20want%20details%20for%20SAP%20FICO%20Course"
+            target="_blank" class="btn btn-outline" style="color: #ffffff; border-color: #a5b4fc;">
+            💬 WhatsApp Counselor
+          </a>
+        </div>
+      </div>
+
+      <!-- Lead Form Card -->
+      <div class="hero-form-card">
+        <div class="hero-form-header">
+          <h3>Book SAP FICO Demo Class</h3>
+          <p>Get Live SAP Server Access &amp; Configuration Blueprint</p>
+        </div>
+        <form id="sapficoPageForm">
+          <input type="hidden" name="course" value="sap-fico">
+          <div class="form-group">
+            <label class="form-label">Full Name *</label>
+            <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Mobile / WhatsApp Number *</label>
+            <input type="tel" name="phone" class="form-control" placeholder="10-digit mobile number" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Background / Current Role *</label>
+            <select name="time" class="form-control form-select">
+              <option value="Accountant / Finance Professional">Accountant / Finance Professional</option>
+              <option value="B.Com / M.Com / MBA Finance Graduate">B.Com / M.Com / MBA Finance Graduate</option>
+              <option value="CA / ICWA / CMA Inter & Final">CA / ICWA / CMA Inter &amp; Final</option>
+              <option value="ERP / IT Consultant Aspirant">ERP / IT Consultant Aspirant</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full"
+            style="background: linear-gradient(135deg, #4f46e5 0%, #3730a3 100%); border: none;">
+            Book Free SAP Demo Class &rarr;
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Detailed Curriculum Section -->
+  <section class="why-us-section" id="curriculum">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tagline" style="color: #4f46e5; background: #e0e7ff;">END-TO-END ERP ROADMAP</span>
+        <h2 class="section-title">Complete SAP FICO Curriculum</h2>
+        <p class="section-subtitle">A comprehensive breakdown of enterprise configuration, business transactions, taxation, and controlling modules.</p>
+      </div>
+
+      <div class="curriculum-grid">
+        <!-- 1 -->
+        <div class="module-box">
+          <div class="module-header">
+            <h4>1. Enterprise Structure Configuration</h4>
+            <span class="module-price">₹2,000</span>
+          </div>
+          <ul class="course-features-list">
+            <li>Introduction to SAP ERP Architecture and Client concepts</li>
+            <li>Define Company (Group entity) &amp; Define Company Code</li>
+            <li>Define Business Area for branch-level reporting</li>
+            <li>Assign Company Code to Company entity</li>
+            <li>Understanding Customizing T-Codes (SPRO) &amp; IMG Reference Menu</li>
+          </ul>
+        </div>
+
+        <!-- 2 -->
+        <div class="module-box">
+          <div class="module-header">
+            <h4>2. Financial Accounting Global Settings</h4>
+            <span class="module-price">₹2,000</span>
+          </div>
+          <ul class="course-features-list">
+            <li>Enter Global Parameters for Company Code</li>
+            <li>Set Company Code to Productive status</li>
+            <li>Enable Business Area Balance Sheet preparation</li>
+            <li>Check Display Authorization for Business Area transactions</li>
+          </ul>
+        </div>
+
+        <!-- 3 -->
+        <div class="module-box">
+          <div class="module-header">
+            <h4>3. Fiscal Year Variants</h4>
+            <span class="module-price">₹2,000</span>
+          </div>
+          <ul class="course-features-list">
+            <li>Maintain Fiscal Year Variant (Year-dependent vs Non-year dependent)</li>
+            <li>Maintain Shortened Fiscal Year configurations</li>
+            <li>Assign Company Code to a Fiscal Year Variant (V3 / K4 / Special Periods)</li>
+            <li>Special posting periods for year-end audit adjustments</li>
+          </ul>
+        </div>
+
+        <!-- 4 -->
+        <div class="module-box">
+          <div class="module-header">
+            <h4>4. Posting Periods &amp; Number Ranges</h4>
+            <span class="module-price">₹2,000</span>
+          </div>
+          <ul class="course-features-list">
+            <li>Define Variants for Open Posting Periods</li>
+            <li>Open and Close Posting Periods (T-Code: OB52)</li>
+            <li>Assign Posting Period Variants to Company Code</li>
+            <li>Define Document Number Ranges (FBN1)</li>
+            <li>Copy Document Number Ranges to Company Code &amp; Fiscal Year</li>
+          </ul>
+        </div>
+
+        <!-- 5 -->
+        <div class="module-box">
+          <div class="module-header">
+            <h4>5. Document Types, Posting Keys &amp; Tolerance</h4>
+            <span class="module-price">₹2,000</span>
+          </div>
+          <ul class="course-features-list">
+            <li>Define Document Types (SA, KR, KZ, DR, DZ, etc.) &amp; Number Ranges</li>
+            <li>Functions of Posting Keys (Debit: 40/01/25/31, Credit: 50/15/21/31)</li>
+            <li>Maintain Field Status Variants &amp; Field Status Groups (OBC4)</li>
+            <li>Assign Company Code to Field Status Variants</li>
+            <li>Define &amp; Assign Tolerance Groups for Employees (OBA4)</li>
+          </ul>
+        </div>
+
+        <!-- 6 -->
+        <div class="module-box">
+          <div class="module-header">
+            <h4>6. General Ledger (G/L) Accounting</h4>
+            <span class="module-price">₹2,000</span>
+          </div>
+          <ul class="course-features-list">
+            <li>Define Chart of Accounts (COA) &amp; Assign to Company Code</li>
+            <li>Define Account Groups &amp; Number Ranges for General Ledger</li>
+            <li>Define Retained Earnings Account (OB53)</li>
+            <li>Creation of General Ledger Accounts (FS00, FSP0, FSS0)</li>
+            <li>Parking (FBV1), Holding, Sample Documents, Recurring &amp; Reversal Entries</li>
+            <li>Financial Statement Version (FSV) creation &amp; Balance Sheet reports</li>
+          </ul>
+        </div>
+
+        <!-- 7 -->
+        <div class="module-box">
+          <div class="module-header">
+            <h4>7. Accounts Payable (AP)</h4>
+            <span class="module-price">₹2,000</span>
+          </div>
+          <ul class="course-features-list">
+            <li>Creation of Vendor Account Groups and Number Ranges (OBD3)</li>
+            <li>Creation and Maintenance of Vendor Master Data (XK01 / BP in S/4HANA)</li>
+            <li>Posting Vendor Invoices (FB60) &amp; Credit Memos (FB65)</li>
+            <li>Vendor Down Payment Request &amp; Down Payment Posting (F-48)</li>
+            <li>Manual Outgoing Payments (F-53) &amp; Special G/L Transactions</li>
+            <li>Automatic Payment Program configuration &amp; execution (APP - F110)</li>
+            <li>Vendor Aging Analysis &amp; Line Item Reports (FBL1N)</li>
+          </ul>
+        </div>
+
+        <!-- 8 -->
+        <div class="module-box">
+          <div class="module-header">
+            <h4>8. Accounts Receivable (AR)</h4>
+            <span class="module-price">₹2,000</span>
+          </div>
+          <ul class="course-features-list">
+            <li>Creation of Customer Account Groups and Number Ranges (OBD2)</li>
+            <li>Customer Master Data creation (XD01 / BP)</li>
+            <li>Customer Invoice Posting (FB70) &amp; Credit Memos (FB75)</li>
+            <li>Customer Down Payments (F-29) &amp; Incoming Payments (F-28)</li>
+            <li>Special G/L Transactions &amp; Bill of Exchange handling</li>
+            <li>Customer Dunning Procedure Configuration (FBMP) &amp; Notices</li>
+            <li>Customer Balances &amp; Line Item Reports (FBL5N)</li>
+          </ul>
+        </div>
+
+        <!-- 9 -->
+        <div class="module-box">
+          <div class="module-header">
+            <h4>9. House Banks &amp; Bank Reconciliation</h4>
+            <span class="module-price">₹2,000</span>
+          </div>
+          <ul class="course-features-list">
+            <li>Define Bank Keys (FI01) &amp; House Banks with Account IDs (FI12)</li>
+            <li>Assign G/L Accounts to House Bank Accounts</li>
+            <li>Define Check Lots (FCHI) &amp; Display Check Register (FCHN)</li>
+            <li>Renumbering, Reprinting, and Voiding Checks (FCH8 / FCH9)</li>
+            <li>Manual Bank Reconciliation Statement (BRS - FF67)</li>
+            <li>Electronic Bank Statement (EBS) automated posting concepts</li>
+          </ul>
+        </div>
+
+        <!-- 10 -->
+        <div class="module-box">
+          <div class="module-header">
+            <h4>10. Asset Accounting (AA)</h4>
+            <span class="module-price">₹2,000</span>
+          </div>
+          <ul class="course-features-list">
+            <li>Define Chart of Depreciation &amp; Depreciation Areas (Book, Tax, Cost)</li>
+            <li>Define Asset Classes including Assets Under Construction (AUC)</li>
+            <li>Group Assets configuration as per Indian Income Tax Act</li>
+            <li>Account Determination &amp; Integration with G/L Accounts (AO90)</li>
+            <li>Depreciation Keys, Multi-shift depreciation &amp; Useful Life setup</li>
+            <li>Asset Transactions: Acquisition (F-90), Retirement (ABAON), Transfers</li>
+            <li>Depreciation Run execution (AFAB) &amp; Asset Explorer (AW01N)</li>
+          </ul>
+        </div>
+
+        <!-- 11 -->
+        <div class="module-box">
+          <div class="module-header">
+            <h4>11. Extended Withholding Tax (TDS)</h4>
+            <span class="module-price">₹2,000</span>
+          </div>
+          <ul class="course-features-list">
+            <li>Comparison between Classical &amp; Extended Withholding Tax</li>
+            <li>Activate Extended Withholding Tax for Company Code</li>
+            <li>Define Official Withholding Tax Keys &amp; Section Codes (194C, 194J, 194I)</li>
+            <li>Define Tax Types for Invoice Posting &amp; Payment Posting</li>
+            <li>Define Withholding Tax Codes, Threshold limits, and G/L Account assignments</li>
+            <li>Certificate Numbering for TDS &amp; Maintenance of PAN in Vendor Master</li>
+          </ul>
+        </div>
+
+        <!-- 12 -->
+        <div class="module-box">
+          <div class="module-header">
+            <h4>12. GST Configuration in SAP</h4>
+            <span class="module-price">₹2,000</span>
+          </div>
+          <ul class="course-features-list">
+            <li>GST Tax Calculation Procedure configuration (TAXINN / TAXINJ)</li>
+            <li>Assign Country to GST Tax Calculation Procedure</li>
+            <li>Define Access Sequences &amp; Condition Types (CGST, SGST, IGST, RCM)</li>
+            <li>Define Account Keys in SAP for Input and Output GST</li>
+            <li>Complete Step-by-Step Implementation of GST in SAP with Invoicing</li>
+          </ul>
+        </div>
+
+        <!-- 13 -->
+        <div class="module-box">
+          <div class="module-header">
+            <h4>13. Foreign Currency &amp; Taxation</h4>
+            <span class="module-price">₹2,000</span>
+          </div>
+          <ul class="course-features-list">
+            <li>Foreign Currency valuation, Exchange Rate Types (OB08) &amp; Gain/Loss G/Ls</li>
+            <li>Purchase &amp; Sales Tax configuration</li>
+            <li>Creation of Tax Codes for Sales Tax and Purchase Tax (FTXP)</li>
+            <li>Interest Calculation configuration and automatic interest postings</li>
+          </ul>
+        </div>
+
+        <!-- 14 -->
+        <div class="module-box">
+          <div class="module-header">
+            <h4>14. Controlling Enterprise Structure</h4>
+            <span class="module-price">₹2,000</span>
+          </div>
+          <ul class="course-features-list">
+            <li>Define and maintain Controlling Area (CO Area)</li>
+            <li>Create Operating Concern for Profitability Analysis</li>
+            <li>Assign Company Code to Controlling Area (1:1 vs 1:Many relationship)</li>
+            <li>Assign Controlling Area to Operating Concern</li>
+            <li>Maintain Number Ranges for Controlling Documents &amp; Maintain Versions</li>
+          </ul>
+        </div>
+
+        <!-- 15 -->
+        <div class="module-box">
+          <div class="module-header">
+            <h4>15. Cost Element Accounting</h4>
+            <span class="module-price">₹2,000</span>
+          </div>
+          <ul class="course-features-list">
+            <li>Primary Cost Elements vs Secondary Cost Elements</li>
+            <li>Automatic and Manual creation of Primary &amp; Secondary Cost Elements</li>
+            <li>Creation of Cost Element Groups for structured reporting</li>
+            <li>Manual Reposting of Costs (KB11N) &amp; Revenues (KB41N)</li>
+          </ul>
+        </div>
+
+        <!-- 16 -->
+        <div class="module-box">
+          <div class="module-header">
+            <h4>16. Activity Allocation &amp; Period Locking</h4>
+            <span class="module-price">₹2,000</span>
+          </div>
+          <ul class="course-features-list">
+            <li>Reposting Line Items (KB61) &amp; Direct Activity Allocation (KB21N)</li>
+            <li>Activity Allocation Reposting &amp; Cost Flow Verification</li>
+            <li>Period Locking for Controlling Transactions (OKP1)</li>
+            <li>Generating Cost Element Accounting audit reports</li>
+          </ul>
+        </div>
+
+        <!-- 17 -->
+        <div class="module-box">
+          <div class="module-header">
+            <h4>17. Cost Center Accounting (CCA)</h4>
+            <span class="module-price">₹2,000</span>
+          </div>
+          <ul class="course-features-list">
+            <li>Activate Cost Center Accounting in Controlling Area</li>
+            <li>Define Standard Hierarchy &amp; Cost Center Categories</li>
+            <li>Define Cost Centers (KS01) and Cost Center Groups (KSH1)</li>
+            <li>Define Activity Types (KL01) &amp; Activity Type Groups</li>
+            <li>Maintain Statistical Key Figures (SKF - KK01) for overhead drivers</li>
+            <li>Cost Center Allocation: Assessment Cycles (KSU5) &amp; Distribution Cycles (KSV5)</li>
+          </ul>
+        </div>
+
+        <!-- 18 -->
+        <div class="module-box">
+          <div class="module-header">
+            <h4>18. Profit Center Accounting (PCA)</h4>
+            <span class="module-price">₹2,000</span>
+          </div>
+          <ul class="course-features-list">
+            <li>Activate Profit Center Accounting in Controlling Area (0KE5)</li>
+            <li>Maintain Profit Center Standard Hierarchy (KCH1)</li>
+            <li>Create Dummy Profit Center &amp; Profit Centers (KE51)</li>
+            <li>Profit Center Assignment to Cost Centers, Materials &amp; Orders</li>
+            <li>Profit Center Assessment / Distribution Cycles</li>
+            <li>Generating PCA Balance Sheet &amp; Profit &amp; Loss Statements (KE5Z)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tools Stack -->
+  <section class="why-us-section" id="tools" style="background-color: var(--clr-slate-100);">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tagline">ERP TOOLCHAIN</span>
+        <h2 class="section-title">SAP FICO Environments Mastered</h2>
+        <p class="section-subtitle">Real-world configuration and transactional mastery on enterprise SAP platforms.</p>
+      </div>
+
+      <div class="tools-grid">
+        <div class="tool-chip">🏢 SAP S/4HANA Finance</div>
+        <div class="tool-chip">💻 SAP GUI &amp; SPRO Menu</div>
+        <div class="tool-chip">📱 SAP Fiori Launchpad Apps</div>
+        <div class="tool-chip">🧾 GST &amp; TDS Tax Engines</div>
+        <div class="tool-chip">💳 Automatic Payment (F110)</div>
+        <div class="tool-chip">🏦 Electronic Bank BRS</div>
+        <div class="tool-chip">📊 Asset Explorer (AW01N)</div>
+        <div class="tool-chip">📈 Controlling CO &amp; PCA</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Career Outcomes -->
+  <section class="why-us-section">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tagline" style="color: #4f46e5; background: #e0e7ff;">CAREER EXCELLENCE</span>
+        <h2 class="section-title">High-Growth ERP Roles</h2>
+        <p class="section-subtitle">SAP FICO certified consultants are among the highest-paid corporate financial specialists globally.</p>
+      </div>
+
+      <div class="career-grid">
+        <div class="career-card">
+          <h4>🏢 SAP FICO Functional Consultant</h4>
+          <p>Configure corporate financial hierarchies, chart of accounts, taxation, and lead ERP migration projects for MNCs.</p>
+        </div>
+        <div class="career-card">
+          <h4>💼 SAP Power User / Lead Accountant</h4>
+          <p>Manage daily transactional entries, vendor/customer ledgers, monthly closing cycles, and automated bank reconciliations.</p>
+        </div>
+        <div class="career-card">
+          <h4>📊 Financial Controlling Analyst</h4>
+          <p>Design overhead allocation cycles, product costing analysis, cost center planning, and profit center profitability reports.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lead Form Section -->
+  <section class="lead-section" id="enroll">
+    <div class="container">
+      <div class="lead-wrapper">
+        <div class="lead-info">
+          <h2>Enroll in SAP FICO Masterclass</h2>
+          <p>Get dedicated SAP GUI server access, configuration guides for GST/TDS, and end-to-end implementation project practice.</p>
+          <ul class="lead-perks">
+            <li>✓ 24/7 Live SAP Server Practice Access Included</li>
+            <li>✓ 100+ T-Code Cheat Sheet &amp; SPRO Configuration Blueprint</li>
+            <li>✓ Complete End-to-End Company Implementation Project</li>
+            <li>✓ Mock Interviews &amp; Resume Crafting for ERP Jobs</li>
+          </ul>
+        </div>
+
+        <div class="lead-form-box">
+          <form id="sapficoPageMainForm">
+            <input type="hidden" name="course" value="sap-fico">
+            <div class="form-group">
+              <label class="form-label">Full Name *</label>
+              <input type="text" name="name" class="form-control" placeholder="Enter Full Name" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Mobile Number *</label>
+              <input type="tel" name="phone" class="form-control" placeholder="Enter Mobile Number" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Preferred Training Batch</label>
+              <select name="time" class="form-control form-select">
+                <option value="Weekend Special Batch (Sat & Sun)">Weekend Special Batch (Sat &amp; Sun)</option>
+                <option value="Weekday Evening Live Batch">Weekday Evening Live Batch (7 PM - 9 PM)</option>
+                <option value="Fast-Track SAP Consultant Batch">Fast-Track SAP Consultant Batch</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full"
+              style="background: linear-gradient(135deg, #4f46e5 0%, #3730a3 100%); border: none;">
+              Reserve My SAP FICO Seat &rarr;
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="../Asset/LOGO.png" alt="SkillNext Logo" class="logo-img">
+          <p>Empowering students and professionals with practical, market-aligned skills in ERP Systems, Financial Technologies, and Data Analytics.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="Courses.html">All Courses</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="#overview">Course Overview</a></li>
+            <li><a href="#curriculum">Syllabus</a></li>
+            <li><a href="#enroll">Book Demo Class</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Other Programs</h4>
+          <ul class="footer-links">
+            <li><a href="NismSeries5A.html">NISM Series 5A Mutual Funds</a></li>
+            <li><a href="PowerBi.html">Microsoft Power BI Masterclass</a></li>
+            <li><a href="SQL.html">Oracle SQL Database Mastery</a></li>
+            <li><a href="advance-excel.html">Advance Excel (Saturday Batch)</a></li>
+            <li><a href="cloud-computing.html">Cloud Computing (Sunday Batch)</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact &amp; Campus</h4>
+          <p style="margin-bottom: 0.5rem;">📍 4th Floor, Tech Hub Towers, Main Avenue Road.</p>
+          <p style="margin-bottom: 0.5rem;">📞 Helpline: +91 90045 47746</p>
+          <p>✉️ Email: admissions@apexskills.edu</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 SkillNXT. SAP FICO Financial Accounting &amp; Controlling Course. All Rights Reserved.</p>
+        <div>
+          <a href="policy.html" style="margin-right: 1rem;">Privacy Policy</a>
+          <a href="policy.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Chat Icon -->
+  <a href="https://wa.me/919004547746?text=Hello%20SkillNXT!%20I%20want%20to%20know%20more%20about%20the%20SAP%20FICO%20Master%20Course." target="_blank" class="floating-whatsapp" aria-label="Chat on WhatsApp">
+    <div class="whatsapp-tooltip">Chat with Counselor</div>
+    <svg fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+  </a>
+
+  <!-- Mobile Bottom Action Bar -->
+  <div class="mobile-bottom-bar">
+    <div class="mobile-bottom-bar-grid">
+      <a href="tel:+919004547746" class="btn btn-outline btn-sm">📞 Call Now</a>
+      <button onclick="scrollToSection('enroll')" class="btn btn-primary btn-sm" style="background: #4f46e5;">Book SAP Demo</button>
+    </div>
+  </div>
+
+  <script src="../js/main.js"></script>
+</body>
+
+</html>

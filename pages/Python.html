@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Python for Data Analytics, Automation & OOPs | SkillNXT Academy</title>
+  <meta name="description"
+    content="Master Python 3 from basics to advanced OOPs, Multithreading, Tkinter GUI, MySQL Database integration, Web Scraping (BeautifulSoup), and Executable packaging. 100% Practical Training.">
+  <meta name="keywords"
+    content="Python Course, Python for Data Analytics, Python OOPs, Web Scraping BeautifulSoup, Tkinter GUI, Python MySQL, Python Automation Institute">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <link rel="icon" type="image/png" href="../Asset/Fixcon%20(1).png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../Asset/Fixcon%20(1).png">
+  <link rel="canonical" href="https://defaultserver.github.io/skillNXT/pages/Python.html">
+  <meta property="og:title" content="Python Programming &amp; Data Automation Masterclass | SkillNXT">
+  <meta property="og:description"
+    content="Learn Python fundamentals, data structures, OOPs, GUI development, Web Scraping, MySQL connectivity, and script automation.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://defaultserver.github.io/skillNXT/pages/Python.html">
+  <meta property="og:image" content="https://defaultserver.github.io/skillNXT/assets/og-image.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Python Programming &amp; Data Automation Masterclass | SkillNXT">
+  <meta name="twitter:description"
+    content="Learn Python fundamentals, data structures, OOPs, GUI development, Web Scraping, MySQL connectivity, and script automation.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="../css/style.css">
+
+  <style>
+    .course-hero-blue {
+      background: radial-gradient(120% 100% at 50% 0%, #0f172a 0%, #1e3a8a 70%, #172554 100%);
+      color: #ffffff;
+      padding: 4rem 0 5rem;
+    }
+
+    .curriculum-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .module-box {
+      background: #ffffff;
+      border-radius: var(--radius-md);
+      padding: 1.75rem;
+      border: 1px solid var(--clr-border);
+      box-shadow: var(--shadow-sm);
+      transition: transform var(--transition-normal), box-shadow var(--transition-normal), border-color var(--transition-normal);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .module-box:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+      border-color: #2563eb;
+    }
+
+    .module-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 1rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .module-box h4 {
+      color: #1d4ed8;
+      font-size: 1.15rem;
+      margin-bottom: 0;
+      line-height: 1.35;
+    }
+
+    .module-price {
+      background: #dbeafe;
+      color: #1d4ed8;
+      font-weight: 700;
+      padding: 0.25rem 0.75rem;
+      border-radius: var(--radius-full);
+      font-size: 0.9rem;
+      white-space: nowrap;
+      border: 1px solid rgba(37, 99, 235, 0.2);
+    }
+
+    .tools-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.25rem;
+      margin-top: 2rem;
+    }
+
+    .tool-chip {
+      background: #ffffff;
+      border: 1px solid var(--clr-border);
+      border-radius: var(--radius-md);
+      padding: 1.1rem 1rem;
+      text-align: center;
+      font-weight: 700;
+      color: var(--clr-navy-900);
+      box-shadow: var(--shadow-sm);
+      transition: transform var(--transition-normal), border-color var(--transition-normal);
+    }
+
+    .tool-chip:hover {
+      transform: translateY(-3px);
+      border-color: #2563eb;
+    }
+
+    .career-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .career-card {
+      background: #ffffff;
+      padding: 1.75rem;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--clr-border);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .career-card h4 {
+      color: var(--clr-navy-900);
+      margin-bottom: 0.5rem;
+      font-size: 1.1rem;
+    }
+
+    .career-card p {
+      color: var(--clr-slate-600);
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 900px) {
+      .curriculum-grid {
+        grid-template-columns: 1fr;
+      }
+      .tools-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .career-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar" style="background: linear-gradient(90deg, #172554 0%, #0f172a 100%);">
+    <div class="container top-bar-content">
+      <div>
+        <span class="top-bar-badge" style="background: #38bdf8; color: #0f172a;">PYTHON INDUSTRY BOOTCAMP</span>
+        🐍 Master Python 3, Object-Oriented Architecture, Web Scraping, GUI &amp; Data Automation.
+      </div>
+      <div class="top-bar-contact">
+        <a href="tel:+919004547746" class="top-bar-link">📞 +91 90045 47746</a>
+        <a href="../index.html" class="top-bar-link">&larr; Back to Home</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="../index.html" class="brand-logo">
+        <img src="../Asset/LOGO.png" alt="SkillNext Logo" class="logo-img">
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html" class="nav-link">Home</a></li>
+        <li><a href="Courses.html" class="nav-link active">Courses</a></li>
+        <li><a href="Gallery.html" class="nav-link">Gallery</a></li>
+        <li><a href="policy.html" class="nav-link">Policy</a></li>
+        <li><a href="about-us.html" class="nav-link">About us</a></li>
+      </ul>
+      <div class="nav-cta-group">
+        <a href="tel:+919004547746" class="btn btn-outline btn-sm">Call Direct</a>
+        <button onclick="scrollToSection('enroll')" class="btn btn-primary btn-sm" style="background: #2563eb;">Book Python Demo</button>
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle Menu">
+          <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Course Hero -->
+  <section class="course-hero-blue" id="overview">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge"
+          style="background: rgba(56, 189, 248, 0.2); border-color: rgba(56, 189, 248, 0.4); color: #7dd3fc;">
+          ⚡ ZERO-TO-HERO INDUSTRY PYTHON CERTIFICATION
+        </div>
+        <h1 class="hero-title">
+          Python for Data <span class="gradient-text"
+            style="background: linear-gradient(135deg, #38bdf8 0%, #a855f7 100%); -webkit-background-clip: text;">Automation &amp; OOPs</span>
+        </h1>
+        <p class="hero-subtitle">
+          Go from absolute fundamentals to building real-world automation scripts, multi-threaded applications, desktop GUIs with Tkinter, web scrapers with BeautifulSoup, and MySQL-powered backends.
+        </p>
+
+        <div
+          style="display: flex; flex-wrap: wrap; gap: 1.5rem; margin-top: 1.5rem; color: #cbd5e1; font-size: 0.95rem;">
+          <div>⏱ <strong>Duration:</strong> 2.5 Months</div>
+          <div>🗓 <strong>Batches:</strong> Weekdays &amp; Weekend Batches</div>
+          <div>📜 <strong>Certificate:</strong> Python Application &amp; Data Engineer Diploma</div>
+          <div>💻 <strong>Tools:</strong> Python 3.12, VS Code, Jupyter, MySQL</div>
+        </div>
+
+        <div class="hero-cta-box" style="margin-top: 2rem;">
+          <button onclick="scrollToSection('enroll')" class="btn btn-primary"
+            style="background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%); border: none;">
+            Enroll in Python Course &rarr;
+          </button>
+          <a href="https://wa.me/919004547746?text=I%20want%20details%20for%20Python%20Programming%20and%20Automation%20Course"
+            target="_blank" class="btn btn-outline" style="color: #ffffff; border-color: #38bdf8;">
+            💬 WhatsApp Counselor
+          </a>
+        </div>
+      </div>
+
+      <!-- Lead Form Card -->
+      <div class="hero-form-card">
+        <div class="hero-form-header">
+          <h3>Book Python Demo Seat</h3>
+          <p>Get 50+ Python Code Templates &amp; Project Repository</p>
+        </div>
+        <form id="pythonPageForm">
+          <input type="hidden" name="course" value="python-analytics">
+          <div class="form-group">
+            <label class="form-label">Full Name *</label>
+            <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Mobile / WhatsApp Number *</label>
+            <input type="tel" name="phone" class="form-control" placeholder="10-digit mobile number" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Coding Experience *</label>
+            <select name="time" class="form-control form-select">
+              <option value="Absolute Beginner (No prior coding)">Absolute Beginner (No prior coding)</option>
+              <option value="Basic Knowledge of C/C++ or Java">Basic Knowledge of C/C++ or Java</option>
+              <option value="Excel User transitioning to Python">Excel User transitioning to Python</option>
+              <option value="Working Professional / IT Aspirant">Working Professional / IT Aspirant</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full"
+            style="background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%); border: none;">
+            Book Free Python Demo Class &rarr;
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Detailed Curriculum Section -->
+  <section class="why-us-section" id="curriculum">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tagline" style="color: #1d4ed8; background: #dbeafe;">21 MODULAR UNITS</span>
+        <h2 class="section-title">Complete Python Practical Curriculum</h2>
+        <p class="section-subtitle">Structured from core language syntax to advanced Object-Oriented software engineering and data workflows.</p>
+      </div>
+
+      <div class="curriculum-grid">
+        <!-- 1 -->
+        <div class="module-box">
+          <div class="module-header">
+            <h4>1. Introduction to Python</h4>
+            <span class="module-price">₹5,000</span>
+          </div>
+          <ul class="course-features-list">
+            <li>History and design philosophy of Python</li>
+            <li>Why learn Python &amp; industry ecosystem applications</li>
+            <li>How is Python different from compiled languages (C, C++, Java)</li>
+            <li>Installing Python 3.x and setting up environment variables (PATH)</li>
+          </ul>
+        </div>
+
+        <!-- 2 -->
+        <div class="module-box">
+          <div class="module-header">
+            <h4>2. Python Interpreter &amp; IDE Setup</h4>
+            <span class="module-price">₹5,000</span>
+          </div>
+          <ul class="course-features-list">
+            <li>Using the interactive Python REPL interpreter</li>
+            <li>Integrated Development Environments (IDEs): VS Code, PyCharm, Jupyter</li>
+            <li>Writing, saving, running, and debugging Python scripts</li>
+            <li>Configuring virtual environments and terminal execution</li>
+          </ul>
+        </div>
+
+        <!-- 3 -->
+        <div class="module-box">
+          <div class="module-header">
+            <h4>3. Python Basics, Syntax &amp; Operators</h4>
+            <span class="module-price">₹5,000</span>
+          </div>
+          <ul class="course-features-list">
+            <li>Variables, Keywords, Statements, and Single/Multi-line comments</li>
+            <li>Python indentation rules and code blocks</li>
+            <li>Primitive data types: int, float, bool, str, None</li>
+            <li>Static Typing vs Dynamic Typing in Python</li>
+            <li>Console I/O with input() and print() formatting</li>
+            <li>Operators: Arithmetic, Relational, Assignment, Logical, Bitwise, Membership (in/not in), Identity (is/is not)</li>
+          </ul>
+        </div>
+
+        <!-- 4 -->
+        <div class="module-box">
+          <div class="module-header">
+            <h4>4. Control Flow &amp; Iteration</h4>
+            <span class="module-price">₹5,000</span>
+          </div>
+          <ul class="course-features-list">
+            <li>Decision making: if statement, if-else, if-elif-else ladder</li>
+            <li>Nested conditional statements and ternary operators</li>
+            <li>while loops and for-in iteration over sequences</li>
+            <li>Nested loops and matrix traversals</li>
+            <li>Loop control statements: break, continue, and pass</li>
+            <li>Python-specific for-else and while-else constructs</li>
+          </ul>
+        </div>
+
+        <!-- 5 -->
+        <div class="module-box">
+          <div class="module-header">
+            <h4>5. Functions, Scope &amp; Lambdas</h4>
+            <span class="module-price">₹5,000</span>
+          </div>
+          <ul class="course-features-list">
+            <li>Defining functions with def, parameters, and return statements</li>
+            <li>Positional arguments, default parameters, and keyword arguments</li>
+            <li>Variable-length arguments: *args and **kwargs</li>
+            <li>Call by object reference, local vs global scope, and global keyword</li>
+            <li>Recursive functions and base case design</li>
+            <li>Anonymous lambda functions and higher-order functions (map, filter)</li>
+          </ul>
+        </div>
+
+        <!-- 6 -->
+        <div class="module-box">
+          <div class="module-header">
+            <h4>6. Modules &amp; Standard Library</h4>
+            <span class="module-price">₹5,000</span>
+          </div>
+          <ul class="course-features-list">
+            <li>Defining, organizing, and creating custom Python modules</li>
+            <li>Importing modules: import, from ... import, as alias</li>
+            <li>Inspecting module contents with dir() and __name__ == '__main__'</li>
+            <li>Understanding module search path (sys.path) and reload mechanisms</li>
+            <li>Standard library exploration: sys, os, math, datetime, random</li>
+          </ul>
+        </div>
+
+        <!-- 7 -->
+        <div class="module-box">
+          <div class="module-header">
+            <h4>7. Packages &amp; PIP Ecosystem</h4>
+            <span class="module-price">₹5,000</span>
+          </div>
+          <ul class="course-features-list">
+            <li>Defining packages and creating __init__.py architecture</li>
+            <li>Importing sub-modules across nested directory packages</li>
+            <li>Installing and managing third-party libraries using pip</li>
+            <li>requirements.txt creation and virtual environment isolation</li>
+          </ul>
+        </div>
+
+        <!-- 8 -->
+        <div class="module-box">
+          <div class="module-header">
+            <h4>8. Numeric Types &amp; Random Generation</h4>
+            <span class="module-price">₹5,000</span>
+          </div>
+          <ul class="course-features-list">
+            <li>Numeric type basics: integers, floating points, complex numbers</li>
+            <li>Hexadecimal (0x), Octal (0o), and Binary (0b) representations</li>
+            <li>Explicit typecasting: int(), float(), complex()</li>
+            <li>Numeric built-in functions: abs(), round(), pow(), divmod()</li>
+            <li>Random number generation using random and secrets modules</li>
+          </ul>
+        </div>
+
+        <!-- 9 -->
+        <div class="module-box">
+          <div class="module-header">
+            <h4>9. Strings &amp; Text Processing</h4>
+            <span class="module-price">₹5,000</span>
+          </div>
+          <ul class="course-features-list">
+            <li>Defining single, double, and triple-quoted multiline strings</li>
+            <li>String indexing, positive/negative slicing [start:stop:step]</li>
+            <li>Escape sequences and raw strings r"..." for regex and paths</li>
+            <li>Built-in methods: split(), join(), replace(), find(), strip(), upper(), lower()</li>
+            <li>Modern string interpolation with f-strings and format()</li>
+          </ul>
+        </div>
+
+        <!-- 10 -->
+        <div class="module-box">
+          <div class="module-header">
+            <h4>10. Lists &amp; Data Structures</h4>
+            <span class="module-price">₹5,000</span>
+          </div>
+          <ul class="course-features-list">
+            <li>List creation, heterogenous elements, and mutable indexing</li>
+            <li>Adding &amp; deleting elements: append(), extend(), insert(), remove(), pop()</li>
+            <li>List sorting, reversing, and built-in functions (len, min, max, sum)</li>
+            <li>List Comprehensions with conditional filters</li>
+            <li>Implementing Stack (LIFO) and Queue (FIFO) data structures using lists</li>
+            <li>Parallel iteration with zip() and 2D matrix operations</li>
+          </ul>
+        </div>
+
+        <!-- 11 -->
+        <div class="module-box">
+          <div class="module-header">
+            <h4>11. Tuples &amp; Immutability</h4>
+            <span class="module-price">₹5,000</span>
+          </div>
+          <ul class="course-features-list">
+            <li>Tuple creation, single-element tuples, and packing/unpacking</li>
+            <li>Accessing tuple elements and understanding immutability advantages</li>
+            <li>List vs Tuple memory and performance comparison</li>
+            <li>Tuple methods: count(), index() and tuple as dictionary keys</li>
+          </ul>
+        </div>
+
+        <!-- 12 -->
+        <div class="module-box">
+          <div class="module-header">
+            <h4>12. Dictionaries &amp; Key-Value Mappings</h4>
+            <span class="module-price">₹5,000</span>
+          </div>
+          <ul class="course-features-list">
+            <li>Creating dictionaries with unique keys and hashable types</li>
+            <li>Accessing elements, safe retrieval with get(), and updating records</li>
+            <li>Deleting items with pop(), popitem(), and del</li>
+            <li>Dictionary methods: keys(), values(), items(), update()</li>
+            <li>Dictionary Comprehensions and nested dictionary JSON parsing</li>
+          </ul>
+        </div>
+
+        <!-- 13 -->
+        <div class="module-box">
+          <div class="module-header">
+            <h4>13. Sets &amp; Mathematical Set Operations</h4>
+            <span class="module-price">₹5,000</span>
+          </div>
+          <ul class="course-features-list">
+            <li>Defining sets and enforcing unique element constraints</li>
+            <li>Set operations: Union (|), Intersection (&amp;), Difference (-), Symmetric Difference (^)</li>
+            <li>Set methods: add(), update(), discard(), remove(), pop()</li>
+            <li>Subset and superset checks: issubset(), issuperset()</li>
+            <li>Set Comprehensions for rapid deduplication</li>
+          </ul>
+        </div>
+
+        <!-- 14 -->
+        <div class="module-box">
+          <div class="module-header">
+            <h4>14. File Handling &amp; Serialization</h4>
+            <span class="module-price">₹5,000</span>
+          </div>
+          <ul class="course-features-list">
+            <li>File operation lifecycle: Open, Read/Write, and Close</li>
+            <li>File access modes: read ('r'), write ('w'), append ('a'), binary ('b')</li>
+            <li>Context managers: using with open(...) for automatic resource cleanup</li>
+            <li>Reading techniques: read(), readline(), readlines()</li>
+            <li>File cursor positioning with seek() and tell()</li>
+            <li>Binary file handling and object serialization using pickle module</li>
+          </ul>
+        </div>
+
+        <!-- 15 -->
+        <div class="module-box">
+          <div class="module-header">
+            <h4>15. Exception Handling &amp; Robustness</h4>
+            <span class="module-price">₹5,000</span>
+          </div>
+          <ul class="course-features-list">
+            <li>Understanding errors vs exceptions and Python default exception handler</li>
+            <li>Detecting exceptions using try blocks and catching with except</li>
+            <li>Catching multiple exceptions and exception hierarchies</li>
+            <li>else block for clean code execution and finally block for guaranteed cleanup</li>
+            <li>Raising explicit exceptions with raise and creating custom user-defined exceptions</li>
+          </ul>
+        </div>
+
+        <!-- 16 -->
+        <div class="module-box">
+          <div class="module-header">
+            <h4>16. Object-Oriented Programming (OOPs)</h4>
+            <span class="module-price">₹5,000</span>
+          </div>
+          <ul class="course-features-list">
+            <li>Core OOP concepts: Classes, Objects, and Instantiation</li>
+            <li>Constructor __init__() and self parameter</li>
+            <li>Instance attributes vs Class attributes</li>
+            <li>Instance methods vs Class methods (@classmethod) vs Static methods (@staticmethod)</li>
+            <li>Encapsulation, public, protected (_), and private (__) name mangling</li>
+            <li>Inheritance (Single, Multiple, Multi-level) and super() method</li>
+            <li>Polymorphism, Method Overriding, and Operator Overloading (__str__, __len__)</li>
+          </ul>
+        </div>
+
+        <!-- 17 -->
+        <div class="module-box">
+          <div class="module-header">
+            <h4>17. Multi-Threading &amp; Concurrency</h4>
+            <span class="module-price">₹5,000</span>
+          </div>
+          <ul class="course-features-list">
+            <li>Process-based multitasking vs Thread-based multitasking</li>
+            <li>Creating threads using function targets and subclassing threading.Thread</li>
+            <li>Controlling thread execution: sleep() and join() synchronization</li>
+            <li>Getting/setting thread names and thread logging modules</li>
+            <li>Thread safety: synchronization, race conditions, and Lock mechanisms</li>
+            <li>Inter-thread communication using queues and condition variables</li>
+          </ul>
+        </div>
+
+        <!-- 18 -->
+        <div class="module-box">
+          <div class="module-header">
+            <h4>18. Desktop GUI Programming with Tkinter</h4>
+            <span class="module-price">₹5,000</span>
+          </div>
+          <ul class="course-features-list">
+            <li>Introduction to Tkinter window and event loop</li>
+            <li>Working with widgets: Label, Button, Entry, Text, Messagebox</li>
+            <li>Selection widgets: Radiobutton, Checkbutton, Listbox, Combobox</li>
+            <li>Layout geometry managers: pack(), grid(), and place()</li>
+            <li>Creating Frames, Menus, Dialogs, and responsive form submissions</li>
+            <li>End-to-end Desktop Application Capstone Project</li>
+          </ul>
+        </div>
+
+        <!-- 19 -->
+        <div class="module-box">
+          <div class="module-header">
+            <h4>19. Database Programming with MySQL</h4>
+            <span class="module-price">₹5,000</span>
+          </div>
+          <ul class="course-features-list">
+            <li>Installing and setting up mysql-connector-python module</li>
+            <li>Establishing connection from Python to MySQL server instance</li>
+            <li>Creating databases and dynamic tables through Python cursors</li>
+            <li>Executing CRUD operations (INSERT, SELECT, UPDATE, DELETE)</li>
+            <li>Parameterized queries for SQL injection prevention &amp; transaction commit()</li>
+          </ul>
+        </div>
+
+        <!-- 20 -->
+        <div class="module-box">
+          <div class="module-header">
+            <h4>20. Web Scraping &amp; Data Extraction</h4>
+            <span class="module-price">₹5,000</span>
+          </div>
+          <ul class="course-features-list">
+            <li>Introduction to Web Scraping ethics, robots.txt, and HTTP status codes</li>
+            <li>Fetching HTML page contents using requests module</li>
+            <li>Parsing DOM trees using BeautifulSoup (bs4)</li>
+            <li>Extracting tags, attributes, CSS selectors, and table datasets</li>
+            <li>Structuring scraped data into clean CSV, Excel, and JSON outputs</li>
+          </ul>
+        </div>
+
+        <!-- 21 -->
+        <div class="module-box">
+          <div class="module-header">
+            <h4>21. Python Executable (.exe) Deployment</h4>
+            <span class="module-price">₹5,000</span>
+          </div>
+          <ul class="course-features-list">
+            <li>Understanding standalone executable compilation and distributions</li>
+            <li>Packaging Python scripts using PyInstaller (--onefile / --noconsole)</li>
+            <li>Bundling dependencies, assets, images, and data files into packages</li>
+            <li>Deploying standalone desktop applications for end-users</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tools Stack -->
+  <section class="why-us-section" id="tools" style="background-color: var(--clr-slate-100);">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tagline">DEVELOPER TOOLCHAIN</span>
+        <h2 class="section-title">Python Ecosystem Mastered</h2>
+        <p class="section-subtitle">Develop code with the most productive IDEs, data libraries, GUI engines, and deployment tools.</p>
+      </div>
+
+      <div class="tools-grid">
+        <div class="tool-chip">🐍 Python 3.12 Engine</div>
+        <div class="tool-chip">💻 VS Code &amp; PyCharm</div>
+        <div class="tool-chip">📓 Jupyter Notebooks</div>
+        <div class="tool-chip">🕷 BeautifulSoup &amp; Requests</div>
+        <div class="tool-chip">🖥 Tkinter GUI Studio</div>
+        <div class="tool-chip">🐬 MySQL Connector</div>
+        <div class="tool-chip">📦 PyInstaller (.exe)</div>
+        <div class="tool-chip">⚡ Git &amp; GitHub Version Control</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Career Outcomes -->
+  <section class="why-us-section">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tagline" style="color: #1d4ed8; background: #dbeafe;">CAREER HORIZONS</span>
+        <h2 class="section-title">In-Demand Python Roles</h2>
+        <p class="section-subtitle">Python is the most versatile and requested programming language across software, data, and automation.</p>
+      </div>
+
+      <div class="career-grid">
+        <div class="career-card">
+          <h4>🐍 Python Software Developer</h4>
+          <p>Build scalable backend architectures, desktop software applications, and microservices using clean Object-Oriented principles.</p>
+        </div>
+        <div class="career-card">
+          <h4>🤖 Automation &amp; RPA Engineer</h4>
+          <p>Automate repetitive business workflows, data parsing, web scraping pipelines, and file processing tasks.</p>
+        </div>
+        <div class="career-card">
+          <h4>📊 Python Data Analyst</h4>
+          <p>Extract, wrangle, and analyze complex datasets from MySQL databases and APIs into actionable insights.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lead Form Section -->
+  <section class="lead-section" id="enroll">
+    <div class="container">
+      <div class="lead-wrapper">
+        <div class="lead-info">
+          <h2>Enroll in Python Bootcamp</h2>
+          <p>Hands-on daily coding exercises, 5+ live project builds, and full tutor support for doubt clearance.</p>
+          <ul class="lead-perks">
+            <li>✓ 100+ Python Problem Sets &amp; GitHub Solutions</li>
+            <li>✓ 5 Real-World Projects (Scraper, GUI App, DB CRUD)</li>
+            <li>✓ Free IDE &amp; Environment Setup Support</li>
+            <li>✓ Certificate of Python Software Proficiency</li>
+          </ul>
+        </div>
+
+        <div class="lead-form-box">
+          <form id="pythonPageMainForm">
+            <input type="hidden" name="course" value="python-analytics">
+            <div class="form-group">
+              <label class="form-label">Full Name *</label>
+              <input type="text" name="name" class="form-control" placeholder="Enter Full Name" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Mobile Number *</label>
+              <input type="tel" name="phone" class="form-control" placeholder="Enter Mobile Number" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Preferred Training Batch</label>
+              <select name="time" class="form-control form-select">
+                <option value="Weekday Morning Batch">Weekday Morning Batch (10 AM - 12 PM)</option>
+                <option value="Weekday Evening Batch">Weekday Evening Batch (6 PM - 8 PM)</option>
+                <option value="Weekend Special Batch">Weekend Special Batch (Sat &amp; Sun)</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full"
+              style="background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%); border: none;">
+              Reserve My Python Seat &rarr;
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="../Asset/LOGO.png" alt="SkillNext Logo" class="logo-img">
+          <p>Empowering students and professionals with practical, market-aligned skills in Python Programming, Data Engineering, and Cloud Technologies.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="Courses.html">All Courses</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="#overview">Course Overview</a></li>
+            <li><a href="#curriculum">Syllabus</a></li>
+            <li><a href="#enroll">Book Demo Class</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Other Programs</h4>
+          <ul class="footer-links">
+            <li><a href="SQL.html">Oracle SQL Database Mastery</a></li>
+            <li><a href="PowerBi.html">Microsoft Power BI Masterclass</a></li>
+            <li><a href="Tablue.html">Tableau Visual Analytics</a></li>
+            <li><a href="advance-excel.html">Advance Excel (Saturday Batch)</a></li>
+            <li><a href="cloud-computing.html">Cloud Computing (Sunday Batch)</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact &amp; Campus</h4>
+          <p style="margin-bottom: 0.5rem;">📍 4th Floor, Tech Hub Towers, Main Avenue Road.</p>
+          <p style="margin-bottom: 0.5rem;">📞 Helpline: +91 90045 47746</p>
+          <p>✉️ Email: admissions@apexskills.edu</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 SkillNXT. Python for Data Analytics &amp; Automation. All Rights Reserved.</p>
+        <div>
+          <a href="policy.html" style="margin-right: 1rem;">Privacy Policy</a>
+          <a href="policy.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Chat Icon -->
+  <a href="https://wa.me/919004547746?text=Hello%20SkillNXT!%20I%20want%20to%20know%20more%20about%20the%20Python%20Programming%20and%20Automation%20Course." target="_blank" class="floating-whatsapp" aria-label="Chat on WhatsApp">
+    <div class="whatsapp-tooltip">Chat with Counselor</div>
+    <svg fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+  </a>
+
+  <!-- Mobile Bottom Action Bar -->
+  <div class="mobile-bottom-bar">
+    <div class="mobile-bottom-bar-grid">
+      <a href="tel:+919004547746" class="btn btn-outline btn-sm">📞 Call Now</a>
+      <button onclick="scrollToSection('enroll')" class="btn btn-primary btn-sm" style="background: #2563eb;">Book Python Demo</button>
+    </div>
+  </div>
+
+  <script src="../js/main.js"></script>
+</body>
+
+</html>

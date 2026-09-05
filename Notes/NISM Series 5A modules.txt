@@ -1,0 +1,66 @@
+NISM Series 5A 
+MODULE 1: INTRODUCTION TO MUTUAL FUNDS ₹2000
+- Concept and Structure of Mutual Funds
+- History and Growth of Mutual Funds in India
+- Key Advantages and Disadvantages of Investing in Mutual Funds
+- Role of Mutual Funds in the Financial Sector
+
+MODULE 2: MUTUAL FUND STRUCTURE AND CONSTITUENTS ₹2000
+- Sponsor, Trustees, Asset Management Company (AMC), and Custodian
+- Role of Registrar and Transfer Agents (RTAs), Auditors, and Brokers
+- Rights and Obligations of Investors
+
+MODULE 3: LEGAL AND REGULATORY FRAMEWORK ₹2000
+- Role of SEBI in Regulating Mutual Funds
+- Key Provisions of SEBI (Mutual Funds) Regulations, 1996
+- Association of Mutual Funds in India (AMFI) - Role and Code of Ethics
+- Know Your Customer (KYC) & Prevention of Money Laundering Act (PMLA)
+
+MODULE 4: OFFER DOCUMENTS AND REGULATORY DISCLOSURES ₹2000
+- Scheme Information Document (SID) and Statement of Additional Information (SAI)
+- Key Information Memorandum (KIM)
+- Factsheets and Mandatory Periodic Disclosures
+- SEBI Categorization and Rationalization of Schemes
+
+MODULE 5: FUND CHARACTERISTICS AND SCHEME TYPES ₹2000
+- Open-ended, Close-ended, and Interval Schemes
+- Equity Schemes (Large Cap, Mid Cap, Small Cap, Sectoral, Thematic, Multi Cap, Flexi Cap, etc.)
+- Debt Schemes (Overnight, Liquid, Ultra Short Duration, Gilt, Corporate Bond, etc.)
+- Hybrid Schemes (Balanced Advantage, Aggressive Hybrid, Multi Asset, Conservative, etc.)
+- Solution-Oriented and Other Schemes (Index Funds, ETFs, Fund of Funds, International Funds)
+
+MODULE 6: METRICS AND NET ASSET VALUE (NAV) ₹2000
+- Computation and Concept of Net Asset Value (NAV)
+- Accounting Policies and Valuation Guidelines for Securities
+- Mark-to-Market Valuation Principles
+- Expense Ratio (TER) Limits and Load Structures (Exit Load)
+
+MODULE 7: TAXATION AND APPLICABLE LAWS ₹2000
+- Securities Transaction Tax (STT) and Stamp Duty
+- Capital Gains Tax: Short-Term Capital Gains (STCG) and Long-Term Capital Gains (LTCG)
+- Dividend Distribution / IDCW Taxability and TDS Provisions
+- Tax Treatment for Resident vs. Non-Resident Investors
+
+MODULE 8: INVESTOR SERVICES AND TRANSACTION FLOW ₹2000
+- Fresh Purchases, Additional Purchases, Redemptions, and Switches
+- Systematic Investment Plan (SIP), Systematic Transfer Plan (STP), and Systematic Withdrawal Plan (SWP)
+- Modes of Investment: Physical, Online Platforms, Mutual Fund Utilities (MFU), BSE StAR MF, NSE NMF II
+- Cut-off Timings and Applicable NAV for Transactions
+
+MODULE 9: RISK, RETURN, AND PERFORMANCE MEASUREMENT ₹2000
+- Risk Factors: Equity Risk, Credit Risk, Interest Rate Risk, Liquidity Risk
+- Concept of Benchmarks and Benchmark Selection
+- Performance Calculation: Absolute Return, CAGR, XIRR
+- Risk-Adjusted Performance Measures: Sharpe Ratio, Treynor Ratio, Alpha, Beta, Standard Deviation
+
+MODULE 10: SCHEME SELECTION AND FINANCIAL PLANNING ₹2000
+- Financial Goals and Investment Horizon Mapping
+- Asset Allocation Strategies (Strategic vs. Tactical)
+- Portfolio Rebalancing Techniques
+- Evaluating Scheme Suitability based on Investor Risk Profiles
+
+MODULE 11: ETHICS, COMPLIANCE, AND DISTRIBUTOR CODE OF CONDUCT ₹2000
+- AMFI Code of Conduct for Intermediaries
+- Commission Structures: Trail Commission Model
+- Due Diligence Requirements and Best Execution Practices
+- Redressal of Investor Grievances (SCORES Platform)

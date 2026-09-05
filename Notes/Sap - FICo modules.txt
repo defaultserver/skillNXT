@@ -1,0 +1,180 @@
+Financial Statement 
+
+Enterprises Structure ₹2000
+• Introduction of SAP
+• Introduction of client
+• Define Company
+• Define Company Code
+• Define Business Area
+• Assign company code to company
+
+Financial Accounting Global Settings
+
+Company Code ₹2000
+• Enter Global Parameters
+• Set Company Code to Productive
+
+Business Area ₹2000
+• Enable Business Area Balance Sheet
+• Check Display Authorization for Business Area
+
+Fiscal Year ₹2000
+• Maintain Fiscal Year Variant (Maintain Shortened Fisc. Year)
+• Assign Company Code to a Fiscal Year Variant
+
+Document ₹2000
+• Posting Periods
+• Define Variants for Open Posting Periods
+• Open and Close Posting Periods
+• Assign Variants to Company Code
+
+Document Number Ranges ₹2000
+• Define Document Number Ranges
+• Copy to Company Code
+• Copy to Fiscal Year
+
+Define Document Types ₹2000
+• Define Document Types
+• Define number range for Document types
+
+Define Posting Keys, Fields Status Variants and tolerance group₹2000
+• Function of Posting Keys
+• Maintain Field Status Variants
+• Assign Company Code to Field Status Variants
+• Define & Assign Tolerance Groups for Employees
+
+General Ledger Accounting ₹2000
+• Define Chart of Account
+• Assign Company Code to Chart of Accounts
+• Define Account Group & Number Range for General Ledger
+• Define Retained Earnings Account
+• Maintain Field Status Variants
+• Assign Company Code to Field Status Variants
+• Creation of General Ledger
+• Parking of a Document
+• Holding of a Document
+• Sample Document
+• Recurring Entries
+• Reversal of Entries
+• Various useful reports
+
+Accounts Payable ₹2000
+• Creation of Vendor Groups and no. ranges
+• Creation of Vendor Master
+• Creation of Vendor Invoice
+• Down Payment
+• Outgoing Payment
+• Special G/L Transactions
+• Automatic Payment Program
+• Various useful reports
+
+Accounts Receivable ₹2000
+• Creation of Customer Groups and No Ranges
+• Creation of Customer Master
+• Creation of Customer Invoice
+• Down Payments
+• Incoming Payments
+• Special G/L Transaction
+• Customer Balances
+• Bill of exchange
+• Dunning procedure
+
+House Banks ₹2000
+• Define Bank Key
+• Define House Bank
+• Define Account ID
+• Assign G/L Account
+• Define check lot
+• Display of Check register
+• Display of Check
+• Renumbering of check
+• Reprinting of checks
+• Define check number to Payment document
+• Void check
+• Automatic Bank Reconciliation
+• Manual bank reconciliation statement
+• Various useful reports
+
+Asset Accounting ₹2000
+• Depreciation area
+• Define Assets Classes including Assets Under Construction (AUC)
+• Define Group Assets as per Income Tax Act
+• Define Account Determination
+• Define Depreciation Keys
+• Integration with G/L Accounts
+• Production start up activity
+• Creation Asset Master Data
+• Assets transaction like acquisition, retirement, transfers
+• Depreciation Run & Postings
+• Various useful reports
+
+Extended with holding Tax configuration ₹2000
+• Compares ion between classical & extended withholding Tax
+• Activate Extended Withholding Tax
+• Define official withholding tax Keys
+• Define Section Code
+• Define Withholding Tax Type for Invoice & payment Posting
+• Define Withholding Tax Type for Payment Posting
+• Define Withholding Tax Codes
+• Define Dependencies Between Withholding Tax Types
+• Assign Withholding Tax Types to Company Codes
+• Define Accounts for Withholding Tax
+• Certificate Numbering for Withholding Tax
+• Maintenance of PAN number for Vendor
+
+GST Configuration ₹2000
+• GST Calculation procedure
+• Assign country to GST tax calculation procedure
+• Define access sequence
+• Define condition types for GST
+• Define account keys in SAP for GST
+• Complete steps – implementation of GST in SAP
+
+Others ₹2000
+• Foreign Currency valuation and Transactions
+• Purchase & Sales Tax configuration
+• Creation of Tax Codes for Sales tax as well as Purchase Tax
+• Interest configuration and application
+
+Enterprises Structure ₹2000
+• Define and maintained Controlling area
+• Create Operating Concern
+• Assign company code to controlling area
+• Assign controlling area to operating concer
+• Maintain number range for controlling documents
+• Maintain version
+
+Cost Element Accounting ₹2000
+• Automatic Creation of Primary and Secondary Cost Elements
+• Manual creation of Primary and Secondary cost elements
+• Creation of Cost Element group
+• End user transaction like Manual Reposting of Costs, Manual Reposting of Revenues
+
+Repost Line Items, Activity Allocation, Activity Allocation Reposting ₹2000
+• Period locking
+• Useful reports
+
+Cost Center Accounting ₹2000
+• Activate Cost Center Accounting in Controlling Area
+• Define Standard Hierarchy
+• Define Cost Center Categories
+• Define Cost Center Groups
+• Define Cost Center
+• Define Cost Elements for Activity Allocation
+• Define Activity Type Groups
+• Define Activity Type
+• Maintain Statistical Key Figures
+• Maintain Statistical Key Figures groups
+• Define planning between Cost center - Cost elements/ Activity type / Statistical Key
+Figures
+• Cost Center Allocation (Assessment / Distribution)
+• Various useful reports
+
+Profit Center Accounting ₹2000
+• Activate Profit Center Accounting in Controlling Area
+• Maintain Standard Hierarchy
+• Create Dummy Profit Center
+• Creation of Profit Center
+• Creation of Profit center group
+• Assessment / Distribution
+• PCA Reports

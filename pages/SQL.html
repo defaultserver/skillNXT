@@ -1,14 +1,685 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SQL- Full Mastery Course</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oracle SQL 12C & Database Mastery | SkillNXT Academy</title>
+  <meta name="description"
+    content="Master Oracle SQL 12C (Exam 1Z0-061), Relational Database Design, Complex Joins, Subqueries, DDL/DML, Constraints, and Query Optimization. 100% Practical Hands-on Labs.">
+  <meta name="keywords"
+    content="Oracle SQL Course, SQL 12C Certification, 1Z0-061 Exam Prep, Database Training, SQL Queries, Joins, Subqueries, SkillNXT SQL Course">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <link rel="icon" type="image/png" href="../Asset/Fixcon%20(1).png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../Asset/Fixcon%20(1).png">
+  <link rel="canonical" href="https://defaultserver.github.io/skillNXT/pages/SQL.html">
+  <meta property="og:title" content="Oracle SQL 12C & Relational Database Mastery | SkillNXT">
+  <meta property="og:description"
+    content="Learn Oracle SQL 12C from basic SELECT statements to complex multi-table joins, subqueries, and database schema management.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://defaultserver.github.io/skillNXT/pages/SQL.html">
+  <meta property="og:image" content="https://defaultserver.github.io/skillNXT/assets/og-image.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Oracle SQL 12C & Relational Database Mastery | SkillNXT">
+  <meta name="twitter:description"
+    content="Learn Oracle SQL 12C from basic SELECT statements to complex multi-table joins, subqueries, and database schema management.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="../css/style.css">
+
+  <style>
+    .course-hero-emerald {
+      background: radial-gradient(120% 100% at 50% 0%, #0f172a 0%, #064e3b 70%, #022c22 100%);
+      color: #ffffff;
+      padding: 4rem 0 5rem;
+    }
+
+    .curriculum-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .module-box {
+      background: #ffffff;
+      border-radius: var(--radius-md);
+      padding: 1.75rem;
+      border: 1px solid var(--clr-border);
+      box-shadow: var(--shadow-sm);
+      transition: transform var(--transition-normal), box-shadow var(--transition-normal), border-color var(--transition-normal);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .module-box:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+      border-color: #059669;
+    }
+
+    .module-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 1rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .module-box h4 {
+      color: #059669;
+      font-size: 1.15rem;
+      margin-bottom: 0;
+      line-height: 1.35;
+    }
+
+    .module-price {
+      background: #d1fae5;
+      color: #059669;
+      font-weight: 700;
+      padding: 0.25rem 0.75rem;
+      border-radius: var(--radius-full);
+      font-size: 0.9rem;
+      white-space: nowrap;
+      border: 1px solid rgba(5, 150, 105, 0.2);
+    }
+
+    .tools-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.25rem;
+      margin-top: 2rem;
+    }
+
+    .tool-chip {
+      background: #ffffff;
+      border: 1px solid var(--clr-border);
+      border-radius: var(--radius-md);
+      padding: 1.1rem 1rem;
+      text-align: center;
+      font-weight: 700;
+      color: var(--clr-navy-900);
+      box-shadow: var(--shadow-sm);
+      transition: transform var(--transition-normal), border-color var(--transition-normal);
+    }
+
+    .tool-chip:hover {
+      transform: translateY(-3px);
+      border-color: #059669;
+    }
+
+    .career-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .career-card {
+      background: #ffffff;
+      padding: 1.75rem;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--clr-border);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .career-card h4 {
+      color: var(--clr-navy-900);
+      margin-bottom: 0.5rem;
+      font-size: 1.1rem;
+    }
+
+    .career-card p {
+      color: var(--clr-slate-600);
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 900px) {
+      .curriculum-grid {
+        grid-template-columns: 1fr;
+      }
+      .tools-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .career-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
+
 <body>
-    <H1>SQL - Mastry at Skill NXT</H1>
-    <p>SkillNXT Offers you one of the best Sql Training programs in the Market, We Don't just tach we transform, Our students say we are the Best in Market, We 
-    </p>
-    
+
+  <!-- Top Bar -->
+  <div class="top-bar" style="background: linear-gradient(90deg, #022c22 0%, #0f172a 100%);">
+    <div class="container top-bar-content">
+      <div>
+        <span class="top-bar-badge" style="background: #10b981; color: #022c22;">ORACLE SQL CERTIFIED</span>
+        🗄 Oracle SQL 12C (Exam 1Z0-061) Practical Industry Curriculum with SQL Developer Labs.
+      </div>
+      <div class="top-bar-contact">
+        <a href="tel:+919004547746" class="top-bar-link">📞 +91 90045 47746</a>
+        <a href="../index.html" class="top-bar-link">&larr; Back to Home</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="../index.html" class="brand-logo">
+        <img src="../Asset/LOGO.png" alt="SkillNext Logo" class="logo-img">
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html" class="nav-link">Home</a></li>
+        <li><a href="Courses.html" class="nav-link active">Courses</a></li>
+        <li><a href="Gallery.html" class="nav-link">Gallery</a></li>
+        <li><a href="policy.html" class="nav-link">Policy</a></li>
+        <li><a href="about-us.html" class="nav-link">About us</a></li>
+      </ul>
+      <div class="nav-cta-group">
+        <a href="tel:+919004547746" class="btn btn-outline btn-sm">Call Direct</a>
+        <button onclick="scrollToSection('enroll')" class="btn btn-primary btn-sm" style="background: #059669;">Book SQL Demo</button>
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle Menu">
+          <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Course Hero -->
+  <section class="course-hero-emerald" id="overview">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge"
+          style="background: rgba(16, 185, 129, 0.2); border-color: rgba(16, 185, 129, 0.4); color: #6ee7b7;">
+          ⚡ ORACLE SQL 12C MASTERCLASS &bull; EXAM 1Z0-061 ALIGNED
+        </div>
+        <h1 class="hero-title">
+          SQL &amp; Relational <span class="gradient-text"
+            style="background: linear-gradient(135deg, #34d399 0%, #38bdf8 100%); -webkit-background-clip: text;">Database Mastery</span>
+        </h1>
+        <p class="hero-subtitle">
+          Master enterprise database querying, relational architecture, advanced joins, subqueries, SET operators, data manipulation (DML/DDL), and database administration views.
+        </p>
+
+        <div
+          style="display: flex; flex-wrap: wrap; gap: 1.5rem; margin-top: 1.5rem; color: #cbd5e1; font-size: 0.95rem;">
+          <div>⏱ <strong>Duration:</strong> 2 Months</div>
+          <div>🗓 <strong>Batches:</strong> Weekdays &amp; Weekend Special</div>
+          <div>📜 <strong>Exam Code:</strong> 1Z0-061 Aligned</div>
+          <div>💻 <strong>Tools:</strong> Oracle Database 12c &amp; SQL Developer</div>
+        </div>
+
+        <div class="hero-cta-box" style="margin-top: 2rem;">
+          <button onclick="scrollToSection('enroll')" class="btn btn-primary"
+            style="background: linear-gradient(135deg, #059669 0%, #047857 100%); border: none;">
+            Enroll in SQL Mastery &rarr;
+          </button>
+          <a href="https://wa.me/919004547746?text=I%20want%20details%20for%20Oracle%20SQL%20Database%20Mastery%20Course"
+            target="_blank" class="btn btn-outline" style="color: #ffffff; border-color: #34d399;">
+            💬 WhatsApp Counselor
+          </a>
+        </div>
+      </div>
+
+      <!-- Lead Form Card -->
+      <div class="hero-form-card">
+        <div class="hero-form-header">
+          <h3>Book SQL Demo Session</h3>
+          <p>Get Oracle SQL Practice Scripts &amp; Study Material</p>
+        </div>
+        <form id="sqlPageForm">
+          <input type="hidden" name="course" value="sql-database">
+          <div class="form-group">
+            <label class="form-label">Full Name *</label>
+            <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Mobile / WhatsApp Number *</label>
+            <input type="tel" name="phone" class="form-control" placeholder="10-digit mobile number" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Background / Goal *</label>
+            <select name="time" class="form-control form-select">
+              <option value="Data Analyst / BI Aspirant">Data Analyst / BI Aspirant</option>
+              <option value="Software Developer / Backend Engineer">Software Developer / Backend Engineer</option>
+              <option value="College Student / Fresher">College Student / Fresher</option>
+              <option value="Database Administrator (DBA)">Database Administrator (DBA)</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full"
+            style="background: linear-gradient(135deg, #059669 0%, #047857 100%); border: none;">
+            Book Free SQL Demo Class &rarr;
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Detailed Curriculum Section -->
+  <section class="why-us-section" id="curriculum">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tagline" style="color: #059669; background: #d1fae5;">EXHAUSTIVE SYLLABUS</span>
+        <h2 class="section-title">Oracle SQL 12C Complete Curriculum</h2>
+        <p class="section-subtitle">A step-by-step modular journey from database fundamentals to high-performance enterprise query optimization.</p>
+      </div>
+
+      <div class="curriculum-grid">
+        <!-- Module 1 -->
+        <div class="module-box">
+          <div class="module-header">
+            <h4>1. Introduction to Oracle Database</h4>
+            <span class="module-price">Foundation</span>
+          </div>
+          <ul class="course-features-list">
+            <li>Features of Oracle Database 12c &amp; enterprise architecture</li>
+            <li>Basic design, theoretical, and physical aspects of relational databases (RDBMS)</li>
+            <li>Categorizing SQL statements: DQL, DML, DDL, DCL, and TCL</li>
+            <li>Exploring sample business data schemas &amp; table relationships</li>
+            <li>Logging on via SQL Developer environment &amp; executing script files</li>
+            <li>Saving queries, organizing worksheets, and exporting query outputs</li>
+          </ul>
+        </div>
+
+        <!-- Module 2 -->
+        <div class="module-box">
+          <div class="module-header">
+            <h4>2. Retrieve Data Using SQL SELECT</h4>
+            <span class="module-price">₹5,000</span>
+          </div>
+          <ul class="course-features-list">
+            <li>Capabilities of SQL SELECT statements (Projection &amp; Selection)</li>
+            <li>Generating reports from basic SELECT queries</li>
+            <li>Selecting all columns vs selecting specific column subsets</li>
+            <li>Column aliases, custom headings, and column heading defaults</li>
+            <li>Arithmetic operators and operator precedence in expressions</li>
+            <li>DESCRIBE command to inspect table structures, nullability, and data types</li>
+          </ul>
+        </div>
+
+        <!-- Module 3 -->
+        <div class="module-box">
+          <div class="module-header">
+            <h4>3. Learn to Restrict &amp; Sort Data</h4>
+            <span class="module-price">₹5,000</span>
+          </div>
+          <ul class="course-features-list">
+            <li>Writing queries with WHERE clauses to limit retrieved rows</li>
+            <li>Comparison operators (=, &lt;&gt;, !=, &gt;, &lt;, &gt;=, &lt;=, BETWEEN, IN, LIKE, IS NULL)</li>
+            <li>Logical operators (AND, OR, NOT) &amp; rules of precedence</li>
+            <li>Using character string literals and case-sensitivity handling in filters</li>
+            <li>ORDER BY clause: Ascending (ASC) and Descending (DESC) sorting</li>
+            <li>Sorting by column alias, multiple columns, and positional expressions</li>
+          </ul>
+        </div>
+
+        <!-- Module 4 -->
+        <div class="module-box">
+          <div class="module-header">
+            <h4>4. Single-Row Functions to Customize Output</h4>
+            <span class="module-price">₹5,000</span>
+          </div>
+          <ul class="course-features-list">
+            <li>Differences between single-row functions and multiple-row group functions</li>
+            <li>Character functions: UPPER, LOWER, INITCAP, CONCAT, SUBSTR, LENGTH, INSTR, LPAD, RPAD, TRIM, REPLACE</li>
+            <li>Numeric manipulation with ROUND, TRUNC, and MOD functions</li>
+            <li>Date arithmetic: adding/subtracting days and calculating intervals</li>
+            <li>Date functions: MONTHS_BETWEEN, ADD_MONTHS, NEXT_DAY, LAST_DAY, ROUND, and TRUNC</li>
+          </ul>
+        </div>
+
+        <!-- Module 5 -->
+        <div class="module-box">
+          <div class="module-header">
+            <h4>5. Conversion Functions &amp; Conditional Logic</h4>
+            <span class="module-price">₹5,000</span>
+          </div>
+          <ul class="course-features-list">
+            <li>Implicit vs explicit data type conversion rules</li>
+            <li>TO_CHAR, TO_NUMBER, and TO_DATE format model conversions</li>
+            <li>Nesting multiple functions for multi-step data transformations</li>
+            <li>Handling NULL values with NVL, NVL2, NULLIF, and COALESCE functions</li>
+            <li>Conditional expressions: CASE statements and Oracle DECODE function</li>
+          </ul>
+        </div>
+
+        <!-- Module 6 -->
+        <div class="module-box">
+          <div class="module-header">
+            <h4>6. Aggregate Data Using Group Functions</h4>
+            <span class="module-price">₹5,000</span>
+          </div>
+          <ul class="course-features-list">
+            <li>Aggregation functions: COUNT, SUM, AVG, MIN, and MAX</li>
+            <li>Dividing table datasets into groups using the GROUP BY clause</li>
+            <li>Grouping by multiple columns &amp; aggregating subsets</li>
+            <li>Filtering aggregated groups using the HAVING clause</li>
+            <li>Key differences and rules: WHERE vs HAVING clauses</li>
+          </ul>
+        </div>
+
+        <!-- Module 7 -->
+        <div class="module-box">
+          <div class="module-header">
+            <h4>7. Display Data From Multiple Tables (Joins)</h4>
+            <span class="module-price">₹5,000</span>
+          </div>
+          <ul class="course-features-list">
+            <li>Cartesian product / Cross Joins and why they occur</li>
+            <li>Inner Joins (Equijoins &amp; Non-Equijoins) using ON and USING clauses</li>
+            <li>Self Joins for hierarchical data (Employees &amp; Managers)</li>
+            <li>Left Outer Join, Right Outer Join, and Full Outer Join syntax</li>
+            <li>Natural Joins and multi-table join chains</li>
+          </ul>
+        </div>
+
+        <!-- Module 8 -->
+        <div class="module-box">
+          <div class="module-header">
+            <h4>8. Use Subqueries to Solve Complex Queries</h4>
+            <span class="module-price">₹5,000</span>
+          </div>
+          <ul class="course-features-list">
+            <li>Understanding business problems that require subqueries</li>
+            <li>Single-row subqueries using standard relational operators</li>
+            <li>Multiple-row subqueries using IN, ANY, and ALL operators</li>
+            <li>Subqueries in WHERE, HAVING, and FROM clauses (Inline Views)</li>
+            <li>Correlated subqueries and EXISTS / NOT EXISTS operators</li>
+          </ul>
+        </div>
+
+        <!-- Module 9 -->
+        <div class="module-box">
+          <div class="module-header">
+            <h4>9. The SET Operators</h4>
+            <span class="module-price">₹5,000</span>
+          </div>
+          <ul class="course-features-list">
+            <li>UNION operator: combining queries and removing duplicates</li>
+            <li>UNION ALL operator: combining queries with duplicate retention</li>
+            <li>INTERSECT operator: retrieving common rows between datasets</li>
+            <li>MINUS operator: finding unique rows in primary dataset</li>
+            <li>Matching column counts, compatible datatypes, and controlling sort orders</li>
+          </ul>
+        </div>
+
+        <!-- Module 10 -->
+        <div class="module-box">
+          <div class="module-header">
+            <h4>10. Data Manipulation Statements (DML)</h4>
+            <span class="module-price">₹5,000</span>
+          </div>
+          <ul class="course-features-list">
+            <li>INSERT statement: inserting single rows and bulk rows</li>
+            <li>UPDATE statement: modifying existing table records</li>
+            <li>DELETE statement: removing specific records based on conditions</li>
+            <li>Transaction management: COMMIT, ROLLBACK, and SAVEPOINT</li>
+            <li>Read consistency, locking mechanisms, and isolation levels</li>
+          </ul>
+        </div>
+
+        <!-- Module 11 -->
+        <div class="module-box">
+          <div class="module-header">
+            <h4>11. DDL Statements to Create &amp; Manage Tables</h4>
+            <span class="module-price">₹5,000</span>
+          </div>
+          <ul class="course-features-list">
+            <li>Categorizing database schema objects (Tables, Views, Indexes, Sequences)</li>
+            <li>Data types: VARCHAR2, CHAR, NUMBER, DATE, TIMESTAMP, CLOB, BLOB</li>
+            <li>CREATE TABLE statement and CREATE TABLE AS SELECT (CTAS)</li>
+            <li>Defining constraints: PRIMARY KEY, FOREIGN KEY, UNIQUE, NOT NULL, CHECK</li>
+            <li>Column-level vs table-level constraint declarations</li>
+          </ul>
+        </div>
+
+        <!-- Module 12 -->
+        <div class="module-box">
+          <div class="module-header">
+            <h4>12. Schema Objects: Views, Sequences &amp; Indexes</h4>
+            <span class="module-price">₹5,000</span>
+          </div>
+          <ul class="course-features-list">
+            <li>Creating simple and complex Views for security and reporting</li>
+            <li>Retrieving data from Views and DML operations on Views</li>
+            <li>Creating, altering, and utilizing SEQUENCES for primary keys</li>
+            <li>Creating and maintaining B-Tree Indexes for performance tuning</li>
+            <li>Creating private and public SYNONYMS for schema masking</li>
+          </ul>
+        </div>
+
+        <!-- Module 13 -->
+        <div class="module-box">
+          <div class="module-header">
+            <h4>13. Control User Access &amp; Database Security</h4>
+            <span class="module-price">₹5,000</span>
+          </div>
+          <ul class="course-features-list">
+            <li>Differentiating system privileges from object privileges</li>
+            <li>Creating database users and granting login/system privileges</li>
+            <li>Creating and granting privileges to ROLES for group administration</li>
+            <li>Changing user passwords and enforcing profile constraints</li>
+            <li>Granting and revoking object privileges with WITH GRANT OPTION</li>
+          </ul>
+        </div>
+
+        <!-- Module 14 -->
+        <div class="module-box">
+          <div class="module-header">
+            <h4>14. Schema Object Management &amp; Flashback</h4>
+            <span class="module-price">₹5,000</span>
+          </div>
+          <ul class="course-features-list">
+            <li>ALTER TABLE: Add, Modify, Rename, and Drop columns</li>
+            <li>Enabling, disabling, cascading, and deferring constraints</li>
+            <li>Creating Function-Based Indexes for optimized lookups</li>
+            <li>Performing Flashback Table and Flashback Drop operations</li>
+            <li>Creating external tables using ORACLE_LOADER and ORACLE_DATAPUMP</li>
+          </ul>
+        </div>
+
+        <!-- Module 15 -->
+        <div class="module-box">
+          <div class="module-header">
+            <h4>15. Data Dictionary Views Management</h4>
+            <span class="module-price">₹5,000</span>
+          </div>
+          <ul class="course-features-list">
+            <li>Understanding the Oracle Data Dictionary architecture</li>
+            <li>Querying USER_*, ALL_*, and DBA_* system views</li>
+            <li>Inspecting table metadata, column definitions, and constraint structures</li>
+            <li>Tracking database views, sequences, indexes, and synonym definitions</li>
+            <li>Adding descriptive comments to tables and columns</li>
+          </ul>
+        </div>
+
+        <!-- Module 16 -->
+        <div class="module-box">
+          <div class="module-header">
+            <h4>16. Large Data Sets &amp; Multi-Table Inserts</h4>
+            <span class="module-price">₹5,000</span>
+          </div>
+          <ul class="course-features-list">
+            <li>Subqueries for large-scale data manipulation and transformation</li>
+            <li>Using Subqueries as data source and insert target</li>
+            <li>Enforcing integrity using the WITH CHECK OPTION keyword on DML</li>
+            <li>Unconditional and Conditional Multi-table INSERT statements</li>
+            <li>Pivoting data using Multi-table INSERT ALL / FIRST commands</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tools & Environments -->
+  <section class="why-us-section" id="tools" style="background-color: var(--clr-slate-100);">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tagline">INDUSTRY LAB STACK</span>
+        <h2 class="section-title">Database Tools &amp; Engines Mastered</h2>
+        <p class="section-subtitle">Develop production-level SQL proficiency across industry-standard relational database systems.</p>
+      </div>
+
+      <div class="tools-grid">
+        <div class="tool-chip">🗄 Oracle Database 12c / 19c</div>
+        <div class="tool-chip">💻 Oracle SQL Developer</div>
+        <div class="tool-chip">🐬 MySQL Workbench</div>
+        <div class="tool-chip">🐘 PostgreSQL &amp; pgAdmin</div>
+        <div class="tool-chip">⚡ SQL*Plus CLI</div>
+        <div class="tool-chip">📊 DBeaver Database GUI</div>
+        <div class="tool-chip">🔗 Data Modeling &amp; ER Diagrams</div>
+        <div class="tool-chip">🚀 Query Performance Optimization</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Career Outcomes -->
+  <section class="why-us-section">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tagline" style="color: #059669; background: #d1fae5;">CAREER PATHWAYS</span>
+        <h2 class="section-title">High-Growth Job Roles</h2>
+        <p class="section-subtitle">SQL is the backbone of all modern technology stacks, data analytics, and backend engineering.</p>
+      </div>
+
+      <div class="career-grid">
+        <div class="career-card">
+          <h4>📊 SQL &amp; Data Analyst</h4>
+          <p>Extract, aggregate, and transform complex enterprise databases into business insights and KPI reports for stakeholders.</p>
+        </div>
+        <div class="career-card">
+          <h4>🗄 Database Developer / DBA</h4>
+          <p>Design normalized relational schemas, write optimized stored procedures, triggers, views, and manage database security.</p>
+        </div>
+        <div class="career-card">
+          <h4>💼 Business Intelligence Engineer</h4>
+          <p>Build robust SQL ETL pipelines that feed live dashboards in Power BI, Tableau, and automated reporting systems.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lead Form Section -->
+  <section class="lead-section" id="enroll">
+    <div class="container">
+      <div class="lead-wrapper">
+        <div class="lead-info">
+          <h2>Enroll in SQL Database Mastery</h2>
+          <p>Join our weekend or weekday practical batches with live database instances and 100+ real-world query exercises.</p>
+          <ul class="lead-perks">
+            <li>✓ 100+ Practical SQL Query Challenges &amp; Solutions</li>
+            <li>✓ 1Z0-061 Oracle Certification Exam Question Bank</li>
+            <li>✓ Live SQL Developer Lab Environment Setup Support</li>
+            <li>✓ 1-on-1 Mentorship &amp; Interview Prep Support</li>
+          </ul>
+        </div>
+
+        <div class="lead-form-box">
+          <form id="sqlPageMainForm">
+            <input type="hidden" name="course" value="sql-database">
+            <div class="form-group">
+              <label class="form-label">Full Name *</label>
+              <input type="text" name="name" class="form-control" placeholder="Enter Full Name" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Mobile Number *</label>
+              <input type="tel" name="phone" class="form-control" placeholder="Enter Mobile Number" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Preferred Training Batch</label>
+              <select name="time" class="form-control form-select">
+                <option value="Weekend Classroom Batch">Weekend Classroom Batch</option>
+                <option value="Weekday Live Online Batch">Weekday Live Online Batch</option>
+                <option value="Sunday Fast-Track Batch">Sunday Fast-Track Batch</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full"
+              style="background: linear-gradient(135deg, #059669 0%, #047857 100%); border: none;">
+              Reserve My SQL Seat &rarr;
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="../Asset/LOGO.png" alt="SkillNext Logo" class="logo-img">
+          <p>Empowering students and professionals with practical, market-aligned skills in Data Analytics, Cloud Technologies, and Database Engineering.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="Courses.html">All Courses</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="#overview">Course Overview</a></li>
+            <li><a href="#curriculum">Syllabus</a></li>
+            <li><a href="#enroll">Book Demo Class</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Other Programs</h4>
+          <ul class="footer-links">
+            <li><a href="PowerBi.html">Power BI &amp; Business Intelligence</a></li>
+            <li><a href="Python.html">Python for Data Analytics</a></li>
+            <li><a href="Tablue.html">Tableau Visual Analytics</a></li>
+            <li><a href="advance-excel.html">Advance Excel (Saturday Batch)</a></li>
+            <li><a href="cloud-computing.html">Cloud Computing (Sunday Batch)</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact &amp; Campus</h4>
+          <p style="margin-bottom: 0.5rem;">📍 4th Floor, Tech Hub Towers, Main Avenue Road.</p>
+          <p style="margin-bottom: 0.5rem;">📞 Helpline: +91 90045 47746</p>
+          <p>✉️ Email: admissions@apexskills.edu</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 SkillNXT. Oracle SQL &amp; Database Mastery Course. All Rights Reserved.</p>
+        <div>
+          <a href="policy.html" style="margin-right: 1rem;">Privacy Policy</a>
+          <a href="policy.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Chat Icon -->
+  <a href="https://wa.me/919004547746?text=Hello%20SkillNXT!%20I%20want%20to%20know%20more%20about%20the%20Oracle%20SQL%20Database%20Mastery%20Course." target="_blank" class="floating-whatsapp" aria-label="Chat on WhatsApp">
+    <div class="whatsapp-tooltip">Chat with Counselor</div>
+    <svg fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+  </a>
+
+  <!-- Mobile Bottom Action Bar -->
+  <div class="mobile-bottom-bar">
+    <div class="mobile-bottom-bar-grid">
+      <a href="tel:+919004547746" class="btn btn-outline btn-sm">📞 Call Now</a>
+      <button onclick="scrollToSection('enroll')" class="btn btn-primary btn-sm" style="background: #059669;">Book SQL Demo</button>
+    </div>
+  </div>
+
+  <script src="../js/main.js"></script>
 </body>
+
 </html>

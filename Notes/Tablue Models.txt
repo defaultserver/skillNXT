@@ -1,0 +1,72 @@
+1. Tableau and Data Visualization ₹2000
+• What is Data Visualization?
+• Scope of Data Visualization
+• Tableau Visualization Engine
+• Various Visualizations: ext Tables, Pie Charts, Bar, and Line
+• Visualizations: Heat Maps, Side by Side Lines, Highlight Tables, Circle Plots
+Visualizations: ree Maps, Area Charts, Dual Charts, Scatter Plots
+• Tableau Workspace
+• Dashboard and the Startup Quadrant
+• Dashboard Tricks: Reference Lines, Droplines, and Tooltips
+
+2. Tableau and Data Connections ₹2000
+• Understanding Data Connections
+• How to connect to Tableau Data Server?
+• Data Connections: Joining and Blending
+• Defining a Join
+• Various Kinds of Join
+• Usage of Join
+• Right Outer Join
+• Custom SQL Enabled
+• Data Blending and Tableau
+• Usage of Data Blending
+• Data Blending in Tableau
+
+3. Data Organization ₹2000
+• How to Organize and Simplify Data?
+• What is Filtering?
+• How to Apply a Filter to a View?
+• Filtering on Dimensions
+• Totals and Subtotals
+• Aggregating Measures and Data Spotlighting
+• String Functions and Logical Functions
+• How to Sort Data in Tableau?
+• Combined Fields
+• Group and Aliases
+• Advanced Table Calculations
+• Calculated Fields and Table Calculations
+• Quality Assurance for Table Calculations
+• Hierarchies and Sets
+• Tableau Bins
+• Fixed Size and Variable Sized Bins
+• Drilling and Drilling Methods
+
+4. Advanced Data Preparation and Analytics In Tableau ₹2000
+• Studying Retail Sector Forecasting
+• Building and Analyzing Box Plots
+• How to work with Large Data Sources in Tableau?
+• Understanding and Implementing Pivot and Split
+• Real-World Retail and its Data
+• Data Source Filters
+• Trendlines
+• Advanced Timeseries Blending
+• Calculating Sales Per Capita
+• Forecasting in Tableau
+• How to Present a Storyline?
+• Creating Animations in Tableau
+• Real-World Case Study: World Health Trends Investigation
+Building Visualization and Adding Animation
+• Manually Sorting Blended Data
+• Finalizing the Dashboard and Animations in Tableau
+
+5. Dashboards and Work Sharing ₹2000
+• Building Interactive Dashboards
+• What are Action Filters?
+• How to create Story Boards?
+• Best Practices to create Dashboards
+• Cover Pages
+• Annotations
+• Tool Tips and keyboard shortcuts
+• Sharing work
+• Tableau Online
+• Tableau Reader

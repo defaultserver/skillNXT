@@ -1,0 +1,213 @@
+Power BI
+
+Power BI Complete Introduction ₹2000
+• Power BI Introduction
+• Data Visualization, Reporting
+• Business Intelligence(BI), Traditional BI, Self-Serviced BI
+• Cloud Based BI, On Premise BI
+• Power BI Products
+• Power BI Desktop (Power Query, Power Pivot, Power View)
+• Flow of Work in Power BI Desktop
+• Power BI Report Server, Power BI Service, Power BI Mobile
+• Flow of Work in Power BI / Power BI Architecture
+• A Brief History of Power BI
+
+PBI Desktop Installation, PBI Desktop & Service Overview ₹2000
+• Power BI Desktop Installation
+• Building Blocks of Power BI
+• Datasets, Visualizations, Reports, Dashboards, Tiles
+• Power BI Desktop User Interface
+• Fields Pane, Visualizations pane, Ribbon, Views, Pages Tab, Canvas
+• Overview of Power Query / Query Editor - Extract, Transform & Load Data
+
+MICROSOFT POWER BI ₹2000
+• Connecting to Data Sources, Establish connection to the Excel source
+• Importing Data into Power BI or Query Editor
+• Transforming the Data using Power Query
+• Model the Data using Power Pivot – Relationship View
+• Creating New Measures and New Columns using DAX – Data View
+• Visualizing the Data using Power View and Power Maps – Report View
+• Saving and Publishing the Visuals or Reports
+• Login to Power BI Service
+• View the Reports in PBI Service and Share the reports
+
+Module 1: Power Query ₹2000
+Introduction to Power Query – Extract, Transform & Load
+• Data Transformation, Benefits of Data Transformation
+• Shape or Transform Data using Power Query
+• Overview of Power Query / Query Editor, Query Editor User Interface
+• The Ribbon (Home, Transform, Add Column, View Tabs)
+• The Queries Pane, The Data View / Results Pane, The Query Settings Pane, Formula Bar
+• Advanced Editor – Complete ETL Code
+• Saving Your Work – Appling ETL Changes – Loading into Power Pivot Model
+• Power Query Conceptually
+
+Data types and Filters in Power Query ₹2000
+• Data types, Changing the Data type of a Column
+• Filters in Power Query
+• Auto Filter / Basic Filtering
+• Filter a Column using Text Filters
+• Filter a Column using Number Filters
+• Filter a Column using Date Filters
+• Filter Multiple Columns
+
+Inbuilt Column Transformations ₹2000
+• Name / Rename a Column
+• Remove Columns / Remove Other Columns
+• Reorder Columns or Sort Columns
+• Add Column / Custom Column
+• Split Columns
+• Merge Columns
+• PIVOT, UNPIVOT Columns
+• Transpose Columns
+
+In built Row Transformations ₹2000
+• Header Row or Use First Row as Headers
+• Keep Top Rows, Keep Bottom Rows
+• Keep Range of Rows
+• Keep Duplicates, Keep Errors
+• Remove Top Rows, Remove Bottom Rows, Remove Alternative Rows
+• Remove Duplicates, Remove Blank Rows, Remove Errors
+• Group Rows / Group By
+
+Combine Queries (Append Queries & Merge Queries) Append Queries / Union
+Queries ₹2000
+• Append Queries
+• Append Queries as New
+• Append 2 or more files individually with different queries
+• Appending multiple files of same type from a folder using single query
+• Query Options
+• Copy Query, Paste Query
+• Delete Query, Rename Query
+• Enable Load, Include in report Refresh
+• Duplicate Query, Reference Query
+• Move to Group, Move Up, Move Down
+
+Module 2: Power Pivot
+Power BI Data Modeling – Relationship View ₹2000
+• Data Modeling Introduction
+• Relationship, Need of Relationship
+• Relationship Types / Cardinality in General
+• One-to-One, One-to-Many (or Many-to-One), Many-to-Many
+• AutoDetect the relationship, Create a new relationship, Edit existing relationships
+• Make Relationship Active or Inactive
+• Delete a relationship
+• Cross filter direction (Single, Both), Assume Referential Integrity
+
+Enhancing the Data Model – DAX ₹2000
+• What is DAX, Calculated Column, Measures
+• DAX Table and Column Name Syntax
+• Creating Calculated Columns, Creating Measures
+• Implicit vs. Explicit Measures
+• Calculated Columns vs. Measures
+• DAX Syntax & Operators
+• DAX Operators
+• Types of Operators : Arithmetic Operators, Comparison Operators, Text Concatenation
+Operator, Logical Operators
+
+DAX Functions Categories ₹2000
+• Date and Time Functions
+• Logical Functions
+• Text Functions
+• Math & Statistical Functions
+• Filter Functions
+• Time Intelligence Functions
+
+DAX Date & Time Functions ₹2000
+• Year, Month, Day
+• Weekday, Weeknum
+• FORMAT (Text Function) Month Name, Weekday Name
+• Date, Today, Now
+• Hour, Minute, Second, Time
+• Datediff, Calendar
+• Creating Date Dimension Table
+
+DAX Text Functions ₹2000
+• Len, Concatenate (&)
+• Left, Right, Mid
+• Upper, Lower
+• Trim, Substitute, Blank
+
+DAX Logical Functions ₹2000
+• If
+• True, False
+• Not, Or, In, And
+• Iferror
+• Switch
+
+DAX Math and Statistical Functions ₹2000
+• Int
+• Round, Roundup, Rounddown
+• Divide
+• Even, Odd
+• Power, Sign
+• Sqrt, Fact
+• Sum, Sumx
+• Min, Minx
+• Max, Maxx
+
+Module 3: Power View
+Report View / Power View ₹2000
+• Report View User Interface
+• Fields Pane, Visualizations pane, Ribbon, Views, Pages Tab, Canvas
+• Visual Interactions
+• Interaction Type (Filter, Highlight, None)
+• Visual Interactions Default Behavior, Changing the Interaction
+
+Filters in Power View ₹2000
+• Filter Types
+• Visual Level Filters, Page Level Filters, Report Level Filters, Drill Through Filters
+• Filter Sub Types
+• Basic Filtering, Advanced Filtering, Top N, Relative Date Filtering
+• Numeric field filters, Text field filters, Date and Time field Filters
+
+Grouping, Binning & Sorting ₹2000
+• Grouping and Binning Introduction
+• Using grouping, Creating Groups on Text Columns
+• Using binning, Creating Bins on Number Column and Date Columns
+• Sorting Data in Visuals
+• Changing the Sort Column, Changing the Sort Order
+• Sort using column that is not used in the Visualization
+
+Visualizing Trend Data ₹2000
+• Line and Area Charts
+• Create and Format Line Chart, Area Chart, Stacked Area Chart
+• Combo Charts
+• Create and Format Line and Stacked Column Chart, Line and Clustered Column Chart
+• Create and Format Ribbon Chart, Waterfall Chart, Funnel Chart
+
+Visualizing KPI Data ₹2000
+• Create and Format Gauge Visual, KPI Visual
+• Create and Format Card Visualization, Multi Row Card
+
+Module 4: Power BI Service
+Power BI Service Introduction ₹2000
+• Power BI Service Introduction, Power BI Cloud Architecture
+• Creating Power BI Service Account, SIGN IN To Power BI Service Account
+• Publishing Reports To The Power BI Service, Import / Getting The Report To PBI
+Service
+• My Workspace / App Workspaces Tabs
+• Datasets, Workbooks, Reports, Dashboards
+• Working With Datasets, Creating Reports In Cloud Using Published Datasets
+• Power BI Datasets Live Connection Using Desktop
+• Working With Workbooks, Working With Reports, Sharing Report
+
+Dashboards Development ₹2000
+• Creating Dashboards
+• Pin Visuals and Pin LIVE Report Pages to Dashboard
+• Advantages of Dashboards
+• Interacting with Dashboards
+• Adding Tiles to Dashboards
+• Web Content, Image, Text Box, Video
+• Formatting Dashboard
+• Sharing Dashboard
+
+Data Gateways ₹2000
+• Introduction to Data Gateways
+• How Data Gateways work
+• Connect to an on premise Data Source by using a Data Gateway
+• Download Data Gateway
+• Installing a Data Gateway
+• Types of Gateways
+• On-premises
+• Data Gateway, On-pre

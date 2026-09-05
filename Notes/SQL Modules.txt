@@ -1,0 +1,128 @@
+Oracle SQL 12C :- Exam code: 1Z0-061
+Introduction to Oracle Database
+• List the features of Oracle Database 12c
+• Discuss the basic design, theoretical, and physical aspects of a relational database
+• Categorize the different types of SQL statements
+• Describe the data set used by the course
+• Log on to the database using SQL Developer environment
+• Save Queries to files and use script files in SQL Developer
+
+Retrieve Data using the SQL SELECT Statement 5000
+• List the capabilities of SQL SELECT statements
+• Generate a report of data from the output of a basic SELECT statement
+• Select All Columns
+• Select Specific Columns
+• Use Column Heading Defaults
+• Use Arithmetic Operators
+• Learn the DESCRIBE command to display the table structure
+• Understand Operator Precedence
+SQL
+
+Learn to Restrict and Sort Data ₹5000
+• Write Queries That Contain A WHERE Clause To Limit The Output Retrieved List
+• the Comparison Operators And Logical Operators That Are Used In A WHERE Clause
+• Describe The Rules Of Precedence For Comparison And Logical Operators Use
+• character String Literals In The WHERE Clause
+• Write Queries That Contain An ORDER BY Clause To Sort The Output Of A SELECT
+Statement
+• Sort Output In Descending And Ascending Order
+
+Usage of Single-Row Functions to Customize Output ₹5000
+• Describe the differences between single row and multiple row functions
+• Manipulate strings with character function in the SELECT and WHERE clauses
+• Manipulate numbers with the ROUND, TRUNC, and MOD functions
+• Perform arithmetic with date data
+• Manipulate dates with the DATE functions
+
+Invoke Conversion Functions and Conditional Expressions ₹5000
+• Describe implicit and explicit data type conversion
+• Use the TO_CHAR, TO_NUMBER, and TO_DATE conversion functions
+• Nest multiple functions
+• Apply the NVL, NULLIF, and COALESCE functions to data
+• Use conditional IF THEN ELSE logic in a SELECT statement
+
+Aggregate Data Using the Group Functions ₹5000
+• Use the aggregation functions in SELECT statements to produce meaningful reports
+• Divide the data into groups by using the GROUP BY clause
+• Exclude groups of data by using the HAVING clause
+
+Display Data From Multiple Tables Using Joins ₹5000
+• Create a simple and complex view
+• Retrieve data from views
+• Create, maintain, and use sequences
+• Create and maintain indexes
+• Create private and public synonyms
+
+Use Subqueries to Solve Queries ₹5000
+• Describe the types of problem that sub-queries can solve
+• Define sub-queries
+• List the types of sub-queries
+• Write single-row and multiple-row sub-queries
+
+The SET Operators ₹5000
+• Describe the SET operators
+• Use a SET operator to combine multiple queries into a single query
+• Control the order of rows returned
+
+Data Manipulation Statements ₹5000
+• Describe each DML statement
+• Insert rows into a table
+• Change rows in a table by the UPDATE statement
+• Delete rows from a table with the DELETE statement
+• Save and discard changes with the COMMIT and ROLLBACK statements
+• Explain read consistency
+
+Use of DDL Statements to Create and Manage Tables ₹5000
+• Categorize the main database objects
+• Review the table structure
+• List the data types available for columns
+• Create a simple table
+• Decipher how constraints can be created at table creation
+• Describe how schema objects work
+
+Other Schema Objects ₹5000
+• Create a simple and complex view
+• Retrieve data from views
+• Create, maintain, and use sequences
+• Create and maintain indexes
+• Create private and public synonyms
+
+Control User Access ₹5000
+• Differentiate system privileges from object privileges
+• Create Users
+• Grant System Privileges
+• Create and Grant Privileges to a Role
+• Change Your Password
+• Grant Object Privileges
+• How to pass on privileges?
+• Revoke Object Privileges
+
+Management of Schema Object ₹5000
+• Add, Modify and Drop a Column
+• Add, Drop and Defer a Constraint
+• How to enable and disable a Constraint?
+• Create and Remove Indexes
+• Create a Function-Based Index
+• Perform Flashback Operations
+• Create an External Table by Using ORACLE_LOADER and by Using
+
+ORACLE_DATAPUMP ₹5000
+• Query External Tables
+
+Manage Objects with Data Dictionary Views ₹5000
+• Explain the data dictionary
+• Use the Dictionary Views
+• USER_OBJECTS and ALL_OBJECTS Views
+• Table and Column Information
+• Query the dictionary views for constraint information
+• Query the dictionary views for view, sequence, index, and synonym information
+• Add a comment to a table
+
+Manipulate Large Data Sets ₹5000
+• Use Subqueries to Manipulate Data
+• Retrieve Data Using a Subquery as Source
+• Insert Using a Subquery as a Target
+• Usage of the WITH CHECK OPTION Keyword on DML Statements
+• List the types of Multi-table INSERT Statements
+• Use Multi-table INSERT State
+
