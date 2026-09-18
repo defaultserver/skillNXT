@@ -1,43 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Digital Marketing Master Course | 5 Months Practical Training & Certification</title>
-  <meta name="description" content="Master SEO, Google Ads, Meta Marketing, GA4 & Content Strategy with 100% live agency projects. 5 Months Master Course for Students, Job Seekers, and Business Owners.">
+  <meta name="description"
+    content="Master SEO, Google Ads, Meta Marketing, GA4 & Content Strategy with 100% live agency projects. 5 Months Master Course for Students, Job Seekers, and Business Owners.">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
   <link rel="icon" type="image/png" href="../Asset/Fixcon%20(1).png">
   <link rel="apple-touch-icon" sizes="180x180" href="../Asset/Fixcon%20(1).png">
   <link rel="canonical" href="https://defaultserver.github.io/skillNXT/pages/digital-marketing.html">
   <meta property="og:title" content="Digital Marketing Master Course | SkillNXT">
-  <meta property="og:description" content="Learn SEO, Google Ads, Meta Marketing, GA4 and content strategy with live agency projects.">
+  <meta property="og:description"
+    content="Learn SEO, Google Ads, Meta Marketing, GA4 and content strategy with live agency projects.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://defaultserver.github.io/skillNXT/pages/digital-marketing.html">
   <meta property="og:image" content="https://defaultserver.github.io/skillNXT/assets/og-image.svg">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Digital Marketing Master Course | SkillNXT">
-  <meta name="twitter:description" content="Learn SEO, Google Ads, Meta Marketing, GA4 and content strategy with live agency projects.">
+  <meta name="twitter:description"
+    content="Learn SEO, Google Ads, Meta Marketing, GA4 and content strategy with live agency projects.">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
+    rel="stylesheet">
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="../css/style.css">
-  
+
   <style>
     .course-hero-header {
       background: radial-gradient(120% 100% at 50% 0%, #0f172a 0%, #1e293b 70%, #064e3b 100%);
       color: #ffffff;
       padding: 4rem 0 5rem;
     }
+
     .curriculum-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 1.5rem;
       margin-top: 2rem;
     }
+
     .module-box {
       background: #ffffff;
       border-radius: var(--radius-md);
@@ -46,11 +54,28 @@
       box-shadow: var(--shadow-sm);
       transition: transform var(--transition-normal), box-shadow var(--transition-normal), border-color var(--transition-normal);
     }
+
     .module-box:hover {
       transform: translateY(-4px);
       box-shadow: var(--shadow-md);
       border-color: var(--clr-primary);
     }
+
+    .module-box.module-box-ai {
+      grid-column: 1 / -1;
+      border: 2px solid rgba(124, 58, 237, 0.4);
+      background: linear-gradient(135deg, #ffffff 0%, #faf5ff 50%, #f5f3ff 100%);
+      position: relative;
+      padding: 2rem 2.25rem;
+      border-radius: var(--radius-md);
+      box-shadow: 0 4px 20px -2px rgba(124, 58, 237, 0.12);
+    }
+
+    .module-box.module-box-ai:hover {
+      border-color: #7c3aed;
+      box-shadow: 0 10px 30px -5px rgba(124, 58, 237, 0.22);
+    }
+
     .module-header {
       display: flex;
       justify-content: space-between;
@@ -58,11 +83,38 @@
       gap: 1rem;
       margin-bottom: 0.75rem;
     }
+
     .module-box h4 {
       color: var(--clr-primary);
       font-size: 1.15rem;
       margin-bottom: 0;
     }
+
+    .module-box.module-box-ai h4 {
+      color: #7c3aed;
+      font-size: 1.25rem;
+    }
+
+    .module-ai-badges {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+    }
+
+    .badge-no-code {
+      background: #ecfdf5;
+      color: #047857;
+      font-weight: 700;
+      padding: 0.3rem 0.85rem;
+      border-radius: var(--radius-full);
+      font-size: 0.85rem;
+      border: 1px solid rgba(16, 185, 129, 0.35);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+
     .module-price {
       background: var(--clr-primary-light);
       color: var(--clr-primary);
@@ -73,12 +125,40 @@
       white-space: nowrap;
       border: 1px solid rgba(2, 132, 199, 0.15);
     }
+
+    .module-price-ai {
+      background: #ede9fe;
+      color: #6d28d9;
+      border-color: rgba(124, 58, 237, 0.25);
+    }
+
+    .module-ai-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem 2.5rem;
+      margin-top: 1.25rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid rgba(124, 58, 237, 0.15);
+    }
+
+    @media (max-width: 768px) {
+      .module-ai-grid {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+      }
+
+      .module-box.module-box-ai {
+        padding: 1.5rem;
+      }
+    }
+
     .tools-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 1.25rem;
       margin-top: 2rem;
     }
+
     .tool-chip {
       background: #ffffff;
       border: 1px solid var(--clr-border);
@@ -88,13 +168,27 @@
       font-weight: 700;
       color: var(--clr-navy-900);
       box-shadow: var(--shadow-sm);
+      transition: all var(--transition-normal);
     }
+
+    .tool-chip:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--clr-primary);
+    }
+
     @media (max-width: 768px) {
-      .curriculum-grid { grid-template-columns: 1fr; }
-      .tools-grid { grid-template-columns: repeat(2, 1fr); }
+      .curriculum-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .tools-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
     }
   </style>
 </head>
+
 <body>
 
   <!-- Top Bar -->
@@ -128,7 +222,9 @@
         <a href="tel:+919004547746" class="btn btn-outline btn-sm">Call Direct</a>
         <button onclick="scrollToSection('enroll')" class="btn btn-primary btn-sm">Book Free Demo</button>
         <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle Menu">
-          <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
         </button>
       </div>
     </div>
@@ -145,10 +241,12 @@
           Digital Marketing <span class="gradient-text">Master Course</span>
         </h1>
         <p class="hero-subtitle">
-          Become a certified Google Analytics, Master Search Engine Optimization (SEO), Paid Ads (Google & Meta) and Growth Hacking with 100% practical live campaigns.
+          Become a certified Google Analytics, Master Search Engine Optimization (SEO), Paid Ads (Google & Meta) and
+          Growth Hacking with 100% practical live campaigns.
         </p>
 
-        <div style="display: flex; flex-wrap: wrap; gap: 1rem 1.5rem; margin-top: 1.5rem; color: #cbd5e1; font-size: 0.95rem;">
+        <div
+          style="display: flex; flex-wrap: wrap; gap: 1rem 1.5rem; margin-top: 1.5rem; color: #cbd5e1; font-size: 0.95rem;">
           <div>⏱ <strong>Duration:</strong> 5 Months</div>
           <div>💻 <strong>Format:</strong> Practical + Portfolio Creation</div>
           <div>📜 <strong>Certification:</strong> Included</div>
@@ -158,7 +256,8 @@
           <button onclick="scrollToSection('enroll')" class="btn btn-primary">
             Enroll in Next Batch &rarr;
           </button>
-          <a href="https://wa.me/919004547746?text=I%20want%20details%20for%20Digital%20Marketing%20Course" target="_blank" class="btn btn-outline" style="color: #ffffff; border-color: #34d399;">
+          <a href="https://wa.me/919004547746?text=I%20want%20details%20for%20Digital%20Marketing%20Course"
+            target="_blank" class="btn btn-outline" style="color: #ffffff; border-color: #34d399;">
             💬 WhatsApp Counselor
           </a>
         </div>
@@ -202,8 +301,9 @@
     <div class="container">
       <div class="text-center">
         <span class="section-tagline">STEP-BY-STEP LEARNING ROADMAP</span>
-        <h2 class="section-title">Comprehensive 6-Module Syllabus</h2>
-        <p class="section-subtitle">Everything you need to plan, launch, optimize, and scale digital marketing campaigns.</p>
+        <h2 class="section-title">Comprehensive 7-Module Syllabus</h2>
+        <p class="section-subtitle">Everything you need to plan, launch, optimize, scale campaigns & build modern
+          websites with AI.</p>
       </div>
 
       <div class="curriculum-grid">
@@ -290,6 +390,38 @@
             <li>Canva video editing with audio & animation</li>
           </ul>
         </div>
+
+        <div class="module-box module-box-ai">
+          <div class="module-header" style="flex-wrap: wrap; gap: 0.75rem;">
+            <div>
+              <h4>🚀 Module 7: AI Website Building (Mandatory for Course)</h4>
+              <p style="color: #64748b; font-size: 0.92rem; margin-top: 0.35rem; margin-bottom: 0;">
+                Learn how to build, customize, and launch agency-level websites with AI assistance — from prompt to live
+                domain.
+              </p>
+            </div>
+            <div class="module-ai-badges">
+              <span class="badge-no-code">✨ No Coding Experience Needed</span>
+              <span class="module-price">₹7,000</span>
+            </div>
+          </div>
+
+          <div class="module-ai-grid">
+            <ul class="course-features-list" style="margin-bottom: 0;">
+              <li><strong>Basic Coding :</strong> HTML5 tags, CSS3 styling &amp; JavaScript essentials made simple</li>
+              <li><strong>AI-Assisted Web Dev:</strong> Build with Claude AI, ChatGPT &amp; Cursor AI Code Editor</li>
+              <li><strong>Prompt Creation:</strong> Prompt engineering for responsive hero banners, landing pages
+                &amp; UI</li>
+            </ul>
+            <ul class="course-features-list" style="margin-bottom: 0;">
+              <li><strong>Rapid AI Builders:</strong> Prototype 10x faster using v0.dev, Bolt.new &amp; Tailwind CSS
+              </li>
+
+              <li><strong>Live Deployment:</strong> One-click publishing to Netlify / GitHub with custom domain mapping
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -299,23 +431,28 @@
     <div class="container">
       <div class="text-center">
         <span class="section-tagline">HANDS-ON TOOLSTACK</span>
-        <h2 class="section-title">Master 15+ Industry Tools</h2>
-        <p class="section-subtitle">Get practical access and training on the exact tools used by top marketing agencies worldwide.</p>
+        <h2 class="section-title">Master 18+ Industry &amp; AI Tools</h2>
+        <p class="section-subtitle">Get practical access and training on the exact tools used by top marketing agencies
+          and tech teams worldwide.</p>
       </div>
 
       <div class="tools-grid">
-        <div class="tool-chip">🎨 Canva</div>
-        <div class="tool-chip">💻 Visual Studio</div>
         <div class="tool-chip">🤖 Claude AI</div>
+        <div class="tool-chip">⚡ Cursor / AI IDE</div>
+        <div class="tool-chip">💻 HTML5 &amp; CSS3</div>
+        <div class="tool-chip">✨ v0.dev &amp; Bolt.new</div>
+        <div class="tool-chip">🎨 Canva Pro</div>
         <div class="tool-chip">🌐 WordPress</div>
         <div class="tool-chip">📍 Google Business Profile</div>
-        <div class="tool-chip">📱 Meta Ads</div>
+        <div class="tool-chip">📱 Meta Ads Manager</div>
         <div class="tool-chip">💼 LinkedIn Ads</div>
         <div class="tool-chip">🎯 Google Ads</div>
-        <div class="tool-chip">📊 Google Analytics</div>
-        <div class="tool-chip">🔎 Google Webmaster</div>
-        <div class="tool-chip">✉️ Mail Buster</div>
-        <div class="tool-chip">🎬 Cap Cut</div>
+        <div class="tool-chip">📊 Google Analytics (GA4)</div>
+        <div class="tool-chip">🔎 Search Console</div>
+        <div class="tool-chip">🚀 Netlify / GitHub</div>
+        <div class="tool-chip">✉️ Mail Buster / MailerLite</div>
+        <div class="tool-chip">🎬 CapCut Video Studio</div>
+        <div class="tool-chip">🏷️ Google Tag Manager</div>
       </div>
     </div>
   </section>
@@ -326,7 +463,8 @@
       <div class="lead-wrapper">
         <div class="lead-info">
           <h2>Enroll in Digital Marketing Master Course</h2>
-          <p>Join the upcoming batch to master practical digital marketing with live projects and 100% placement support.</p>
+          <p>Join the upcoming batch to master practical digital marketing with live projects and 100% placement
+            support.</p>
           <ul class="lead-perks">
             <li>✓ 100% Practical Agency Projects</li>
             <li>✓ Certificate & Google / Meta Exam Guidance</li>
@@ -366,7 +504,8 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <img src="../Asset/LOGO.png" alt="SkillNext Logo" class="logo-img">
-          <p>Empowering students and professionals with practical, market-aligned skills in Digital Marketing, Cloud Technologies, and Data Analytics.</p>
+          <p>Empowering students and professionals with practical, market-aligned skills in Digital Marketing, Cloud
+            Technologies, and Data Analytics.</p>
         </div>
 
         <div class="footer-col">
@@ -408,9 +547,13 @@
   </footer>
 
   <!-- Floating WhatsApp Chat Icon -->
-  <a href="https://wa.me/919004547746?text=Hello%20SkillNXT!%20I%20want%20to%20know%20more%20about%20the%20Digital%20Marketing%20Master%20Course%20and%20demo%20class." target="_blank" class="floating-whatsapp" aria-label="Chat on WhatsApp">
+  <a href="https://wa.me/919004547746?text=Hello%20SkillNXT!%20I%20want%20to%20know%20more%20about%20the%20Digital%20Marketing%20Master%20Course%20and%20demo%20class."
+    target="_blank" class="floating-whatsapp" aria-label="Chat on WhatsApp">
     <div class="whatsapp-tooltip">Chat with Counselor</div>
-    <svg fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+    <svg fill="currentColor" viewBox="0 0 24 24">
+      <path
+        d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+    </svg>
   </a>
 
   <!-- Mobile Bottom Action Bar -->
@@ -423,4 +566,5 @@
 
   <script src="../js/main.js"></script>
 </body>
+
 </html>
