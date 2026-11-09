@@ -19,14 +19,12 @@ Organic Engagement Vs Paid ADs
 Performance Tracking 
 Targeted ADs
 
-
 Module 4 (Web Analytics (GA4) & Google Search Console (GSC))
 Acquisition Report 
 Engagement Report
 User Report 
 Create Event & Audience
 Crawling & Indexing
-
 
 Module 5 (Retargeting Email Marketing & WhatsApp Marketing)
 Email Automation 
@@ -35,7 +33,6 @@ WhatsApp Broadcast Campaigns & Compliance
 WhatsApp Business
 Cross-Platform Retargeting 
 
-
 Module 6 (Content Creation & Canva)
 Info-Graphic Creation 
 Theme Continuation
@@ -43,7 +40,9 @@ Canva Apps
 Content Writing 
 Canva Video Editing 
 
-
-
-
- 
+Module 7 (AI Website Building & Basic Coding)
+Basic Web Coding Fundamentals (HTML5, CSS3, JS)
+AI Web Development with Claude AI & ChatGPT
+Prompt Engineering for Landing Pages & Funnels
+Cursor, v0.dev & Bolt.new Rapid Prototyping
+Live Cloud Deployment & Tracking Setup (GA4 / Pixel)

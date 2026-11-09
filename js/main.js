@@ -91,10 +91,22 @@ document.addEventListener('DOMContentLoaded', () => {
             'AI + manual content writing practice',
             'Canva video editing with audio & animation'
           ]
+        },
+        {
+          number: 'Module 7',
+          title: 'AI Website Building & Basic Coding',
+          price: '₹7,000',
+          topics: [
+            'Basic Coding Core (HTML5 structure, CSS3 styling & JavaScript essentials)',
+            'AI-Powered Web Dev (Claude AI, ChatGPT & Cursor / VS Code workflow)',
+            'Prompt Engineering for high-converting landing pages & responsive UI',
+            'Modern rapid builders (v0.dev, Bolt.new, Tailwind CSS & component libraries)',
+            'Live deployment (GitHub / Netlify), custom domains & tracking code integration'
+          ]
         }
       ],
-      tools: ['Google Ads', 'GA4', 'Meta Ads Manager', 'SEMrush', 'Canva Pro', 'WordPress', 'Google Tag Manager'],
-      careers: ['Digital Marketing Manager', 'SEO Specialist', 'PPC Campaign Strategist', 'Social Media Manager', 'Growth Marketer'],
+      tools: ['Claude AI', 'Cursor / VS Code', 'HTML5 & CSS3', 'v0 & Bolt.new', 'Google Ads', 'GA4', 'Meta Ads Manager', 'Canva Pro', 'WordPress', 'Google Tag Manager'],
+      careers: ['Digital Marketing Manager', 'AI Growth Specialist', 'SEO Specialist', 'PPC Campaign Strategist', 'Social Media Manager', 'Growth Marketer'],
       timings: 'Weekdays: 10:00 AM - 12:30 PM OR 5:00 PM - 7:30 PM | Weekend: Saturday & Sunday Batches'
     },
 
@@ -668,4 +680,213 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 4500);
   }
 
+  /* ------------------------------------------------------------------------
+     8. Hero Banner Slideshow
+     ------------------------------------------------------------------------ */
+  function initHeroSlider() {
+    const slider = document.getElementById('heroSlider');
+    const track = document.getElementById('heroSliderTrack');
+    if (!slider || !track) return;
+
+    const slides = Array.from(track.querySelectorAll('.hero-slide'));
+    const prevBtn = document.getElementById('sliderPrevBtn');
+    const nextBtn = document.getElementById('sliderNextBtn');
+    const dotsContainer = document.getElementById('sliderDots');
+    const progressBar = document.getElementById('sliderProgressBar');
+
+    if (slides.length === 0) return;
+
+    let currentIndex = 0;
+    const totalSlides = slides.length;
+    const intervalDuration = 5000; // 5 seconds per slide
+    let slideTimer = null;
+    let progressStartTime = 0;
+    let progressAnimFrame = null;
+    let isPaused = false;
+    let isDragging = false;
+    let hasDragged = false;
+
+    // Build pagination dots
+    if (dotsContainer) {
+      dotsContainer.innerHTML = '';
+      slides.forEach((_, i) => {
+        const dot = document.createElement('button');
+        dot.type = 'button';
+        dot.className = `hero-slider-dot ${i === 0 ? 'active' : ''}`;
+        dot.setAttribute('role', 'tab');
+        dot.setAttribute('aria-label', `Slide ${i + 1} of ${totalSlides}`);
+        dot.setAttribute('aria-selected', i === 0 ? 'true' : 'false');
+        dot.addEventListener('click', (e) => {
+          e.preventDefault();
+          goToSlide(i);
+        });
+        dotsContainer.appendChild(dot);
+      });
+    }
+
+    const dots = dotsContainer ? Array.from(dotsContainer.querySelectorAll('.hero-slider-dot')) : [];
+
+    function updateProgressBar() {
+      if (!progressBar) return;
+      if (isPaused) {
+        progressAnimFrame = requestAnimationFrame(updateProgressBar);
+        return;
+      }
+      const elapsed = Date.now() - progressStartTime;
+      const pct = Math.min(100, (elapsed / intervalDuration) * 100);
+      progressBar.style.width = `${pct}%`;
+
+      if (elapsed < intervalDuration) {
+        progressAnimFrame = requestAnimationFrame(updateProgressBar);
+      }
+    }
+
+    function resetProgress() {
+      if (progressAnimFrame) {
+        cancelAnimationFrame(progressAnimFrame);
+      }
+      progressStartTime = Date.now();
+      if (progressBar) {
+        progressBar.style.width = '0%';
+      }
+      updateProgressBar();
+    }
+
+    function goToSlide(index) {
+      currentIndex = (index + totalSlides) % totalSlides;
+      track.style.transform = `translateX(-${currentIndex * 100}%)`;
+
+      slides.forEach((slide, i) => {
+        const isActive = i === currentIndex;
+        slide.classList.toggle('active', isActive);
+        slide.setAttribute('aria-hidden', isActive ? 'false' : 'true');
+      });
+
+      dots.forEach((dot, i) => {
+        const isActive = i === currentIndex;
+        dot.classList.toggle('active', isActive);
+        dot.setAttribute('aria-selected', isActive ? 'true' : 'false');
+      });
+
+      startAutoPlay();
+    }
+
+    function startAutoPlay() {
+      stopAutoPlay();
+      resetProgress();
+      slideTimer = setTimeout(() => {
+        goToSlide(currentIndex + 1);
+      }, intervalDuration);
+    }
+
+    function stopAutoPlay() {
+      if (slideTimer) {
+        clearTimeout(slideTimer);
+        slideTimer = null;
+      }
+      if (progressAnimFrame) {
+        cancelAnimationFrame(progressAnimFrame);
+        progressAnimFrame = null;
+      }
+    }
+
+    if (prevBtn) {
+      prevBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        goToSlide(currentIndex - 1);
+      });
+    }
+
+    if (nextBtn) {
+      nextBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        goToSlide(currentIndex + 1);
+      });
+    }
+
+    // Hover listeners to pause/resume auto-play
+    slider.addEventListener('mouseenter', () => {
+      isPaused = true;
+      stopAutoPlay();
+    });
+
+    slider.addEventListener('mouseleave', () => {
+      isPaused = false;
+      startAutoPlay();
+    });
+
+    // Keyboard support
+    slider.setAttribute('tabindex', '0');
+    slider.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowLeft') {
+        e.preventDefault();
+        goToSlide(currentIndex - 1);
+      } else if (e.key === 'ArrowRight') {
+        e.preventDefault();
+        goToSlide(currentIndex + 1);
+      }
+    });
+
+    // Touch & Swipe Support for mobile devices
+    let touchStartX = 0;
+    let touchStartY = 0;
+
+    slider.addEventListener('touchstart', (e) => {
+      if (e.touches.length === 1) {
+        touchStartX = e.touches[0].clientX;
+        touchStartY = e.touches[0].clientY;
+        isDragging = true;
+        hasDragged = false;
+        stopAutoPlay();
+      }
+    }, { passive: true });
+
+    slider.addEventListener('touchmove', (e) => {
+      if (!isDragging || e.touches.length !== 1) return;
+      const currentX = e.touches[0].clientX;
+      const diffX = currentX - touchStartX;
+
+      if (Math.abs(diffX) > 15) {
+        hasDragged = true;
+      }
+    }, { passive: true });
+
+    slider.addEventListener('touchend', (e) => {
+      if (!isDragging) return;
+      isDragging = false;
+      const touchEndX = e.changedTouches[0].clientX;
+      const touchEndY = e.changedTouches[0].clientY;
+      const diffX = touchEndX - touchStartX;
+      const diffY = touchEndY - touchStartY;
+
+      // Horizontal swipe threshold
+      if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) > 40) {
+        if (diffX < 0) {
+          goToSlide(currentIndex + 1);
+        } else {
+          goToSlide(currentIndex - 1);
+        }
+      } else {
+        startAutoPlay();
+      }
+      setTimeout(() => { hasDragged = false; }, 60);
+    }, { passive: true });
+
+    // Prevent link click when swiping
+    slider.querySelectorAll('.hero-slide-link').forEach(link => {
+      link.addEventListener('click', (e) => {
+        if (hasDragged) {
+          e.preventDefault();
+          e.stopPropagation();
+        }
+      });
+    });
+
+    // Start slideshow
+    goToSlide(0);
+  }
+
+  initHeroSlider();
 });

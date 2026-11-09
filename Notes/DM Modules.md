@@ -1,4 +1,4 @@
-﻿# Digital Marketing Modules
+# Digital Marketing Modules
 
 **Module 1 (Website Basics, SEO & Frontend Setup)** ₹11000
 
@@ -55,11 +55,22 @@
 * Canva Video Editing - Timeline, Audio & Animation
 
 
+**Module 7 (AI Website Building & Basic Coding)** ₹7000
+
+* Basic Web Coding Fundamentals (HTML5, CSS3 & JavaScript Essentials)
+* AI-Assisted Website Development (Claude AI, ChatGPT & Cursor / VS Code)
+* Prompt Engineering for UI/UX Layouts, Landing Pages & High-Converting Funnels
+* No-Code & Low-Code AI Rapid Builders (v0.dev, Bolt.new & Tailwind integrations)
+* Tracking Setup (GA4 & Meta Pixel) & Fast Cloud Deployment (GitHub / Netlify)
+
+
 **Tools We Learn**
 
-* Canva
-* Visual Studio Code
 * Claude AI
+* Cursor / VS Code AI IDE
+* HTML5 & CSS3
+* v0.dev & Bolt.new
+* Canva Pro
 * WordPress
 * Google Business Profile
 * Meta Ads
@@ -69,3 +80,4 @@
 * Google Search Console
 * MailerLite / Mail Buster
 * CapCut
+
