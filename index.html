@@ -7,13 +7,6 @@
   <!-- Google tag (gtag.js) -->
   <script src="https://analytics.ahrefs.com/analytics.js" data-key="IC+6GoNWXf+hdfz2ILD38g" async></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-1V3LDP68EE"></script>
-  <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-KXQK53JQ');</script>
-<!-- End Google Tag Manager -->
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
@@ -138,119 +131,145 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
   </header>
 
-  <!-- 3. Hero Section -->
-  <section class="hero-section" id="home">
-    <div class="container hero-grid">
-      <div class="hero-content">
-        <div class="hero-badge">
-          🎓 #1 Practical Industry Training & Certification Center
-        </div>
-        <h1 class="hero-title">
-          Elevate Your Career with <span class="gradient-text">High-Demand Skills</span>
-        </h1>
-        <p class="hero-subtitle">
-          Master Digital Marketing, Cloud Computing, and Advance Data Analytics. Gain hands-on experience through live
-          corporate projects, flexible weekend batches, and 100% placement support.
-        </p>
+  <!-- 3. Hero Section (Slideshow) -->
+  <section class="hero-section hero-slider-section" id="home">
+    <h1 class="sr-only">SkillNXT - Industry Certification Training in Digital Marketing, Cloud DevOps, Data Analytics &
+      Finance</h1>
+    <div class="container hero-slider-container">
+      <div class="hero-slider-wrapper" id="heroSlider" aria-roledescription="carousel"
+        aria-label="SkillNXT Featured Courses and Admissions">
+        <!-- Slider Track -->
+        <div class="hero-slider-track" id="heroSliderTrack">
+          <!-- Slide 1: Main Overview & Online Campus -->
+          <div class="hero-slide active" role="group" aria-roledescription="slide"
+            aria-label="1 of 7: SkillNXT Online Campus & Courses">
+            <a href="pages/Courses.html" class="hero-slide-link" title="Explore SkillNXT Online Campus & Courses">
+              <img src="HomeIMG/Main.png"
+                alt="SkillNXT Online Courses and Online Campus - Learn Anywhere, Grow Everywhere" class="hero-slide-img"
+                width="1873" height="840" fetchpriority="high">
+            </a>
+          </div>
 
-        <div class="hero-cta-box">
-          <button onclick="scrollToSection('lead-capture')" class="btn btn-primary">
-            <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-            </svg>
-            Book a Free Demo Class
-          </button>
-          <button onclick="scrollToSection('courses')" class="btn btn-outline"
-            style="color: #ffffff; border-color: rgba(255,255,255,0.3);">
-            Explore All Courses
-          </button>
+          <!-- Slide 2: Admissions Open All Courses -->
+          <div class="hero-slide" role="group" aria-roledescription="slide"
+            aria-label="2 of 7: Admissions Open - All Courses">
+            <a href="#lead-capture" onclick="scrollToSection('lead-capture')" class="hero-slide-link"
+              title="Book Free Demo - Admissions Open">
+              <img src="HomeIMG/skillnxt-07-admissions-open-all-courses.png"
+                alt="Build Your Career With SkillNXT - Admissions Open for All Courses" class="hero-slide-img"
+                width="1873" height="840" loading="lazy">
+            </a>
+          </div>
+
+          <!-- Slide 3: Digital Marketing -->
+          <div class="hero-slide" role="group" aria-roledescription="slide"
+            aria-label="3 of 7: Digital Marketing Master Course">
+            <a href="pages/digital-marketing.html" class="hero-slide-link"
+              title="Digital Marketing Master Course - Explore Curriculum">
+              <img src="HomeIMG/skillnxt-02-digital-marketing.png"
+                alt="Digital Marketing Course - SEO, SMM, SEM, Content Creation & Website Building"
+                class="hero-slide-img" width="1873" height="840" loading="lazy">
+            </a>
+          </div>
+
+          <!-- Slide 4: Data Analytics -->
+          <div class="hero-slide" role="group" aria-roledescription="slide" aria-label="4 of 7: Data Analytics Course">
+            <a href="pages/advance-excel.html" class="hero-slide-link"
+              title="Data Analytics Course - Advanced Excel, Tableau, Power BI & MIS">
+              <img src="HomeIMG/skillnxt-03-data-analytics.png"
+                alt="Data Analytics Course - Advanced Excel, Tableau, Power BI, MIS" class="hero-slide-img" width="1873"
+                height="840" loading="lazy">
+            </a>
+          </div>
+
+          <!-- Slide 5: Cloud DevOps -->
+          <div class="hero-slide" role="group" aria-roledescription="slide" aria-label="5 of 7: Cloud DevOps Course">
+            <a href="pages/cloud-computing.html" class="hero-slide-link"
+              title="Cloud DevOps Course - AWS, Azure, Docker, Linux">
+              <img src="HomeIMG/skillnxt-05-cloud-devops.png"
+                alt="Cloud DevOps Course - AWS, Microsoft Azure, Docker, Linux" class="hero-slide-img" width="1873"
+                height="840" loading="lazy">
+            </a>
+          </div>
+
+          <!-- Slide 6: Financial Course -->
+          <div class="hero-slide" role="group" aria-roledescription="slide"
+            aria-label="6 of 7: Financial Course - NISM Certification">
+            <a href="pages/NismSeries5A.html" class="hero-slide-link"
+              title="Financial Course - NISM Series 5, 15A & B Certification">
+              <img src="HomeIMG/skillnxt-04-financial-course.png"
+                alt="Financial Course - NISM Certification in Mutual Funds and Equity Derivatives"
+                class="hero-slide-img" width="1873" height="840" loading="lazy">
+            </a>
+          </div>
+
+          <!-- Slide 7: Data Science -->
+          <div class="hero-slide" role="group" aria-roledescription="slide" aria-label="7 of 7: Data Science Course">
+            <a href="pages/Python.html" class="hero-slide-link"
+              title="Data Science Course - Python, Machine Learning & Statistics">
+              <img src="HomeIMG/skillnxt-06-data-science.png"
+                alt="Data Science Course - Python, Machine Learning, Statistical Modeling" class="hero-slide-img"
+                width="1873" height="840" loading="lazy">
+            </a>
+          </div>
         </div>
 
-        <div class="hero-trust-list">
-          <div class="trust-item">
-            <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-            </svg>
-            <span><strong>4.9 / 5 Rating</strong> (1,200+ Alumni)</span>
-          </div>
-          <div class="trust-item">
-            <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-            </svg>
-            <span><strong>100% Practical</strong> Live Projects</span>
-          </div>
-          <div class="trust-item">
-            <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-            </svg>
-            <span><strong>Dedicated Weekend</strong> Batches</span>
-          </div>
+        <!-- Navigation Arrows -->
+        <button type="button" class="hero-slider-arrow prev" id="sliderPrevBtn" aria-label="Previous Slide">
+          <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+        <button type="button" class="hero-slider-arrow next" id="sliderNextBtn" aria-label="Next Slide">
+          <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+
+        <!-- Slide Indicators / Dots -->
+        <div class="hero-slider-dots" id="sliderDots" role="tablist" aria-label="Select Slide"></div>
+
+        <!-- Animated Progress Bar -->
+        <div class="hero-slider-progress" aria-hidden="true">
+          <div class="hero-slider-progress-bar" id="sliderProgressBar"></div>
         </div>
       </div>
 
-      <!-- Quick Lead Form inside Hero -->
-      <div class="hero-form-card">
-        <div class="hero-form-header">
-          <h3>Book Your Free Live Demo</h3>
-          <p>Get personalized career counseling & instant batch details</p>
+      <!-- Hero Trust Highlights Bar -->
+      <div class="hero-trust-bar">
+        <div class="hero-trust-pill">
+          <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.196-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+          </svg>
+          <span><strong>4.9 / 5 Rating</strong> (1,200+ Alumni)</span>
         </div>
-        <form id="heroLeadForm">
-          <div class="form-group">
-            <label class="form-label">Full Name *</label>
-            <input type="text" name="name" class="form-control" placeholder="e.g. Rahul Sharma" required>
-          </div>
-          <div class="form-group">
-            <label class="form-label">Mobile / WhatsApp Number *</label>
-            <input type="tel" name="phone" class="form-control" placeholder="10-Digit Mobile Number" required>
-          </div>
-          <div class="form-group">
-            <label class="form-label">Select Course *</label>
-            <select name="course" class="form-control form-select" required>
-              <option value="">-- Choose Your Course --</option>
-              <option value="digital-marketing">Digital Marketing Master Course (5 Months)</option>
-              <option value="cloud-computing">Cloud Computing Professional (Sunday Special Batch)</option>
-              <option value="advance-excel">Advance Excel & Data Analysis (Saturday Special Batch)</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label class="form-label">Preferred Time Slot</label>
-            <select name="time" class="form-control form-select">
-              <option value="Weekend Morning">Weekend Morning (Sat/Sun)</option>
-              <option value="Weekday Morning">Weekday Morning (10 AM)</option>
-              <option value="Weekday Evening">Weekday Evening (6 PM)</option>
-            </select>
-          </div>
-          <button type="submit" class="btn btn-primary btn-full">
-            Claim Free Demo Slot &rarr;
-          </button>
-          <p class="form-notice">🔒 100% Privacy Guaranteed. No Spam Calls.</p>
-        </form>
+        <div class="hero-trust-pill">
+          <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          <span><strong>100% Practical</strong> Live Projects</span>
+        </div>
+        <div class="hero-trust-pill">
+          <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+          </svg>
+          <span><strong>Flexible Weekend & Weekday</strong> Batches</span>
+        </div>
+        <div class="hero-trust-pill">
+          <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+          </svg>
+          <span><strong>100% Advance</strong> Skills</span>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- 4. Key Metrics Bar -->
-  <section class="stats-banner">
-    <div class="container stats-grid">
-      <div class="stat-item">
-        <div class="stat-number">5,000+</div>
-        <div class="stat-label">Students Trained</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-number">350+</div>
-        <div class="stat-label">Practical Modules</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-number">100%</div>
-        <div class="stat-label">Practical Live Teaching</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-number">75%</div>
-        <div class="stat-label">Avg Skill Growth</div>
-      </div>
-    </div>
-  </section>
+
 
   <!-- 5. Courses Section -->
   <section class="courses-section" id="courses">
@@ -483,11 +502,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       </div>
 
       <!-- Explore All Courses CTA Button -->
-      <div class="text-center" style="margin-top: 3.5rem; padding-top: 1.5rem; border-top: 1px dashed rgba(2, 132, 199, 0.2);">
+      <div class="text-center"
+        style="margin-top: 3.5rem; padding-top: 1.5rem; border-top: 1px dashed rgba(2, 132, 199, 0.2);">
         <p style="font-size: 1.05rem; color: var(--clr-slate-600); margin-bottom: 1.25rem; font-weight: 500;">
           Looking for specialized tracks in <strong>Power BI, SQL, Python, Tableau, Cloud &amp; Marketing</strong>?
         </p>
-        <a href="pages/Courses.html" class="btn btn-primary" style="display: inline-flex; align-items: center; gap: 0.75rem; padding: 0.95rem 2.25rem; font-size: 1.05rem; font-weight: 700; box-shadow: 0 10px 25px -5px rgba(2, 132, 199, 0.4); border-radius: var(--radius-full);">
+        <a href="pages/Courses.html" class="btn btn-primary"
+          style="display: inline-flex; align-items: center; gap: 0.75rem; padding: 0.95rem 2.25rem; font-size: 1.05rem; font-weight: 700; box-shadow: 0 10px 25px -5px rgba(2, 132, 199, 0.4); border-radius: var(--radius-full);">
           <span>View All Courses &amp; Syllabuses</span>
           <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
